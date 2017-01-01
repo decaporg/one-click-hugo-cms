@@ -46,7 +46,6 @@
 
 */
 
-
 .pa0 { padding: var(--spacing-none); }
 .pa1 { padding: var(--spacing-extra-small); }
 .pa2 { padding: var(--spacing-small); }
@@ -277,6 +276,10 @@
   margin-right: var(--spacing-extra-extra-extra-large);
 }
 
+.mhn1 { margin-left: -.25rem; margin-right: -.25rem; }
+.mhn2 { margin-left: -.5rem; margin-right: -.5rem; }
+.mhn3 { margin-left: -1rem; margin-right: -1rem; }
+
 @media (--breakpoint-not-small) {
   .pa0-ns  {  padding: var(--spacing-none); }
   .pa1-ns {  padding: var(--spacing-extra-small); }
@@ -498,6 +501,10 @@
     margin-left: var(--spacing-extra-extra-extra-large);
     margin-right: var(--spacing-extra-extra-extra-large);
   }
+
+  .mhn1-ns { margin-left: -.25rem; margin-right: -.25rem; }
+  .mhn2-ns { margin-left: -.5rem; margin-right: -.5rem; }
+  .mhn3-ns { margin-left: -1rem; margin-right: -1rem; }
 
 }
 
@@ -724,6 +731,10 @@
     margin-right: var(--spacing-extra-extra-extra-large);
   }
 
+  .mhn1-m { margin-left: -.25rem; margin-right: -.25rem; }
+  .mhn2-m { margin-left: -.5rem; margin-right: -.5rem; }
+  .mhn3-m { margin-left: -1rem; margin-right: -1rem; }
+
 }
 
 @media (--breakpoint-large) {
@@ -948,5 +959,8 @@
     margin-left: var(--spacing-extra-extra-extra-large);
     margin-right: var(--spacing-extra-extra-extra-large);
   }
-}
 
+  .mhn1-l { margin-left: -.25rem; margin-right: -.25rem; }
+  .mhn2-l { margin-left: -.5rem; margin-right: -.5rem; }
+  .mhn3-l { margin-left: -1rem; margin-right: -1rem; }
+}

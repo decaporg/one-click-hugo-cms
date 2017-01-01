@@ -7,7 +7,7 @@
 
 
 .sans-serif {
-  font-family: -apple-system, BlinkMacSystemFont,
+  font-family: Nunito Sans, -apple-system, BlinkMacSystemFont,
                'avenir next', avenir,
                helvetica, 'helvetica neue',
                ubuntu,
@@ -97,4 +97,3 @@ code, .code {
   font-family: baskerville,
                serif;
 }
-

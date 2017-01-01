@@ -1,0 +1,13 @@
+.cms {
+  & h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  & a {
+    color: var(--primary);
+    transition: var(--hover-transition);
+    &:hover {
+      background-color: var(--highlight);
+      color: var(--black);
+    }
+  }
+}

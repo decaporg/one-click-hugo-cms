@@ -40,5 +40,9 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp-svgstore": "^6.1.0",
+    "svg-sprite-loader": "^0.1.2"
   }
 }

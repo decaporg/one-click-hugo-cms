@@ -10,7 +10,10 @@
 
 */
 
-
+p {
+  margin-bottom: 1rem;
+  max-width: 32rem;
+}
 
 /* Measure is limited to ~66 characters */
 .measure {
@@ -24,7 +27,7 @@
 
 /* Measure is limited to ~45 characters */
 .measure-narrow {
-  max-width: 20em;
+  max-width: 25em;
 }
 
 /* Book paragraph style - paragraphs are indented with no vertical spacing. */

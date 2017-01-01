@@ -7,6 +7,9 @@ import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
+import svgstore from "gulp-svgstore";
+import svgmin from "gulp-svgmin";
+import inject from "gulp-inject";
 
 const browserSync = BrowserSync.create();
 const hugoBin = "hugo";
@@ -39,7 +42,24 @@ gulp.task("js", (cb) => {
   });
 });
 
-gulp.task("server", ["hugo", "css", "js"], () => {
+gulp.task('svg', () => {
+    const svgs = gulp
+      .src('site/static/img/icons/*.svg')
+      .pipe(svgmin())
+      .pipe(svgstore({ inlineSvg: true }));
+
+    function fileContents(filePath, file) {
+        return file.contents.toString();
+    }
+
+    return gulp
+      .src('site/layouts/partials/svg.html')
+      .pipe(inject(svgs, { transform: fileContents }))
+      .pipe(gulp.dest('site/layouts/partials/'));
+      browserSync.reload();
+});
+
+gulp.task("server", ["hugo", "css", "js", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
@@ -55,7 +75,7 @@ function buildSite(cb, options) {
 
   return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
     if (code === 0) {
-      browserSync.reload();
+      browserSync.reload("notify:false");
       cb();
     } else {
       browserSync.notify("Hugo build failed :(");
