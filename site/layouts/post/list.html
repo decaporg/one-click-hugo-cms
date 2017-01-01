@@ -1,0 +1,14 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+
+{{ partial "jumbotron" (dict "imageUrl" "img/2.jpg" "title" "post title goes here") }}
+
+<ul class="flex-l">
+    {{ range .Data.Pages }}
+        <div>
+          {{ .Render "li"}}
+        </div>
+    {{ end }}
+</ul>
+
+{{ partial "footer" . }}

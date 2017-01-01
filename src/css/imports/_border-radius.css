@@ -24,11 +24,12 @@
 
 */
 
+  :root {
+    --border-radius: .25rem;
+  }
+
   .br0 {        border-radius: 0; }
-  .br1 {        border-radius: .125rem; }
-  .br2 {        border-radius: .25rem; }
-  .br3 {        border-radius: .5rem; }
-  .br4 {        border-radius: 1rem; }
+  .br1 {        border-radius: var(--border-radius); }
   .br-100 {     border-radius: 100%; }
   .br-pill {    border-radius: 9999px; }
   .br--bottom {
@@ -50,10 +51,7 @@
 
 @media (--breakpoint-not-small) {
   .br0-ns {     border-radius: 0; }
-  .br1-ns {     border-radius: .125rem; }
-  .br2-ns {     border-radius: .25rem; }
-  .br3-ns {     border-radius: .5rem; }
-  .br4-ns {     border-radius: 1rem; }
+  .br1-ns {     border-radius: var(--border-radius); }
   .br-100-ns {  border-radius: 100%; }
   .br-pill-ns { border-radius: 9999px; }
   .br--bottom-ns {
@@ -76,10 +74,7 @@
 
 @media (--breakpoint-medium) {
   .br0-m {     border-radius: 0; }
-  .br1-m {     border-radius: .125rem; }
-  .br2-m {     border-radius: .25rem; }
-  .br3-m {     border-radius: .5rem; }
-  .br4-m {     border-radius: 1rem; }
+  .br1-m {     border-radius: var(--border-radius); }
   .br-100-m {  border-radius: 100%; }
   .br-pill-m { border-radius: 9999px; }
   .br--bottom-m {
@@ -102,10 +97,7 @@
 
 @media (--breakpoint-large) {
   .br0-l {     border-radius: 0; }
-  .br1-l {     border-radius: .125rem; }
-  .br2-l {     border-radius: .25rem; }
-  .br3-l {     border-radius: .5rem; }
-  .br4-l {     border-radius: 1rem; }
+  .br1-l {     border-radius: var(--border-radius); }
   .br-100-l {  border-radius: 100%; }
   .br-pill-l { border-radius: 9999px; }
   .br--bottom-l {

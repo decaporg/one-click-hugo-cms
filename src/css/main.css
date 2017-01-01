@@ -12,7 +12,7 @@
  *    TABLE OF CONTENTS
  *
  *    1. External Library Includes
- *       - Normalize.css | http://normalize.css.github.io
+ *       - Reset.css | http://meyerweb.com/eric/tools/css/reset/
  *    2. Tachyons Modules
  *    3. Variables
  *       - Media Queries
@@ -25,7 +25,7 @@
 
 
 /* External Library Includes */
-@import './imports/_normalize';
+@import './imports/_reset';
 
 /* Modules */
 @import './imports/_box-sizing';
@@ -34,10 +34,10 @@
 @import './imports/_background-position';
 @import './imports/_outlines';
 @import './imports/_borders';
-@import './imports/_border-colors';
 @import './imports/_border-radius';
 @import './imports/_border-style';
 @import './imports/_border-widths';
+@import './imports/_border-colors';
 @import './imports/_box-shadow';
 @import './imports/_code';
 @import './imports/_coordinates';
@@ -59,10 +59,7 @@
 @import './imports/_overflow';
 @import './imports/_position';
 @import './imports/_opacity';
-@import './imports/_skins';
-@import './imports/_skins-pseudo';
 @import './imports/_spacing';
-@import './imports/_tables';
 @import './imports/_text-decoration';
 @import './imports/_text-align';
 @import './imports/_text-transform';
@@ -75,15 +72,19 @@
 @import './imports/_hovers';
 @import './imports/_z-index';
 @import './imports/_styles';
+@import './imports/_buttons';
+@import './imports/_svg';
+@import './imports/_cms';
 
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
 @import './imports/_colors';
 @import './imports/_media-queries';
+@import './imports/_variables';
 
 /* Debugging */
 @import './imports/_debug-children';
 @import './imports/_debug-grid';
 
 /* Uncomment out the line below to help debug layout issues */
-/* @import './imports/_debug'; */
+/*@import './imports/_debug';*/

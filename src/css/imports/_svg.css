@@ -1,0 +1,7 @@
+svg {
+  fill: currentColor;
+  fill-rule:evenodd;
+  clip-rule:evenodd;
+  max-width: 100%;
+  max-height: 100%;
+}

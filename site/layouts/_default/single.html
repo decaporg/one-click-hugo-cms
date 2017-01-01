@@ -1,5 +1,5 @@
-{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<article class="content">
-  <main>{{- .Content -}}</main>
-</article>
-{{ end }}
+{{ partial "header" . }}
+{{ partial "nav" . }}
+{{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
+  {{ .Content }}
+{{ partial "footer" . }}

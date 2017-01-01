@@ -27,6 +27,25 @@
  * so be careful using them on smaller screens.
  * */
 
+html {
+  font-size: 18px;
+  @media (--breakpoint-medium) {
+    font-size: 20px;
+  }
+  @media (--breakpoint-large) {
+    font-size: 22px;
+  }
+}
+
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--white);
+ }
+
 .f-6,
 .f-headline {
   font-size: 6rem;

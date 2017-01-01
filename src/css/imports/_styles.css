@@ -6,3 +6,6 @@
 
 */
 
+::selection {
+  background-color: var(--highlight);
+}

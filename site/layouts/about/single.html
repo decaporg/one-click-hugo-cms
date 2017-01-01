@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+{{ partial "jumbotron" (dict "imageUrl" "/img/about/jumbotron.jpg" "title" "About us" "subtitle" "Our values") }}
+
+<div class="mw7 center ph3 pt4">
+
+  {{ partial "media-block" (dict "heading" "Shade-grown coffee" "text" "Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species." "imageUrl" "/img/about/direct-sourcing.jpg") }}
+
+  {{ partial "media-block-reverse" (dict "heading" "Shade-grown coffee" "text" "Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species." "imageUrl" "/img/about/reinvest-profits.jpg") }}
+
+  {{ partial "media-block" (dict "heading" "Shade-grown coffee" "text" "Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species." "imageUrl" "/img/about/shade-grown.jpg") }}
+
+  {{ partial "media-block-reverse" (dict "heading" "Shade-grown coffee" "text" "Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species." "imageUrl" "/img/about/single-origin.jpg") }}
+</div>
+
+{{ partial "footer" . }}

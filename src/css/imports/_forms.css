@@ -1,8 +1,13 @@
 /*
 
    FORMS
-   
+
 */
+
+fieldset
+{
+  position: relative;
+}
 
 .input-reset {
   -webkit-appearance: none;
@@ -13,4 +18,63 @@
 .input-reset::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+input, textarea {
+  background-color: var(--grey-2);
+  border-radius: var(--border-radius);
+  padding: 12px 16px 10px;
+  font-size: 1rem;
+  line-height: 1.25;
+  position: relative;
+  z-index: 2;
+  &:focus {
+    background-color: var(--white);
+  }
+  &:focus + label {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-120%);
+  }
+}
+
+::-webkit-input-placeholder {
+   color: var(--black);
+   font-size: 1rem;
+   line-height: normal;
+}
+
+:-moz-placeholder {
+   color: var(--black);
+   font-size: 1rem;
+   line-height: normal;
+}
+
+::-moz-placeholder {
+   color: var(--black);
+   font-size: 1rem;
+   line-height: normal;
+}
+
+:-ms-input-placeholder {
+   color: var(--black);
+   font-size: 1rem;
+   line-height: normal;
+}
+
+label
+{
+  font-size: .875rem;
+  font-weight: 800;
+  color: var(--primary);
+  background-color: var(--grey-2);
+  border-radius: .25rem;
+  padding: .25rem .5rem;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  line-height: 1;
+  transition: var(--hover-transition);
+  z-index: 2;
 }
