@@ -1,18 +1,39 @@
-/*
+html {
+  font-size: 18px;
+  @media (--breakpoint-medium) {
+    font-size: 20px;
+  }
+  @media (--breakpoint-large) {
+    font-size: 22px;
+  }
+}
 
-   TYPOGRAPHY
-   http://tachyons.io/docs/typography/measure/
 
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
+body {
+  font-size: var(--spacing-medium);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--white);
+ }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-medium);
   max-width: 32rem;
+}
+
+strong {
+  font-weight: 800;
+}
+
+em {
+  font-style: italic;
+}
+
+sup {
+  font-size: .6rem;
+  font-weight: 700;
+  vertical-align: super;
 }
 
 /* Measure is limited to ~66 characters */
