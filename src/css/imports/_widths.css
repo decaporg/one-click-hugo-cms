@@ -38,7 +38,7 @@
 
 /* Width Scale */
 
-.w1 {    width: 1rem; }
+.w1 {    width: var(--spacing-medium); }
 .w2 {    width: 2rem; }
 .w3 {    width: 4rem; }
 .w4 {    width: 8rem; }
@@ -64,7 +64,7 @@
 .w-auto { width: auto; }
 
 @media (--breakpoint-not-small) {
-  .w1-ns {  width: 1rem; }
+  .w1-ns {  width: var(--spacing-medium); }
   .w2-ns {  width: 2rem; }
   .w3-ns {  width: 4rem; }
   .w4-ns {  width: 8rem; }
@@ -89,7 +89,7 @@
 }
 
 @media (--breakpoint-medium) {
-  .w1-m {      width: 1rem; }
+  .w1-m {      width: var(--spacing-medium); }
   .w2-m {      width: 2rem; }
   .w3-m {      width: 4rem; }
   .w4-m {      width: 8rem; }
@@ -114,7 +114,7 @@
 }
 
 @media (--breakpoint-large) {
-  .w1-l {      width: 1rem; }
+  .w1-l {      width: var(--spacing-medium); }
   .w2-l {      width: 2rem; }
   .w3-l {      width: 4rem; }
   .w4-l {      width: 8rem; }

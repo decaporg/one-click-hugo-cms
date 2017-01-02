@@ -1,32 +1,29 @@
-@media (--breakpoint-large) {
-  .raise {
-    transform: none;
-    transition: var(--hover-transition);
-  }
-  .raise:hover,
-  .raise:focus {
-    transform: translateY(-.1rem);
-    transition: var(--hover-transition);
-  }
-  .raise:active {
-    opacity: .5; transition: var(--hover-transition);
-  }
+/* Focus states */
+input:focus, textarea:focus a:focus {
+  box-shadow: 0 0 0 2px var(--primary);
+  outline: 0;
 }
 
-/*
+button:focus {
+  box-shadow: 0 0 0 4px var(--primary);
+  outline: 0;
+}
 
-  Hide child & reveal on hover:
+.raise {
+  transition: var(--hover-transition);
+  transform: translateY(0) translateZ(0);
+}
 
-  Put the hide-child class on a parent element and any nested element with the
-  child class will be hidden and displayed on hover or focus.
+.raise:hover,
+.raise:focus {
+  transition: var(--hover-transition);
+  transform: translateY(-.12rem) translateZ(0);
+}
 
-  <div class="hide-child">
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-    <div class="child"> Hidden until hover or focus </div>
-  </div>
-*/
+.raise:active {
+  transition: var(--hover-transition);
+  opacity: .5;
+}
 
 .hide-child .child {
   opacity: 0;

@@ -35,7 +35,7 @@
 
 /* Max Width Scale */
 
-.mw1  {  max-width: 1rem; }
+.mw1  {  max-width: var(--spacing-medium); }
 .mw2  {  max-width: 2rem; }
 .mw3  {  max-width: 4rem; }
 .mw4  {  max-width: 8rem; }
@@ -52,7 +52,7 @@
 @media (--breakpoint-not-small) {
   .mw-100-ns  { max-width: 100%; }
 
-  .mw1-ns  {  max-width: 1rem; }
+  .mw1-ns  {  max-width: var(--spacing-medium); }
   .mw2-ns  {  max-width: 2rem; }
   .mw3-ns  {  max-width: 4rem; }
   .mw4-ns  {  max-width: 8rem; }
@@ -68,7 +68,7 @@
 @media (--breakpoint-medium) {
   .mw-100-m  { max-width: 100%; }
 
-  .mw1-m  {  max-width: 1rem; }
+  .mw1-m  {  max-width: var(--spacing-medium); }
   .mw2-m  {  max-width: 2rem; }
   .mw3-m  {  max-width: 4rem; }
   .mw4-m  {  max-width: 8rem; }
@@ -84,7 +84,7 @@
 @media (--breakpoint-large) {
   .mw-100-l  { max-width: 100%; }
 
-  .mw1-l  {  max-width: 1rem; }
+  .mw1-l  {  max-width: var(--spacing-medium); }
   .mw2-l  {  max-width: 2rem; }
   .mw3-l  {  max-width: 4rem; }
   .mw4-l  {  max-width: 8rem; }

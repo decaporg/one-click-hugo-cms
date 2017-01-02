@@ -1,21 +1,19 @@
 <footer class="bg-black ph3 pv4 white">
 
 	<div class="mw7 center pt3">
+
 		<div class="measure-narrow center mb4">
+
 			<img src="/img/logo.svg" alt="" class="db w4 center mb4">
 			<p class="f3 lh-title light-gray b tc mb2">Newsletter subscribe</p>
 			<p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
 
-			<form action="" class="flex-ns mb3">
-				<fieldset class="flex-auto mb2 mb0-ns mr2-ns">
-					<input type="text" id="email" placeholder="Your email" class="w-100">
-					<label for="email">Your email</label>
-				</fieldset>
-				<button class="btn mb3 w-100 w-auto-ns mb0-ns raise" type="submit">Submit</button>
-			</form>
+			{{ partial "newsletter-form" . }}
+
 		</div>
 
 		<div class="flex-ns justify-between">
+
 			<div>
 				<h3 class="f4 b lh-title mb1 primary">List of links</h3>
 				<ul class="mb3">
@@ -45,6 +43,7 @@
 					{{ partial "social-icon" (dict "link" "facebook.com" "svg" "Amazon") }}
 				</ul>
 			</div>
+
 		</div>
 	</div>
 

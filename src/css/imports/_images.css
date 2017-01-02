@@ -1,11 +1,7 @@
-/*
+img {
+  max-width: 100%;
+}
 
-   IMAGES
-   Docs: http://tachyons.io/docs/elements/images/
-
-*/
-
-/* Responsive images! */
-
-img { max-width: 100%; }
-
+img:not(.w-100) {
+  border-radius: var(--border-radius);
+}

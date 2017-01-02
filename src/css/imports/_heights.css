@@ -33,7 +33,7 @@
 
 /* Height Scale */
 
-.h1 { height: 1rem; }
+.h1 { height: var(--spacing-medium); }
 .h2 { height: 2rem; }
 .h3 { height: 4rem; }
 .h4 { height: 8rem; }
@@ -64,7 +64,7 @@
 .h-inherit {  height: inherit; }
 
 @media (--breakpoint-not-small) {
-  .h1-ns {  height: 1rem; }
+  .h1-ns {  height: var(--spacing-medium); }
   .h2-ns {  height: 2rem; }
   .h3-ns {  height: 4rem; }
   .h4-ns {  height: 8rem; }
@@ -84,7 +84,7 @@
 }
 
 @media (--breakpoint-medium) {
-  .h1-m { height: 1rem; }
+  .h1-m { height: var(--spacing-medium); }
   .h2-m { height: 2rem; }
   .h3-m { height: 4rem; }
   .h4-m { height: 8rem; }
@@ -104,7 +104,7 @@
 }
 
 @media (--breakpoint-large) {
-  .h1-l { height: 1rem; }
+  .h1-l { height: var(--spacing-medium); }
   .h2-l { height: 2rem; }
   .h3-l { height: 4rem; }
   .h4-l { height: 8rem; }
