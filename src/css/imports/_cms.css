@@ -2,7 +2,7 @@
 
 	/* Headings */
 	& h1, & h2, & h3, & h4, & h5, & h6 {
-		font-weight: bold;
+		font-weight: var(--bold-font-weight);
 		line-height: 1.25;
     margin-bottom: var(--spacing-small);
   }
@@ -62,7 +62,7 @@
 	& ul {
 		margin-left: 1.33rem;
 		& >li:before {
-			content: '★';
+			content: '✱';
 			left: -1.33rem;
 			position: absolute;
 			color: var(--primary);
