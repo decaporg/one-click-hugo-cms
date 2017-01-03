@@ -1,7 +1,6 @@
 ---
 title: "Just in: small batch of Jamaica Blue Mountain in store next week"
-type: "post"
-date: "2017-01-04T15:04:10.000Z"
+date: 2017-01-04T15:04:10.000Z
 ---
 
 We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.
