@@ -14,6 +14,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--spacing-medium);
   line-height: var(--line-height);
+  font-weight: var(--body-font-weight);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--off-white);
@@ -25,7 +26,7 @@ p {
 }
 
 strong {
-  font-weight: 800;
+  font-weight: var(--bold-font-weight);
 }
 
 em {
