@@ -29,7 +29,7 @@ gulp.task("css", () => (
       cssImport({from: "./src/css/main.css"}),
       cssnext(),
       cssnano(),
-      uncss({ html: ['site/**/*.html']})
+      // uncss({ html: ['./site/**/*.html']})
     ]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
