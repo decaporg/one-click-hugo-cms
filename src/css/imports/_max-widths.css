@@ -1,41 +1,8 @@
-/*
-
-   MAX WIDTHS
-   Docs: http://tachyons.io/docs/layout/max-widths/
-
-   Base:
-     mw = max-width
-
-   Modifiers
-     1 = 1st step in width scale
-     2 = 2nd step in width scale
-     3 = 3rd step in width scale
-     4 = 4th step in width scale
-     5 = 5th step in width scale
-     6 = 6st step in width scale
-     7 = 7nd step in width scale
-     8 = 8rd step in width scale
-     9 = 9th step in width scale
-
-     -100 = literal value 100%
-
-     -none  = string value none
-
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-
-/* Max Width Percentages */
-
 .mw-100  { max-width: 100%; }
 
 /* Max Width Scale */
 
-.mw1  {  max-width: var(--spacing-medium); }
+.mw1  {  max-width: 1rem; }
 .mw2  {  max-width: 2rem; }
 .mw3  {  max-width: 4rem; }
 .mw4  {  max-width: 8rem; }
@@ -52,7 +19,7 @@
 @media (--breakpoint-not-small) {
   .mw-100-ns  { max-width: 100%; }
 
-  .mw1-ns  {  max-width: var(--spacing-medium); }
+  .mw1-ns  {  max-width: 1rem; }
   .mw2-ns  {  max-width: 2rem; }
   .mw3-ns  {  max-width: 4rem; }
   .mw4-ns  {  max-width: 8rem; }
@@ -68,7 +35,7 @@
 @media (--breakpoint-medium) {
   .mw-100-m  { max-width: 100%; }
 
-  .mw1-m  {  max-width: var(--spacing-medium); }
+  .mw1-m  {  max-width: 1rem; }
   .mw2-m  {  max-width: 2rem; }
   .mw3-m  {  max-width: 4rem; }
   .mw4-m  {  max-width: 8rem; }
@@ -84,7 +51,7 @@
 @media (--breakpoint-large) {
   .mw-100-l  { max-width: 100%; }
 
-  .mw1-l  {  max-width: var(--spacing-medium); }
+  .mw1-l  {  max-width: 1rem; }
   .mw2-l  {  max-width: 2rem; }
   .mw3-l  {  max-width: 4rem; }
   .mw4-l  {  max-width: 8rem; }
