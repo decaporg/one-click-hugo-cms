@@ -1,5 +1,5 @@
 +++
-title = "Another Hugo Post"
+title = "Products"
 type = "products"
 page="/products.html"
 +++
