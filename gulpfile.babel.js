@@ -10,6 +10,8 @@ import webpackConfig from "./webpack.conf";
 import svgstore from "gulp-svgstore";
 import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
+import cssnano from "cssnano";
+import uncss from "postcss-uncss";
 
 const browserSync = BrowserSync.create();
 const hugoBin = "hugo";
@@ -23,7 +25,12 @@ gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
-    .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
+    .pipe(postcss([
+      cssImport({from: "./src/css/main.css"}),
+      cssnext(),
+      cssnano(),
+      uncss({ html: ['site/**/*.html']})
+    ]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
