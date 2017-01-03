@@ -61,8 +61,8 @@ label
 {
   font-size: .875rem;
   font-weight: 800;
-  color: var(--primary);
-  background-color: var(--grey-2);
+  color: var(--white);
+  background-color: var(--primary);
   border-radius: var(--border-radius);
   padding: var(--spacing-extra-small) var(--spacing-small);
   position: absolute;

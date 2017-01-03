@@ -1,13 +1,3 @@
-/*
-
-   CLEARFIX
-   http://tachyons.io/docs/layout/clearfix/
-
-*/
-
-/* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
-
 .cf:before,
 .cf:after { content: " "; display: table; }
 .cf:after { clear: both; }

@@ -1,12 +1,12 @@
 /* Focus states */
-input:focus, textarea:focus a:focus {
-  box-shadow: 0 0 0 2px var(--primary);
-  outline: 0;
+input:focus, textarea:focus, a:focus {
+  box-shadow: inset 0 0 0 2px var(--primary);
+  outline: 0!important;
 }
 
 button:focus {
-  box-shadow: 0 0 0 4px var(--primary);
-  outline: 0;
+  box-shadow: inset 0 0 0 4px var(--primary);
+  outline: 0!important;
 }
 
 .raise {
@@ -40,43 +40,6 @@ button:focus {
 .underline-hover:focus {
   text-decoration: underline;
 }
-
-/* Can combine this with overflow-hidden to make background images grow on hover
- * even if you are using background-size: cover */
-
-.grow {
-  -moz-osx-font-smoothing: grayscale;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  transition: transform 0.25s ease-out;
-}
-
-.grow:hover,
-.grow:focus {
-  transform: scale(1.05);
-}
-
-.grow:active {
-  transform: scale(.90);
-}
-
-.grow-large {
-  -moz-osx-font-smoothing: grayscale;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  transition: transform .25s ease-in-out;
-}
-
-.grow-large:hover,
-.grow-large:focus {
-  transform: scale(1.2);
-}
-
-.grow-large:active {
-  transform: scale(.95);
-}
-
-/* Add pointer on hover */
 
 .pointer:hover {
   cursor: pointer;

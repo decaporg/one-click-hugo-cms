@@ -1,14 +1,3 @@
-/*
-
-  FLEXBOX
-
-  Media Query Extensions:
-   -ns = not-small
-   -m  = medium
-   -l  = large
-
-*/
-
 .flex { display: flex; }
 .inline-flex { display: inline-flex; }
 

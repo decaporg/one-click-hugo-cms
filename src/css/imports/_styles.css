@@ -1,11 +1,15 @@
-/*
-
-  STYLES
-
-  Add custom styles here.
-
-*/
-
 ::selection {
   background-color: var(--highlight);
+}
+
+/* Used in the navbar */
+.divider-grey {
+  box-shadow: inset 0 -4px 0 var(--grey-1);
+  /* Link hover states */
+  & a {
+    transition: var(--hover-transition);
+  }
+  & ul a:hover {
+    box-shadow: inset 0 -4px 0 var(--primary);
+  }
 }

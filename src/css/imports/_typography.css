@@ -1,20 +1,22 @@
 html {
-  font-size: 18px;
+  font-size: var(--font-size);
   @media (--breakpoint-medium) {
-    font-size: 20px;
+    font-size: var(--font-size-m);
   }
   @media (--breakpoint-large) {
-    font-size: 22px;
+    font-size: var(--font-size-l);
   }
+  background-color: var(--black);
 }
 
 
 body {
+  font-family: var(--font-family);
   font-size: var(--spacing-medium);
-  line-height: 1.5;
+  line-height: var(--line-height);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--white);
+  background-color: var(--off-white);
  }
 
 p {

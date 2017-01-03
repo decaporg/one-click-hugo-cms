@@ -1,32 +1,9 @@
-/*
-
-    BORDERS
-    Docs: http://tachyons.io/docs/themes/borders/
-
-    Base:
-      b = border
-
-    Modifiers:
-      a = all
-      t = top
-      r = right
-      b = bottom
-      l = left
-      n = none
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-
-  .ba { border-style: solid; border-width: 1px; }
-  .bt { border-top-style: solid; border-top-width: 1px; }
-  .br { border-right-style: solid; border-right-width: 1px; }
-  .bb { border-bottom-style: solid; border-bottom-width: 1px; }
-  .bl { border-left-style: solid; border-left-width: 1px; }
-  .bn { border-style: none; border-width: 0; }
+.ba { border-style: solid; border-width: 1px; }
+.bt { border-top-style: solid; border-top-width: 1px; }
+.br { border-right-style: solid; border-right-width: 1px; }
+.bb { border-bottom-style: solid; border-bottom-width: 1px; }
+.bl { border-left-style: solid; border-left-width: 1px; }
+.bn { border-style: none; border-width: 0; }
 
 
 @media (--breakpoint-not-small) {
@@ -55,4 +32,3 @@
   .bl-l { border-left-style: solid; border-left-width: 1px; }
   .bn-l { border-style: none; border-width: 0; }
 }
-

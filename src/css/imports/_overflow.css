@@ -1,14 +1,3 @@
-/*
-
-    OVERFLOW
-
-    Media Query Extensions:
-      -ns = not-small
-      -m  = medium
-      -l  = large
-
- */
-
 .overflow-visible { overflow: visible; }
 .overflow-hidden { overflow: hidden; }
 .overflow-scroll { overflow: scroll; }
