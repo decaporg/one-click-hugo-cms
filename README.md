@@ -1,3 +1,5 @@
+# Netlify CMS small-business template
+
 ## Layouts
 The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the `site/layouts/partials` folder for all available partials.
 
