@@ -13,15 +13,12 @@
 
 	<!-- Features -->
 	<ul>
+		{{ $itemCount := len .items }}
+		{{ range $index, $item := .items }}
 		<li>
-			<p class="pb2 mb2 divider-grey">{{.item1}}</p>
+			<p class="{{ if ne (add 1 $index) $itemCount }}pb2 mb2 divider-grey{{ end }}">{{ $item }}</p>
 		</li>
-		<li>
-			<p class="pb2 mb2 divider-grey">{{.item2}}</p>
-		</li>
-		<li>
-			<p>{{.item3}}</p>
-		</li>
+		{{ end }}
 	</ul>
 
 </div>

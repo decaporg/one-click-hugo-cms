@@ -4,33 +4,12 @@
 		<p class="mb4 mw6">{{.description}}</p>
 
 		<div class="flex-ns flex-wrap mhn2-ns mb3">
-
-			<div class="ph2-ns w-50-ns mb4">
-				<img src="{{.svg1}}" alt="" class="center db mb3" style="width: 240px">
-				<p>{{.text1}}</p>
-			</div>
-
-			<div class="ph2-ns w-50-ns mb4">
-				<img src="{{.svg2}}" alt="" class="center db mb3" style="width: 240px">
-				<p>{{.text2}}</p>
-			</div>
-
-      <div class="ph2-ns w-50-ns mb4">
-        <img src="{{.svg3}}" alt="" class="center db mb3" style="width: 240px">
-        <p>{{.text3}}</p>
-      </div>
-
-      <div class="ph2-ns w-50-ns mb4">
-        <img src="{{.svg4}}" alt="" class="center db mb3" style="width: 240px">
-        <p>{{.text4}}</p>
-      </div>
-
+			{{ range .blurbs }}
+				<div class="ph2-ns w-50-ns mb4">
+					<img src="{{ .image }}" alt="" class="center db mb3" style="width: 240px">
+					<p>{{ .text }}</p>
+				</div>
+			{{ end }}
 		</div>
-
-		{{ if .buttonText }}
-			<div class="tc">
-				<a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
-			</div>
-		{{ end }}
 	</div>
 </div>
