@@ -14,8 +14,8 @@ import cssnano from "cssnano";
 import uncss from "postcss-uncss";
 
 const browserSync = BrowserSync.create();
-const hugoBin = "hugo";
-const defaultArgs = ["-d", "../dist", "-s", "site", "-v"];
+const hugoBin = `./bin/hugo.${process.platform === "windows" ? "exe" : process.platform}`;
+const defaultArgs = ["-d", "../dist", "-s", "site"];
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
