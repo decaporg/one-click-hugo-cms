@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: netlify-templates/kaldi-hugo-cms-template # Path to your Github repository
+  repo: <% GITHUB_REPOSITORY %> # Gulp will replace this with your GitHub repository
   branch: master # Branch to update (master by default)
 
 media_folder: "dist/img" # Folder where user uploaded files should go
