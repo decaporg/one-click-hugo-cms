@@ -10,8 +10,8 @@ import webpackConfig from "./webpack.conf";
 import svgstore from "gulp-svgstore";
 import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
+import replace from "gulp-replace";
 import cssnano from "cssnano";
-import uncss from "postcss-uncss";
 
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "windows" ? "exe" : process.platform}`;
@@ -20,7 +20,19 @@ const defaultArgs = ["-d", "../dist", "-s", "site"];
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
 
-gulp.task("build", ["css", "js", "hugo"]);
+gulp.task("cms", () => {
+  const match = process.env.REPOSITORY_URL ? process.env.REPOSITORY_URL : cp.execSync("git remote -v", {encoding: "utf-8"});
+  let repo = null;
+  match.replace(/github.com:(.+?)\.git/, (_, m) => {
+    repo = m;
+  });
+  gulp.src("./src/cms/*")
+    .pipe(replace("<% GITHUB_REPOSITORY %>", repo))
+    .pipe(gulp.dest("./dist/admin"))
+    .pipe(browserSync.stream());
+});
+
+gulp.task("build", ["css", "js", "hugo", "cms"]);
 gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
@@ -29,7 +41,6 @@ gulp.task("css", () => (
       cssImport({from: "./src/css/main.css"}),
       cssnext(),
       cssnano(),
-      // uncss({ html: ['./site/**/*.html']})
     ]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
@@ -49,24 +60,23 @@ gulp.task("js", (cb) => {
   });
 });
 
-gulp.task('svg', () => {
-    const svgs = gulp
-      .src('site/static/img/icons/*.svg')
-      .pipe(svgmin())
-      .pipe(svgstore({ inlineSvg: true }));
+gulp.task("svg", () => {
+  const svgs = gulp
+    .src("site/static/img/icons/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({inlineSvg: true}));
 
-    function fileContents(filePath, file) {
-        return file.contents.toString();
-    }
+  function fileContents(filePath, file) {
+    return file.contents.toString();
+  }
 
-    return gulp
-      .src('site/layouts/partials/svg.html')
-      .pipe(inject(svgs, { transform: fileContents }))
-      .pipe(gulp.dest('site/layouts/partials/'));
-      browserSync.reload();
+  return gulp
+    .src("site/layouts/partials/svg.html")
+    .pipe(inject(svgs, {transform: fileContents}))
+    .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "js", "svg"], () => {
+gulp.task("server", ["hugo", "css", "js", "svg", "cms"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
@@ -74,6 +84,7 @@ gulp.task("server", ["hugo", "css", "js", "svg"], () => {
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/cms/*", ["cms"]);
   gulp.watch("./site/static/img/icons/*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
