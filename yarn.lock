@@ -5059,9 +5059,9 @@ netlify-auth-js@^0.5.5:
   dependencies:
     micro-api-client "^2.0.0"
 
-netlify-cms@^0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-0.3.9.tgz#972b22527b5f33303cdd2ee9d9cea2cfd274d1aa"
+netlify-cms@^0.3.15:
+  version "0.3.15"
+  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-0.3.15.tgz#a17a1a709aa62e4aac96174fdbc04ebb2b5607e1"
   dependencies:
     "@kadira/storybook" "^1.36.0"
     autoprefixer "^6.3.3"
