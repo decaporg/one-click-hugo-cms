@@ -3,8 +3,8 @@ backend:
   repo: <% GITHUB_REPOSITORY %> # Gulp will replace this with your GitHub repository
   branch: master # Branch to update (master by default)
 
-media_folder: "dist/img" # Folder where user uploaded files should go
-public_folder: "dist" # CMS now knows 'source' is the public folder and will strip this from the path
+media_folder: "site/static/img" # Folder where user uploaded files should go
+public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -13,7 +13,6 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "A color", name: "color", widget: "color"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
