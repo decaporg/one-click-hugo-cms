@@ -30,6 +30,9 @@ gulp.task("cms", () => {
     .pipe(replace("<% GITHUB_REPOSITORY %>", repo))
     .pipe(gulp.dest("./dist/admin"))
     .pipe(browserSync.stream());
+  gulp.src(["./node_modules/netlify-cms/dist/*.*", "!./node_modules/netlify-cms/dist/*.html"])
+    .pipe(gulp.dest("./dist"))
+    .pipe(browserSync.stream())
 });
 
 gulp.task("build", ["css", "js", "hugo", "cms"]);
