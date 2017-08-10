@@ -23,7 +23,7 @@ gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture
 gulp.task("cms", () => {
   const match = process.env.REPOSITORY_URL ? process.env.REPOSITORY_URL : cp.execSync("git remote -v", {encoding: "utf-8"});
   let repo = null;
-  match.replace(/github.com:(\S+)(\.git)?/, (_, m) => {
+  match.replace(/github.com[:/](\S+)(\.git)?/, (_, m) => {
     repo = m.replace(/\.git$/, "");
   });
   gulp.src("./src/cms/*")
