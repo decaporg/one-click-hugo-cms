@@ -1,7 +1,8 @@
 backend:
-  name: github
-  repo: <% GITHUB_REPOSITORY %> # Gulp will replace this with your GitHub repository
-  branch: master # Branch to update (master by default)
+  name: netlify-auth
+  auth_url: "/.netlify/identity"
+  github_proxy_url: "/.netlify/git/github"
+  accept_roles: ['admin', 'cms']
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
