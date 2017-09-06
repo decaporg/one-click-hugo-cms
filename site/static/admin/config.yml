@@ -1,8 +1,5 @@
 backend:
-  name: netlify-auth
-  auth_url: "/.netlify/identity"
-  github_proxy_url: "/.netlify/git/github"
-  accept_roles: ['admin', 'cms']
+  name: git-gateway
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
