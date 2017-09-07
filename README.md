@@ -1,20 +1,23 @@
-# Netlify CMS small-business template
+# Hugo template for Netlify CMS with Netlify Identity
 
 This is a small business template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital).
 
 ## Getting started
 
-Use our deploy button to get your own copy of the repository:
+Use our deploy button to get your own copy of the repository. 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/kaldi-hugo-cms-template)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/one-click-hugo-cms&stack=cms)
 
-Once that is done, you need to setup the GitHub integration for Netlify CMS.
+This will setup everything needed for running the CMS:
 
-Go to https://github.com/settings/developers and register a new application.
+* A new repository in your GitHub account with the code
+* Full Continuous Deployment to Netlify's global CDN network
+* Control users and access with Netlify Identity
+* Manage content with Netlify CMS
 
-Then go to the "Access" tab in your new Netlify site and add a GitHub authentication provider.
+Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite.
 
-Once that's done, you'll be able to enter the CMS by going to the URL of your new site and appending `/admin`
+Now you're all set, and you can start editing content!
 
 ## Local Development
 
