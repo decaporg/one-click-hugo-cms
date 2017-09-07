@@ -4803,9 +4803,9 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-netlify-cms@^0.5.0-beta.6:
-  version "0.5.0-beta.6"
-  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-0.5.0-beta.6.tgz#137abbfce363234a436684a4a8537c0fba5c79a7"
+netlify-cms@^0.5.0-beta.8:
+  version "0.5.0-beta.8"
+  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-0.5.0-beta.8.tgz#f1c37830b5542f2a50cd95cf16453968cc3def33"
   dependencies:
     "@kadira/storybook" "^1.36.0"
     autoprefixer "^6.3.3"
