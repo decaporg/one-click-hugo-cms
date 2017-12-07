@@ -48,4 +48,11 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Type, name: type, widget: hidden, default: values}
           - {label: Page, name: page, widget: hidden, default: "/values.html"}
-          - {label: Body, name: body, widget: markdown}
+          - {label: Image, name: image, widget: image}
+          - label: Values
+            name: values
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Text, name: text, widget: text}
+              - {label: Image, name: imageUrl, widget: image}
