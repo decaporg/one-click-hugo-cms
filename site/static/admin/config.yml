@@ -25,7 +25,18 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Type, name: type, widget: hidden, default: contact}
           - {label: Page, name: page, widget: hidden, default: "/contact.html"}
+          - {label: Logo, name: logo, widget: image}
           - {label: Body, name: body, widget: markdown}
+          - label: Contact Entries
+            name: contact_entries
+            widget: list
+            fields:
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Text
+                name: text
+                widget: text
       - file: "site/content/products.md"
         label: "Products Page"
         name: "products"
