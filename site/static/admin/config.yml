@@ -18,13 +18,30 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     files:
-      - file: "site/content/contact.md"
+      - file: "site/content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Blurb", name: blurb, widget: object, fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Intro", name: intro, widget: object, fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Products", name: products, widget: list, fields: [
+              {label: "Image", name: "image", widget: "image"},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Values", name: "values", widget: "object", fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+      - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Type, name: type, widget: hidden, default: contact}
-          - {label: Page, name: page, widget: hidden, default: "/contact.html"}
           - {label: Logo, name: logo, widget: image}
           - {label: Body, name: body, widget: markdown}
           - label: Contact Entries
@@ -37,13 +54,11 @@ collections: # A list of collections the CMS should be able to edit
               - label: Text
                 name: text
                 widget: text
-      - file: "site/content/products.md"
+      - file: "site/content/products/_index.md"
         label: "Products Page"
         name: "products"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Type, name: type, widget: hidden, default: products}
-          - {label: Page, name: page, widget: hidden, default: "/products.html"}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
@@ -52,13 +67,11 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-      - file: "site/content/values.md"
+      - file: "site/content/values/_index.md"
         label: "Values Page"
         name: "values"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Type, name: type, widget: hidden, default: values}
-          - {label: Page, name: page, widget: hidden, default: "/values.html"}
           - {label: Image, name: image, widget: image}
           - label: Values
             name: values
