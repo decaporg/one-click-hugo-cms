@@ -1,31 +1,32 @@
-<!doctype html>
-<html lang="en-US">
-	<head>
+<head>
 
-		<title>{{ .Title }} | Kaldi</title>
-		<link rel="stylesheet" href="/css/main.css"/>
+  <title>{{ .Title }} | {{ $.Site.Title }}</title>
 
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ $stylesheet := .Site.Data.webpack.main }}
+  {{ with $stylesheet.css }}
+    <link href="{{ relURL . }}" rel="stylesheet">
+  {{ end }}
 
-		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
-		<!-- Favicons -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-		<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="/manifest.json">
-		<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
-		<meta name="theme-color" content="#fff">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
 
-		<!-- Open Graph -->
-		<meta property="og:type" content="business.business">
-		<meta property="og:title" content="Kaldi | Great coffee with a conscience">
-		<meta property="og:url" content="/">
-		<meta property="og:image" content="/img/og-image.jpg">
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
+	<meta name="theme-color" content="#fff">
 
-		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-	</head>
+	<!-- Open Graph -->
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
+	<meta property="og:url" content="/">
+	<meta property="og:image" content="/img/og-image.jpg">
 
-	<body class="sans-serif">
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
