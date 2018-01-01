@@ -1,5 +1,4 @@
-{{ partial "head" . }}
-{{ partial "nav" . }}
+{{ define "main" }}
 
 {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
 
@@ -13,4 +12,4 @@
   </ul>
 </div>
 
-{{ partial "footer" . }}
+{{end}}
