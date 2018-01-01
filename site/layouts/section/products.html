@@ -1,5 +1,4 @@
-{{ partial "head" . }}
-{{ partial "nav" . }}
+{{ define "main" }}
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
 
@@ -29,4 +28,4 @@
 
 {{ partial "table" .Params.pricing }}
 
-{{ partial "footer" . }}
+{{ end }}
