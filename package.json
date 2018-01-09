@@ -14,7 +14,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "^6.6.0",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.4",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
@@ -41,13 +40,13 @@
     "imports-loader": "^0.6.5",
     "netlify-cms": "^1.0.2",
     "postcss-cssnext": "^2.7.0",
-    "postcss-import": "^8.1.2",
+    "postcss-import": "^11.0.0",
     "postcss-loader": "^0.9.1",
     "postcss-uncss": "^0.14.0",
     "react": "15.6.1",
     "uncss": "^0.14.1",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.1",
+    "webpack": "^3.0.0",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {

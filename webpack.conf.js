@@ -6,11 +6,10 @@ export default {
     loaders: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file?name=/[hash].[ext]"
+        loader: "file-loader?name=/[hash].[ext]"
       },
-      {test: /\.json$/, loader: "json-loader"},
       {
-        loader: "babel",
+        loader: "babel-loader",
         test: /\.js?$/,
         exclude: /node_modules/,
         query: {cacheDirectory: true}
@@ -20,7 +19,7 @@ export default {
 
   plugins: [
     new webpack.ProvidePlugin({
-      "fetch": "imports?this=>global!exports?global.fetch!whatwg-fetch"
+      "fetch": "imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch"
     })
   ],
 
