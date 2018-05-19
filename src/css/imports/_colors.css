@@ -5,7 +5,7 @@
 }
 
 .highlight {
-  color: --var(--highlight);
+  color: var(--highlight);
 }
 
 .white {
@@ -41,7 +41,7 @@
 }
 
 .bg-highlight {
-  background-color: --var(--highlight);
+  background-color: var(--highlight);
 }
 
 .bg-white {
