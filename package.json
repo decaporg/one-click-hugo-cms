@@ -49,9 +49,9 @@
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
-    "gulp-inject": "^4.2.0",
-    "gulp-svgmin": "^1.2.3",
-    "gulp-svgstore": "^6.1.0",
-    "svg-sprite-loader": "^0.1.2"
+    "gulp-inject": "4.3.2",
+    "gulp-svgmin": "1.2.4",
+    "gulp-svgstore": "6.1.1",
+    "svg-sprite-loader": "0.1.2"
   }
 }

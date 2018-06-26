@@ -3043,7 +3043,7 @@ gulp-babel@^6.1.2:
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
-gulp-inject@^4.2.0:
+gulp-inject@4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/gulp-inject/-/gulp-inject-4.3.2.tgz#56525857ec312ce6e75dbb62876bea7e29f10118"
   dependencies:
@@ -3066,14 +3066,14 @@ gulp-postcss@^6.1.1:
     postcss-load-config "^1.2.0"
     vinyl-sourcemaps-apply "^0.2.1"
 
-gulp-svgmin@^1.2.3:
+gulp-svgmin@1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/gulp-svgmin/-/gulp-svgmin-1.2.4.tgz#a4aa9e2615cf1105ef555aea86e86296cc20e273"
   dependencies:
     gulp-util "^3.0.4"
     svgo "^0.7.0"
 
-gulp-svgstore@^6.1.0:
+gulp-svgstore@6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/gulp-svgstore/-/gulp-svgstore-6.1.1.tgz#7fa8af005c23bb0338f9f365a6010c86651f13d0"
   dependencies:
@@ -7373,7 +7373,7 @@ supports-color@^5.3.0, supports-color@^5.4.0:
   dependencies:
     has-flag "^3.0.0"
 
-svg-sprite-loader@^0.1.2:
+svg-sprite-loader@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/svg-sprite-loader/-/svg-sprite-loader-0.1.2.tgz#f50346732450a81ac202041abbd22d3e3a6a9b16"
   dependencies:
