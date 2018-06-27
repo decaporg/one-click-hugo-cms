@@ -44,7 +44,7 @@
     "postcss-uncss": "^0.16.0",
     "react": "15.6.1",
     "uncss": "^0.16.0",
-    "url-loader": "^0.5.7",
+    "url-loader": "^0.6.0",
     "webpack": "^3.0.0",
     "whatwg-fetch": "^1.0.0"
   },
