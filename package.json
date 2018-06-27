@@ -41,7 +41,7 @@
     "netlify-cms": "^1.0.2",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^11.0.0",
-    "postcss-loader": "^0.13.0",
+    "postcss-loader": "^2.0.0",
     "postcss-uncss": "^0.16.0",
     "react": "15.6.1",
     "uncss": "^0.16.0",
