@@ -2,8 +2,9 @@ import webpack from "webpack";
 import path from "path";
 
 export default {
+  mode: process.env.NODE_ENV || 'development',
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
         loader: "file-loader?name=/[hash].[ext]"

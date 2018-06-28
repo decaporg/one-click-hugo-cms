@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
-    "webpack": "gulp webpack",
-    "build": "gulp build",
-    "build-preview": "gulp build-preview",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "build-preview": "cross-env NODE_ENV=production gulp build-preview",
     "start": "gulp server",
     "lint": "eslint src"
   },
@@ -25,6 +24,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-register": "^6.11.6",
     "browser-sync": "^2.13.0",
+    "cross-env": "^5.2.0",
     "css-loader": "^0.28.0",
     "cssnano": "^3.9.1",
     "date-fns": "^1.27.2",
