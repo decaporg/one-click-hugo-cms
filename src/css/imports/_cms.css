@@ -75,8 +75,9 @@
 		counter-reset: i 0;
     & >li:before {
       font-weight: 800;
-      left: -var(--spacing-medium);
-      position: absolute;
+      left: var(--spacing-medium);
+      margin-right: 1.33rem;
+      position: relative;
       height: 100%;
       content: counter(i);
       counter-increment: i;
