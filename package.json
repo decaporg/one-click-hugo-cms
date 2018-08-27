@@ -16,7 +16,7 @@
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.0.0",
-    "babel-loader": "^7.0.0",
+    "babel-loader": "^8.0.0",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.10.2",
     "babel-plugin-transform-object-assign": "^6.8.0",
