@@ -5036,23 +5036,23 @@ neo-async@^2.5.0:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.2.tgz#489105ce7bc54e709d736b195f82135048c50fcc"
 
-netlify-cms-backend-bitbucket@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/netlify-cms-backend-bitbucket/-/netlify-cms-backend-bitbucket-2.0.6.tgz#ab5b14e90052b8b6e0c4323a59ca238114e378c4"
+netlify-cms-backend-bitbucket@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/netlify-cms-backend-bitbucket/-/netlify-cms-backend-bitbucket-2.0.7.tgz#802128c02cf43b0b7223006e18e628ef781a137f"
   dependencies:
     js-base64 "^2.4.8"
     semaphore "^1.1.0"
 
-netlify-cms-backend-git-gateway@^2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/netlify-cms-backend-git-gateway/-/netlify-cms-backend-git-gateway-2.0.7.tgz#6c9ffcb705696e27d410aa945f798e7272e4a0a6"
+netlify-cms-backend-git-gateway@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/netlify-cms-backend-git-gateway/-/netlify-cms-backend-git-gateway-2.0.8.tgz#a4151bf64dd39fe4ab02f1b8935ad1b9fc8fced4"
   dependencies:
     gotrue-js "^0.9.22"
     jwt-decode "^2.2.0"
 
-netlify-cms-backend-github@^2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/netlify-cms-backend-github/-/netlify-cms-backend-github-2.0.7.tgz#d39292a7ebd2a140ba0d0416186825ea8fc5caa9"
+netlify-cms-backend-github@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/netlify-cms-backend-github/-/netlify-cms-backend-github-2.0.8.tgz#bf5bc3d998d1bec7b4c3417521c4d8ff7547db2a"
   dependencies:
     js-base64 "^2.4.8"
     semaphore "^1.1.0"
@@ -5070,9 +5070,9 @@ netlify-cms-backend-test@^2.0.6:
   dependencies:
     uuid "^3.3.2"
 
-netlify-cms-core@^2.0.9:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/netlify-cms-core/-/netlify-cms-core-2.0.9.tgz#bd8e64b7be82a7cd6bd9ab642f5079ec3c8a548d"
+netlify-cms-core@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-core/-/netlify-cms-core-2.1.0.tgz#4a80789925b1ffca01d434a79c51d7f240f841c7"
   dependencies:
     ajv "^6.4.0"
     ajv-errors "^1.0.0"
@@ -5091,7 +5091,7 @@ netlify-cms-core@^2.0.9:
     moment "^2.11.2"
     netlify-cms-editor-component-image "^2.0.4"
     netlify-cms-lib-auth "^2.0.4"
-    netlify-cms-lib-util "^2.0.5"
+    netlify-cms-lib-util "^2.1.0"
     netlify-cms-ui-default "^2.0.6"
     prop-types "^15.5.10"
     react "^16.4.1"
@@ -5133,11 +5133,15 @@ netlify-cms-lib-auth@^2.0.4:
   dependencies:
     uuid "^3.1.0"
 
-netlify-cms-lib-util@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/netlify-cms-lib-util/-/netlify-cms-lib-util-2.0.5.tgz#bb29efc301b8427e8547851d62676f38c040db20"
+netlify-cms-lib-util@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-lib-util/-/netlify-cms-lib-util-2.1.0.tgz#3a1806f522d5136e5eb8c5ef541e9ae1f5758ba0"
   dependencies:
     localforage "^1.4.2"
+
+netlify-cms-media-library-uploadcare@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-media-library-uploadcare/-/netlify-cms-media-library-uploadcare-0.2.0.tgz#d167331d08931d13eec476099e5649fce97bda9b"
 
 netlify-cms-ui-default@^2.0.6:
   version "2.0.6"
@@ -5163,17 +5167,17 @@ netlify-cms-widget-datetime@^2.0.5:
   dependencies:
     netlify-cms-widget-date "^2.0.5"
 
-netlify-cms-widget-file@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/netlify-cms-widget-file/-/netlify-cms-widget-file-2.0.5.tgz#792609b2599f2806e5065ee32af2c67baea611bf"
+netlify-cms-widget-file@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-widget-file/-/netlify-cms-widget-file-2.1.0.tgz#e3490bdb30ecebb76d1618f4bfb1bb7b8df7f033"
   dependencies:
     uuid "^3.3.2"
 
-netlify-cms-widget-image@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/netlify-cms-widget-image/-/netlify-cms-widget-image-2.0.5.tgz#32cdd0db7cb4ca8aab64bc2b9af729e556e9ef9a"
+netlify-cms-widget-image@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-widget-image/-/netlify-cms-widget-image-2.1.0.tgz#3e3377671b9be97a0402c953d5630e76d5ed66e9"
   dependencies:
-    netlify-cms-widget-file "^2.0.5"
+    netlify-cms-widget-file "^2.1.0"
 
 netlify-cms-widget-list@^2.0.6:
   version "2.0.6"
@@ -5182,9 +5186,9 @@ netlify-cms-widget-list@^2.0.6:
     netlify-cms-widget-object "^2.0.5"
     react-sortable-hoc "^0.6.8"
 
-netlify-cms-widget-markdown@^2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/netlify-cms-widget-markdown/-/netlify-cms-widget-markdown-2.0.7.tgz#14403c22f6fc74c64388c34489f1ab49ac2d4be3"
+netlify-cms-widget-markdown@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/netlify-cms-widget-markdown/-/netlify-cms-widget-markdown-2.0.8.tgz#ac3fd561b4606977a0cb642c507e795847f02a52"
   dependencies:
     is-hotkey "^0.1.1"
     mdast-util-definitions "^1.2.2"
@@ -5233,25 +5237,26 @@ netlify-cms-widget-text@^2.0.5:
   dependencies:
     react-textarea-autosize "^5.2.0"
 
-netlify-cms@^2.0.9:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-2.0.11.tgz#8f0c65c73563e4cf95d74dc2eade4680e13a1907"
+netlify-cms@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-2.1.1.tgz#4f226513e483f52286f01cf74d22b22765762e2b"
   dependencies:
     emotion "^9.2.6"
-    netlify-cms-backend-bitbucket "^2.0.6"
-    netlify-cms-backend-git-gateway "^2.0.7"
-    netlify-cms-backend-github "^2.0.7"
+    netlify-cms-backend-bitbucket "^2.0.7"
+    netlify-cms-backend-git-gateway "^2.0.8"
+    netlify-cms-backend-github "^2.0.8"
     netlify-cms-backend-gitlab "^2.0.6"
     netlify-cms-backend-test "^2.0.6"
-    netlify-cms-core "^2.0.9"
+    netlify-cms-core "^2.1.0"
     netlify-cms-editor-component-image "^2.0.4"
+    netlify-cms-media-library-uploadcare "^0.2.0"
     netlify-cms-widget-boolean "^2.0.4"
     netlify-cms-widget-date "^2.0.5"
     netlify-cms-widget-datetime "^2.0.5"
-    netlify-cms-widget-file "^2.0.5"
-    netlify-cms-widget-image "^2.0.5"
+    netlify-cms-widget-file "^2.1.0"
+    netlify-cms-widget-image "^2.1.0"
     netlify-cms-widget-list "^2.0.6"
-    netlify-cms-widget-markdown "^2.0.7"
+    netlify-cms-widget-markdown "^2.0.8"
     netlify-cms-widget-number "^2.0.5"
     netlify-cms-widget-object "^2.0.5"
     netlify-cms-widget-relation "^2.0.5"
