@@ -3334,13 +3334,13 @@ graceful-fs@~1.2.0:
   version "1.2.3"
   resolved "http://registry.npmjs.org/graceful-fs/-/graceful-fs-1.2.3.tgz#15a4806a57547cb2d2dbf27f42e89a8c3451b364"
 
-gray-matter@^3.0.6:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/gray-matter/-/gray-matter-3.1.1.tgz#101f80d9e69eeca6765cdce437705b18f40876ac"
+gray-matter@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/gray-matter/-/gray-matter-4.0.1.tgz#375263c194f0d9755578c277e41b1c1dfdf22c7d"
   dependencies:
-    extend-shallow "^2.0.1"
-    js-yaml "^3.10.0"
-    kind-of "^5.0.2"
+    js-yaml "^3.11.0"
+    kind-of "^6.0.2"
+    section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
 group-array@^0.3.3:
@@ -4277,7 +4277,7 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
 
-js-yaml@^3.10.0, js-yaml@^3.12.0, js-yaml@^3.9.0:
+js-yaml@^3.10.0, js-yaml@^3.11.0, js-yaml@^3.12.0, js-yaml@^3.9.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
   dependencies:
@@ -5087,9 +5087,9 @@ netlify-cms-backend-test@^2.0.6:
   dependencies:
     uuid "^3.3.2"
 
-netlify-cms-core@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/netlify-cms-core/-/netlify-cms-core-2.2.1.tgz#058e64a037505d275a5e45c7ed5784233b45d7af"
+netlify-cms-core@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-core/-/netlify-cms-core-2.3.0.tgz#574116ca65c499e7a36773d79e1db40442867cc8"
   dependencies:
     ajv "^6.4.0"
     ajv-errors "^1.0.0"
@@ -5097,7 +5097,7 @@ netlify-cms-core@^2.2.1:
     emotion "^9.2.6"
     fuzzy "^0.1.1"
     gotrue-js "^0.9.15"
-    gray-matter "^3.0.6"
+    gray-matter "^4.0.1"
     history "^4.7.2"
     immutable "^3.7.6"
     js-base64 "^2.1.9"
@@ -5105,7 +5105,7 @@ netlify-cms-core@^2.2.1:
     jwt-decode "^2.1.0"
     lodash "^4.17.10"
     moment "^2.11.2"
-    netlify-cms-editor-component-image "^2.0.4"
+    netlify-cms-editor-component-image "^2.1.0"
     netlify-cms-lib-auth "^2.0.5"
     netlify-cms-lib-util "^2.1.1"
     netlify-cms-ui-default "^2.1.1"
@@ -5116,7 +5116,7 @@ netlify-cms-core@^2.2.1:
     react-dnd-html5-backend "^7.0.0"
     react-dom "^16.0.0"
     react-emotion "^9.2.5"
-    react-frame-component "^2.0.0"
+    react-frame-component "^4.0.2"
     react-hot-loader "^4.0.0"
     react-immutable-proptypes "^2.1.0"
     react-is "16.3.1"
@@ -5141,9 +5141,9 @@ netlify-cms-core@^2.2.1:
     url "^0.11.0"
     what-input "^5.0.3"
 
-netlify-cms-editor-component-image@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/netlify-cms-editor-component-image/-/netlify-cms-editor-component-image-2.0.4.tgz#f799383be5c955d0a7352435de9532430acd3826"
+netlify-cms-editor-component-image@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-editor-component-image/-/netlify-cms-editor-component-image-2.1.0.tgz#b57efe5c7a12f1f88b941b49193520f7aa05003c"
 
 netlify-cms-lib-auth@^2.0.5:
   version "2.0.5"
@@ -5157,9 +5157,9 @@ netlify-cms-lib-util@^2.1.1:
   dependencies:
     localforage "^1.4.2"
 
-netlify-cms-media-library-uploadcare@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/netlify-cms-media-library-uploadcare/-/netlify-cms-media-library-uploadcare-0.2.1.tgz#8e3ce2a88f5c2caa8151039200293f10031b0ed3"
+netlify-cms-media-library-uploadcare@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-media-library-uploadcare/-/netlify-cms-media-library-uploadcare-0.3.0.tgz#33fc57b44ba7978f0ca5c0f36f70d082ef936472"
 
 netlify-cms-ui-default@^2.1.1:
   version "2.1.1"
@@ -5185,17 +5185,18 @@ netlify-cms-widget-datetime@^2.0.7:
   dependencies:
     netlify-cms-widget-date "^2.1.0"
 
-netlify-cms-widget-file@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/netlify-cms-widget-file/-/netlify-cms-widget-file-2.1.0.tgz#e3490bdb30ecebb76d1618f4bfb1bb7b8df7f033"
+netlify-cms-widget-file@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-widget-file/-/netlify-cms-widget-file-2.2.0.tgz#91b4e3f36f467d2abfc26a6137c3448d8efc19de"
   dependencies:
+    common-tags "^1.8.0"
     uuid "^3.3.2"
 
-netlify-cms-widget-image@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/netlify-cms-widget-image/-/netlify-cms-widget-image-2.1.0.tgz#3e3377671b9be97a0402c953d5630e76d5ed66e9"
+netlify-cms-widget-image@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/netlify-cms-widget-image/-/netlify-cms-widget-image-2.1.1.tgz#e8e9aba58997638b501441e542f6c0e237c8cdd6"
   dependencies:
-    netlify-cms-widget-file "^2.1.0"
+    netlify-cms-widget-file "^2.2.0"
 
 netlify-cms-widget-list@^2.0.7:
   version "2.0.7"
@@ -5241,9 +5242,9 @@ netlify-cms-widget-relation@^2.0.5:
   dependencies:
     react-autosuggest "^9.3.2"
 
-netlify-cms-widget-select@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/netlify-cms-widget-select/-/netlify-cms-widget-select-2.0.5.tgz#57b95963de63d8492e8981f69052719541683ca3"
+netlify-cms-widget-select@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms-widget-select/-/netlify-cms-widget-select-2.1.0.tgz#927fef44a587bb8e4d4bb49721448560a7829fc0"
   dependencies:
     react-select "^2.1.1"
 
@@ -5257,9 +5258,9 @@ netlify-cms-widget-text@^2.0.6:
   dependencies:
     react-textarea-autosize "^7.0.0"
 
-netlify-cms@^2.1.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-2.2.1.tgz#e6dce282842f677be754f20f080cb9aa9a3cf46a"
+netlify-cms@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-2.3.0.tgz#d97b01b7933b45e3d177766680f092328420a97a"
   dependencies:
     create-react-class "^15.6.0"
     emotion "^9.2.6"
@@ -5268,20 +5269,20 @@ netlify-cms@^2.1.1:
     netlify-cms-backend-github "^2.1.0"
     netlify-cms-backend-gitlab "^2.1.0"
     netlify-cms-backend-test "^2.0.6"
-    netlify-cms-core "^2.2.1"
-    netlify-cms-editor-component-image "^2.0.4"
-    netlify-cms-media-library-uploadcare "^0.2.1"
+    netlify-cms-core "^2.3.0"
+    netlify-cms-editor-component-image "^2.1.0"
+    netlify-cms-media-library-uploadcare "^0.3.0"
     netlify-cms-widget-boolean "^2.0.5"
     netlify-cms-widget-date "^2.1.0"
     netlify-cms-widget-datetime "^2.0.7"
-    netlify-cms-widget-file "^2.1.0"
-    netlify-cms-widget-image "^2.1.0"
+    netlify-cms-widget-file "^2.2.0"
+    netlify-cms-widget-image "^2.1.1"
     netlify-cms-widget-list "^2.0.7"
     netlify-cms-widget-markdown "^2.0.10"
     netlify-cms-widget-number "^2.0.5"
     netlify-cms-widget-object "^2.0.5"
     netlify-cms-widget-relation "^2.0.5"
-    netlify-cms-widget-select "^2.0.5"
+    netlify-cms-widget-select "^2.1.0"
     netlify-cms-widget-string "^2.0.4"
     netlify-cms-widget-text "^2.0.6"
 
@@ -6721,9 +6722,9 @@ react-emotion@^9.2.5:
     babel-plugin-emotion "^9.2.11"
     create-emotion-styled "^9.2.8"
 
-react-frame-component@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/react-frame-component/-/react-frame-component-2.0.2.tgz#e602a980e1d78f91f471531225b61cfdbf68e614"
+react-frame-component@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/react-frame-component/-/react-frame-component-4.0.2.tgz#408f137ab4ba14cd13a5844b86ac972903dda021"
 
 react-hot-loader@^4.0.0:
   version "4.3.12"
@@ -7456,6 +7457,13 @@ schema-utils@^1.0.0:
 section-iterator@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/section-iterator/-/section-iterator-2.0.0.tgz#bf444d7afeeb94ad43c39ad2fb26151627ccba2a"
+
+section-matter@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/section-matter/-/section-matter-1.0.0.tgz#e9041953506780ec01d59f292a19c7b850b84167"
+  dependencies:
+    extend-shallow "^2.0.1"
+    kind-of "^6.0.0"
 
 selection-is-backward@^1.0.0:
   version "1.0.0"
