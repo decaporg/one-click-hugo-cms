@@ -38,7 +38,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-util": "^3.0.7",
     "imports-loader": "^0.8.0",
-    "netlify-cms": "^2.3.3",
+    "netlify-cms": "^2.4.2",
     "postcss-cssnext": "^3.0.0",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^3.0.0",
