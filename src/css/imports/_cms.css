@@ -89,10 +89,14 @@
     background-color: var(--grey-1);
     display: block;
     border-radius: var(--border-radius);
+		border-top-left-radius: 0rem;
+		border-bottom-left-radius: 0rem;
+		border-left-style: solid;
+    border-left-width: var(--spacing-small);
+		border-color: var(--primary);
     padding: var(--spacing-medium);
-    color: var(--primary);
-    font-weight: 700;
-    font-size: 1.25rem;;
+		padding-left: calc( var(--spacing-small) + var(--spacing-medium));
+    font-size: 1rem;
     margin-bottom: var(--spacing-medium);
     & p {
       margin: 0;
