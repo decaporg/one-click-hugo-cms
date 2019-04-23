@@ -37,22 +37,22 @@
     "gulp-babel": "^7.0.0",
     "gulp-postcss": "^8.0.0",
     "gulp-util": "^3.0.7",
+    "gulp-inject": "^5.0.0",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
     "imports-loader": "^0.8.0",
     "netlify-cms": "^2.9.1",
     "postcss-cssnext": "^3.0.0",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^3.0.0",
     "postcss-uncss": "^0.16.0",
-    "react": "16.7.0",
+    "react": "^16.8.4",
     "uncss": "^0.16.0",
     "url-loader": "^1.0.0",
-    "webpack": "^3.0.0",
+    "webpack": "^3.12.0",
     "whatwg-fetch": "^2.0.0"
   },
   "devDependencies": {
-    "gulp-inject": "^5.0.0",
-    "gulp-svgmin": "^1.2.3",
-    "gulp-svgstore": "^6.1.0",
     "svg-sprite-loader": "^3.0.0"
   }
 }
