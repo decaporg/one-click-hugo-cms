@@ -71,15 +71,14 @@
 
 	& ol {
 		list-style: none;
-		margin-left: var(--spacing-medium);
+		margin-left: 1.33rem;
 		counter-reset: i 0;
     & >li:before {
       font-weight: 800;
-      left: var(--spacing-medium);
-      margin-right: 1.33rem;
-      position: relative;
+      left: -1.33rem;
+      position: absolute;
       height: 100%;
-      content: counter(i);
+      content: counter(i) ".";
       counter-increment: i;
       color: var(--primary);
     }
