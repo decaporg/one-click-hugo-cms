@@ -13,9 +13,9 @@
 			</div>
 		</div>
 
-		<div class="tc">
-			<a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
-		</div>
+		{{ if (and .buttonLink .buttonText) }}
+			{{partial "button" (dict "buttonLink" .buttonLink "buttonText" .buttonText)}}
+		{{ end }}
 
 	</div>
 </div>
