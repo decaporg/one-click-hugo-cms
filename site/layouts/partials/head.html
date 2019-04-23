@@ -18,10 +18,13 @@
 	<meta name="theme-color" content="#fff">
 
 	<!-- Open Graph -->
-	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
-	<meta property="og:url" content="/">
-	<meta property="og:image" content="/img/og-image.jpg">
+	{{ template "_internal/opengraph.html" . }}
+
+	<!-- Google Analytics -->
+	{{ template "_internal/google_analytics.html" . }}
+
+	<!-- Twitter -->
+	{{ template "_internal/twitter_cards.html" . }}
 
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
