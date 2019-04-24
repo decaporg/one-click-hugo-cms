@@ -9,7 +9,7 @@ description: >-
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
 intro:
-  blurbs:
+  tiles:
     - image: /img/illustrations-coffee.svg
       text: >
         We sell green and roasted coffee beans that are sourced directly from
@@ -98,5 +98,3 @@ pricing:
       plan: Custom
       price: '?'
 ---
-
-

@@ -1,0 +1,24 @@
+<div class="bg-off-white pv4">
+	<div class="ph3 mw7 center">
+		<h2 class="f2 b lh-title mb2">{{.heading}}</h2>
+		<p class="mb4 mw6">{{.description}}</p>
+
+		<div class="flex-ns flex-wrap mhn2-ns mb3">
+			{{ range .tiles }}
+				<div class="ph2-ns w-50-ns mb4">
+					{{ with .image }}
+						<img src="{{ . }}" alt="" class="center db mb3 w-100" style="height:12rem; object-fit: cover">
+					{{ end }}
+					{{ with .heading }}
+						<h2 class="f3 b lh-title mb1">{{ . }}</h2>
+					{{ end }}
+					<p>{{ .text }}</p>
+				</div>
+			{{ end }}
+		</div>
+
+		{{ if (and .buttonlink .buttontext) }}
+			{{partial "button" (dict "buttonLink" .buttonlink "buttonText" .buttontext)}}
+		{{ end }}
+	</div>
+</div>
