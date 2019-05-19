@@ -42,9 +42,6 @@ gulp.task("hugo-preview", (cb) => {
   buildSite(cb, args)
 });
 
-gulp.task("build", ["css", "js", "hugo"]);
-gulp.task("build-preview", ["css", "js", "hugo-preview"]);
-
 gulp.task("css", () => (
 
   gulp.src("./src/css/*.css")
@@ -87,17 +84,17 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "js", "svg"], () => {
+gulp.task("server", gulp.series("svg", gulp.parallel("hugo", "css", "js"), () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
     }
   });
-  gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
-  gulp.watch("./site/static/img/icons-*.svg", ["svg"]);
-  gulp.watch("./site/**/*", ["hugo"]);
-});
+  gulp.watch("./src/js/**/*.js", gulp.series("js"));
+  gulp.watch("./src/css/**/*.css", gulp.series("css"));
+  gulp.watch("./site/static/img/icons-*.svg", gulp.series("svg"));
+  gulp.watch("./site/**/*", gulp.series("hugo"));
+}));
 
 function buildSite(cb, options) {
   const args = options ? defaultArgs.concat(options) : defaultArgs;
@@ -112,3 +109,6 @@ function buildSite(cb, options) {
     }
   });
 }
+
+gulp.task("build", gulp.parallel("css", "js", "hugo"));
+gulp.task("build-preview", gulp.parallel("css", "js", "hugo-preview"));
