@@ -5128,9 +5128,9 @@ neo-async@^2.5.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
 
-netlify-cms-app@^2.9.2:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/netlify-cms-app/-/netlify-cms-app-2.9.2.tgz#ad03a7ee8c1e2a28702a0bfb03f51d0396ccf243"
+netlify-cms-app@^2.9.3:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/netlify-cms-app/-/netlify-cms-app-2.9.3.tgz#567f5ae0e7aeb865318b28c1c99eeaa63a9906d2"
   dependencies:
     "@emotion/core" "^10.0.9"
     "@emotion/styled" "^10.0.9"
@@ -5138,7 +5138,7 @@ netlify-cms-app@^2.9.2:
     lodash "^4.17.11"
     moment "^2.24.0"
     netlify-cms-backend-bitbucket "^2.4.0"
-    netlify-cms-backend-git-gateway "^2.4.2"
+    netlify-cms-backend-git-gateway "^2.4.3"
     netlify-cms-backend-github "^2.4.2"
     netlify-cms-backend-gitlab "^2.3.2"
     netlify-cms-backend-test "^2.2.2"
@@ -5172,9 +5172,9 @@ netlify-cms-backend-bitbucket@^2.4.0:
     js-base64 "^2.5.1"
     semaphore "^1.1.0"
 
-netlify-cms-backend-git-gateway@^2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/netlify-cms-backend-git-gateway/-/netlify-cms-backend-git-gateway-2.4.2.tgz#a6aaeb0537c788fbdf599e1e4fbb37c6f39b266f"
+netlify-cms-backend-git-gateway@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/netlify-cms-backend-git-gateway/-/netlify-cms-backend-git-gateway-2.4.3.tgz#49c999529d9e9f59e411dd05f5e8af1a7978e7a3"
   dependencies:
     gotrue-js "^0.9.24"
     ini "^1.3.5"
@@ -5369,11 +5369,11 @@ netlify-cms-widget-text@^2.2.2:
   dependencies:
     react-textarea-autosize "^7.1.0"
 
-netlify-cms@^2.9.2:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-2.9.2.tgz#d0dd7b7ffe882e9baab0ca361d0ff48bd39bb1bd"
+netlify-cms@^2.9.3:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-2.9.3.tgz#729789ecfac6cbfaff4dd301b63e7d7160817c41"
   dependencies:
-    netlify-cms-app "^2.9.2"
+    netlify-cms-app "^2.9.3"
     netlify-cms-media-library-cloudinary "^1.3.2"
     netlify-cms-media-library-uploadcare "^0.5.2"
     react "^16.8.4"
