@@ -6539,9 +6539,9 @@ postcss-svgo@^4.0.2:
     postcss-value-parser "^3.0.0"
     svgo "^1.0.0"
 
-postcss-uncss@^0.16.0:
-  version "0.16.1"
-  resolved "https://registry.yarnpkg.com/postcss-uncss/-/postcss-uncss-0.16.1.tgz#463bd3e6296d47f86ad59833a90f0852871a4621"
+postcss-uncss@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/postcss-uncss/-/postcss-uncss-0.17.0.tgz#6a67eec47d545501c60353c3f188212928bc498e"
 
 postcss-unique-selectors@^4.0.1:
   version "4.0.1"
