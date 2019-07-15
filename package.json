@@ -42,7 +42,7 @@
     "postcss-cssnext": "^3.0.0",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^3.0.0",
-    "postcss-uncss": "^0.16.0",
+    "postcss-uncss": "^0.17.0",
     "react": "16.7.0",
     "uncss": "^0.17.0",
     "url-loader": "^1.0.0",
