@@ -3412,9 +3412,9 @@ gulp-svgmin@^1.2.3:
     gulp-util "^3.0.4"
     svgo "^0.7.0"
 
-gulp-svgstore@^6.1.0:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/gulp-svgstore/-/gulp-svgstore-6.1.1.tgz#7fa8af005c23bb0338f9f365a6010c86651f13d0"
+gulp-svgstore@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/gulp-svgstore/-/gulp-svgstore-7.0.1.tgz#885b9bb911bded726129a5594d3b3528c94ea423"
   dependencies:
     cheerio "0.*"
     fancy-log "^1.3.2"
