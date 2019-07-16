@@ -28,5 +28,7 @@
 	<meta property="og:url" content="/">
 	<meta property="og:image" content="/img/og-image.jpg">
 
-	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {{ if .IsHome }}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {{ end }}
 </head>
