@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Content Manager</title>
-  <!-- Include the stylesheets from your site here -->
 
   <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <script src="/cms.js"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.cms.entry %>"></script>
 </body>
 </html>
