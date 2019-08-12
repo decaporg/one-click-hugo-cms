@@ -50,4 +50,8 @@
 
 {{ partial "svg" . }}
 
-<script src="/app.js"></script>
+
+{{ $app := .Site.Data.webpack.app }}
+{{ with $app.js }}
+<script src="{{ relURL . }}"></script>
+{{ end }}
