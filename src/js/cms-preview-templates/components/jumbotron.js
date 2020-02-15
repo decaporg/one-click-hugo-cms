@@ -1,6 +1,7 @@
 import React from "react";
 
-const Jumbotron = ({image, title, subtitle}) => <div>
+const Jumbotron = ({image, title, subtitle}) =>
+<div>
   <div className="pv5 pv6-l ph3 bg-center cover" style={{
     backgroundImage: image && `url(${image})`
   }}>
