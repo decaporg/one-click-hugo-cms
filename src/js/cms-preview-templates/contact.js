@@ -12,7 +12,7 @@ const ContactEntries = ({data}) => data && data.length > 0
   </div>
   : "";
 
-const ContactPreview = ({ entry, getAsset, widgetFor }) => {
+const ContactPreview = ({entry, widgetFor}) => {
   const entryContactEntries = entry.getIn(["data", "contact_entries"]);
   const contactEntries = entryContactEntries ? entryContactEntries.toJS() : [];
   return <div className="ph3 bg-off-white">
