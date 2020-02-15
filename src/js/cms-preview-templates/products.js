@@ -3,7 +3,7 @@ import format from "date-fns/format";
 
 import Jumbotron from "./components/jumbotron";
 
-const ProductsPreview = ({ entry }) => <div>
+const ProductsPreview = ({entry}) => <div>
   <Jumbotron image={entry.getIn(["data", "image"])} title={entry.getIn(["data", "title"])} />
 
   <div className="bg-off-white pv4">
