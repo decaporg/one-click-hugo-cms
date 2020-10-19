@@ -5264,9 +5264,9 @@ https-browserify@^1.0.0:
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
 hugo-bin@^0.64.0:
-  version "0.64.3"
-  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.64.3.tgz#ff42952ddc072cd70ad8d196827d7c51a8436739"
-  integrity sha512-jKBeevlqIiu1r5JTWtovBvBCILevjBkheay0sQ27FW9C8TDMzpIV25hDVU79OKfFCW9P1NCkUHIh2MS8SxfwrA==
+  version "0.64.5"
+  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.64.5.tgz#34c9c7b3fa7fdb95009f2ae371798b315ab1c5eb"
+  integrity sha512-bZbLB87E/S8uNwnD6Hio2Q+8HXkBlXsXG8LFS41YyTuAPINw7m64K7VaoSsLu5NYQBzE1jwLhNYlb4KwoYLD0g==
   dependencies:
     bin-wrapper "^4.1.0"
     pkg-conf "^3.1.0"
