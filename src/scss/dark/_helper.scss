@@ -1,0 +1,46 @@
+//
+// helper.scss
+//
+.bg-overlay {
+    background-color: $overlay;
+}
+.bg-overlay-gradient {
+    background-color: $gradident-overlay;
+}
+
+.bg-overlay-gradient2 {
+    background-image: linear-gradient(90deg, $success, $primary, $success);
+}
+.bg-overlay-white {
+    background-color: $bg-overlay-white;
+}
+.text-shadow-title {
+    text-shadow: 2px 0 0 $dark, -2px 0 0 $dark, 0 4px 0 rgba($dark, 0.4), 0 -2px 0 $dark, 1px 1px $dark, -1px -1px 0 $dark, 1px -1px 0 $dark, -1px 1px 0 $dark;
+}
+
+//Title
+.title-dark {
+    color: $dark !important;
+}
+.para-dark {
+    color: $muted !important;
+}
+.title-white {
+    color: $white !important;
+}
+.title-bg-dark {
+    background: $dark !important;
+}
+
+//Switcher
+#style-switcher {
+    .t-dark,
+    .t-rtl-light,
+    .t-ltr-dark {
+        display: none;
+    }
+    .t-light,
+    .t-rtl-dark {
+        display: inline-block;
+    }
+}

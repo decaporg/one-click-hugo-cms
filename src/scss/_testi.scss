@@ -1,0 +1,51 @@
+//
+// testi.scss
+//
+.owl-theme .owl-dots .owl-dot span {
+    background: $primary !important;
+}
+.customer-testi {
+    cursor: e-resize;
+    .content {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 0;
+            margin-left: 13px;
+            box-sizing: border-box;
+            border: 8px solid $dark;
+            border-color: transparent $white $white transparent;
+            transform-origin: 0 0;
+            transform: rotate(135deg);
+            box-shadow: 2px 2px 2px -1px rgba($dark, 0.15);
+        }
+    }
+}
+.owl-theme {
+    .owl-dots {
+        .owl-dot {
+            span {
+                border-radius: 3px;
+                background: rgba($primary, 0.5) !important;
+                transition: all 0.5s ease;
+            }
+        }
+        .owl-dot.active span, 
+        &.clickable .owl-dot:hover span {
+            background: $primary !important;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+}
+
+//Slick slider
+.slick-slider {
+    overflow-x: hidden !important;
+    cursor: pointer;
+}

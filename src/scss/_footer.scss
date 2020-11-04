@@ -1,0 +1,59 @@
+//
+// footer.scss
+//
+.footer {
+    background: $footer;
+    padding: 60px 0;
+    position: relative;
+    color: $gray-500;
+    .logo-footer {
+        font-size: 22px;
+    }
+    .footer-head {
+        font-size: 20px; 
+        letter-spacing: 1px;         
+        font-weight: 500;
+    }
+    .foot-subscribe {
+        .form-control {
+            background-color: lighten($black, 10%);
+            border: 1px solid lighten($black, 10%);
+            color: $light;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        &.foot-white {
+            .form-control {
+                color: $gray-500;
+            }
+        }
+        input{
+            &::placeholder{
+                color: $gray-500;
+            }
+        }
+    } 
+    .text-foot {
+        color: $gray-500;
+    }
+    .footer-list {
+        margin-bottom: 0;
+        li {
+            margin-bottom: 10px;
+            a{
+                transition: all 0.5s ease;
+                &:hover {
+                    color: lighten($gray-500, 20%);
+                }
+            }   
+            &:last-child{
+                margin-bottom: 0;
+            }         
+        }
+    }    
+    &.footer-bar {
+        padding: 30px 0;
+        border-top: 1px solid lighten($footer, 5%);
+    }
+}

@@ -1,0 +1,94 @@
+//
+// Bootstrap-custom.scss
+//
+
+@each $name,
+$value in $colors {
+    .bg-#{$name} {
+        background-color: #{$value} !important;
+    }
+    .bg-soft-#{$name} {
+        background-color: rgba($value, 0.2) !important;
+        border: 1px solid rgba($value, 0.2) !important;
+        color: #{$value} !important;
+    }
+    .text-#{$name} {
+        color: #{$value} !important;
+    }
+    a {
+        transition: all 0.5s ease;
+        &.text-#{$name} {
+            &:hover,
+            &:focus {
+                color: darken($value, 5%) !important;
+            }
+        }
+    }
+}
+
+.bg-black {
+    background: $black !important;
+}
+
+//li (list inline item)
+.list-inline-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
+
+// Rounded
+.rounded {
+    border-radius: 6px !important;
+}
+.rounded-top {
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+}
+.rounded-left {
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+}
+.rounded-bottom {
+    border-bottom-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+.rounded-right {
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+
+.rounded-md {
+    border-radius: 10px !important;
+}
+.rounded-lg {
+    border-radius: 30px !important;
+}
+
+//Border
+.border {
+    border: 1px solid $gray-200 !important;
+}
+.border-top {
+    border-top: 1px solid $gray-200 !important;    
+}
+.border-bottom {
+    border-bottom: 1px solid $gray-200 !important;    
+}
+.border-left {
+    border-left: 1px solid $gray-200 !important;    
+}
+.border-right {
+    border-right: 1px solid $gray-200 !important;    
+}
+
+//Small
+.small, small {
+    font-size: 90%;
+}
+
+//card
+.card {
+    .card-body {
+        padding: 1.5rem;
+    }
+}

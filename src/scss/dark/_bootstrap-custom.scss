@@ -1,0 +1,47 @@
+//
+// Bootstrap-custom.scss
+//
+
+
+@each $name,
+$value in $colors {
+    .bg-#{$name} {
+        background-color: #{$value} !important;
+    }
+    .text-#{$name} {
+        color: #{$value} !important;
+    }
+    a {
+        &.text-#{$name} {
+            &:hover,
+            &:focus {
+                color: darken($value, 5%) !important;
+            }
+        }
+    }
+}
+
+//Card
+.card {
+    background-color: $white;
+}
+
+//Border
+.border {
+    border: 1px solid $gray-100 !important;
+    &.border-light {
+        border-color: $dark !important;
+    }
+}
+.border-top {
+    border-top: 1px solid $gray-100 !important;    
+}
+.border-bottom {
+    border-bottom: 1px solid $gray-100 !important;    
+}
+.border-left {
+    border-left: 1px solid $gray-100 !important;    
+}
+.border-right {
+    border-right: 1px solid $gray-100 !important;    
+}

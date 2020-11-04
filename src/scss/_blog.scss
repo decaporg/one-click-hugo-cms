@@ -1,0 +1,285 @@
+//
+// blog.scss
+//
+.blog {
+    transition: all 0.3s ease;
+    .content {
+        h4 {
+            line-height: 1.2;
+        }
+        .title {
+            font-size: 20px;
+            transition: all 0.5s ease;
+            &:hover {
+                color: $primary !important;
+            }
+        }
+        .post-meta {
+            .like, .comments, .readmore {
+                font-size: 15px;
+                transition: all 0.5s ease;
+            }
+            .like {
+                &:hover {
+                    color: $danger !important;
+                }
+            }
+            .comments {
+                &:hover {
+                    color: $success !important;
+                }
+            }
+            .readmore {
+                &:hover {
+                    color: $primary !important;
+                }
+            }
+        }
+    }
+    .author,
+    .teacher,
+    .course-fee {
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    .author {
+        top: 5%;
+        left: 5%;
+    }
+    .teacher {
+        bottom: 6%;
+        left: 5%;
+    }
+    .course-fee {
+        bottom: -5%;
+        right: 5%;
+        width: 50px;
+        height: 50px;
+        .fee {
+            line-height: 50px;
+        }
+    }
+    &.blog-detail {
+        &:hover {
+            transform: translateY(0px) !important;
+        }
+    }
+    &:hover {
+        transform: translateY(-10px);
+        .overlay {
+            opacity: 0.4;
+        }
+        .author,
+        .teacher,
+        .course-fee {
+            opacity: 1;
+        }
+    }
+    .blog-list-meta {
+        position: absolute;
+        bottom: 24px;
+    }
+}
+
+//Sidebar
+.sidebar {
+    .widget {
+        .widget-search {
+            form {
+                position: relative;
+            }
+        }
+        .widget-search, .searchform { 
+            input[type="text"] {
+                box-shadow: none;
+                padding: 12px 15px;
+                height: 45px;
+                font-size: 14px;
+                display: block;
+                width: 100%;
+                outline: none !important;
+                padding-right: 45px;
+            }
+            input[type="submit"] {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                opacity: 0;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .widget-search {
+            .searchform:after {
+                content: "\F0349";
+                position: absolute;
+                font-family: "Material Design Icons";
+                right: 16px;
+                top: 15px;
+                font-size: 20px;
+                line-height: 20px;
+                pointer-events: none;
+            }
+        }
+        .widget-title {
+            font-size: 18px;
+        }
+        
+        .blog-catagories{
+            li {
+                padding-bottom: 10px;
+                &:last-child {
+                    padding-bottom: 0;
+                }
+                a, span {
+                    font-size: 15px;
+                }
+                a {
+                    color: $dark;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }      
+        .post-recent {
+            padding-bottom: 15px;
+            &:last-child {
+                padding-bottom: 0;
+            }
+            .post-recent-thumb {
+                width: 25%;
+            }
+            
+            .post-recent-content {
+                width: 75%;
+                padding-left: 10px;
+                a {
+                    display: block;
+                    color: $dark;
+                    font-size: 15px;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+        .tagcloud {
+            > a {
+                background: $gray-200;
+                color: $dark;
+                display: inline-block;
+                font-size: 9px;
+                letter-spacing: 1px;
+                margin: 5px 10px 5px 0;
+                padding: 8px 12px 7px;
+                text-transform: uppercase;
+                transition: all 0.5s ease;
+                font-weight: 600;
+                &:hover {
+                    background: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+// single blog
+.page-title {
+    font-size: 20px;
+}
+
+.media-list {
+    .media {
+        .media-heading {
+            &:hover{
+                color: $primary !important;
+            }
+        }
+    }
+    .sub-comment {
+        border-left: 2px dashed $gray-300;
+    }
+}
+
+.blog .overlay,
+.job-box .job-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0; 
+    transition: all 0.5s ease;
+}
+
+//Jobs and Careers
+.job-box {
+    transition: all 0.5s ease;
+    .job-overlay {
+        opacity: 0.6;
+    }
+    .head {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .position {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        a {
+            transition: all 0.5s ease;
+            &:hover {
+                color: $primary !important;
+            }
+        }
+    }
+    .firm-logo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        margin: 0 auto;
+        top: -30px;
+    }
+    .company-name {
+        transition: all 0.5s ease;
+        &:hover {
+            color: $primary !important;
+        }
+    }
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+//page-job-candindate.html, page-job-company.html
+@media (min-width: 1024px) {
+    .job-profile {
+        top: -378px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .job-profile {
+        top: -338px;
+    }
+}
+
+@media (max-width: 767px) {
+    .company-logo {
+        float: none !important;
+        text-align: left !important;
+    }
+}

@@ -1,0 +1,67 @@
+//
+// variables.scss
+//
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap');
+// Color
+$white:                     #1f2d3d; //ffffff
+
+$primary:                   #2f55d4; //6dc77a
+$secondary:                 #5a6d90;
+$success:                   #2eca8b;
+$warning:                   #f17425;
+$info:                      #17a2b8;
+$danger:                    #e43f52;
+$dark:                      #ffffff; //3c4858
+$black:                     #161c2d;
+$muted:                     #9bacc4; //8492a6
+$light:                     #253649;
+
+// Gray
+$gray-100:                  #495057;
+$gray-200:                  #6c757d;
+$gray-300:                  #adb5bd;
+$gray-400:                  #ced4da;
+$gray-500:                  #dee2e6;
+$gray-600:                  #e9ecef;
+$gray-700:                  #f8f9fa;
+
+// Overlay
+$overlay:                   rgba($white, 0.7);
+$gradident-overlay:         rgba($primary, 0.5);
+$bg-overlay-white:          rgba(0, 0, 0 , 0.4);
+
+//Body Background
+$shadow:                    0 0 3px rgba($dark,.15);
+$shadow-lg:                 0 10px 25px rgba($dark, 0.15);
+$shadow-md:                 0 5px 13px rgba($dark, .2);
+$footer:                    lighten($white, 3%); //#1b2838;
+$bg-body:                   $white;
+
+// Base font
+$font-size-base:            16px;
+
+$font-family-base:          'Nunito', sans-serif;
+$font-family-secondary:     'Nunito', sans-serif;
+
+//Color Picker/Switcher
+$green:                     #6dc77a;
+$red:                       #ff5b69;
+$skyblue:                   #32c2ec;
+$skobleoff:                 #0f7173;
+$cyan:                      #00c9a7;
+
+$colors: (
+    "white": $white,
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "warning": $warning,
+    "info": $info,
+    "danger": $danger,
+    "dark": $dark,
+    "muted": $muted,
+    "light": $light,
+    "blue": $primary,
+    "footer": $footer,
+);

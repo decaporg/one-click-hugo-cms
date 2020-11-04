@@ -1,0 +1,153 @@
+//
+// helper.scss
+//
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+.section-two {
+    padding: 60px 0;
+    position: relative;
+}
+.bg-overlay {
+    background-color: $overlay;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%
+}
+.bg-overlay-gradient {
+    background-color: $gradident-overlay;
+}
+
+.bg-overlay-white {
+    background-color: $bg-overlay-white;
+}
+
+.bg-overlay-gradient2 {
+    background-image: linear-gradient(90deg, $success, $primary, $success);
+    opacity: 0.5;
+}
+
+//Title
+.title-heading {
+    line-height: 26px;
+    .heading {
+        font-size: 45px;
+        letter-spacing: 1px;
+    }
+    .para-desc {
+        font-size: 18px;
+    }
+}
+.section-title {
+    position: relative;
+    .title {
+        letter-spacing: 0.5px;
+        font-size: 30px;
+    }
+} 
+.text-shadow-title {
+    text-shadow: 2px 0 0 $white, -2px 0 0 $white, 0 4px 0 rgba($white, 0.4), 0 -2px 0 $white, 1px 1px $white, -1px -1px 0 $white, 1px -1px 0 $white, -1px 1px 0 $white;
+}
+.para-desc {
+    max-width: 600px;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+//Shapes
+.shape {
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+    &>svg {
+        transform: scale(2);
+        width: 100%;
+        height: auto;
+        transform-origin: top center;
+    }
+}
+
+.mover {
+    animation: mover 1s infinite alternate;
+}
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+//Feature post placeholder
+.feature-posts-placeholder {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 66.6%;
+}
+
+
+//Spinner Class
+.spin-anything {
+    animation: spinner-animation 5s linear infinite
+}
+
+@keyframes spinner-animation {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@media (min-width: 768px) {
+    .margin-top-100 {
+        margin-top: 100px;
+        .heading {
+            font-size: 40px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+    .title-heading {
+        .heading {
+            font-size: 35px !important;
+        }
+        .para-desc {
+            font-size: 18px;
+        }
+    }
+    .section-title {
+        .title {
+            font-size: 24px;
+        }
+    }
+    .mt-60 {
+        margin-top: 60px;
+    }   
+}
+
+@media (max-width: 425px) {
+    .shape {
+        bottom: -4px;
+    }
+}
+
+@media (max-width: 425px) {
+    .feature-posts-placeholder {
+        height: 80%;
+    }
+}

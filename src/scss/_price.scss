@@ -1,0 +1,67 @@
+//
+// price.scss
+//
+.pricing-rates {
+    position: relative;
+    z-index: 1;
+    border-bottom: 3px solid $gray-500 !important;
+    .title {
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .price {
+        font-weight: 400;
+    }
+    &.business-rate {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            .title {
+                color: $primary;
+            }
+            transform: scale(1.03);
+            z-index: 2;
+            border-color: $primary;
+            box-shadow: $shadow-md !important;
+            background-color: $white !important;
+        }
+    }
+    &.starter-plan {
+        transform: scale(1.05);
+        z-index: 2;
+        border-color: $primary;
+    }
+    &.best-plan {
+        transition: all 0.5s ease;
+        .lable {
+            width: 200px;
+            position: absolute;
+            top: 15px;
+            right: -65px;
+            transform: rotate(45deg);
+            z-index: 1;
+            h6 {
+                font-size: 12px;
+            }
+        }
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+//page-invoice.html
+.invoice-top {
+    .logo-invoice {
+        font-weight: 700;
+        font-size: 27px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pricing-rates {
+        &.starter-plan {
+            transform: scale(1);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+//
+// team.scss
+//
+.team {
+    img {
+        transition: all 0.5s ease;
+    }
+    .name {
+        &:hover {
+            color: $primary !important;
+        }
+    }
+    .team-icon {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        right: 0;
+        opacity: 0; 
+        left: 0;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    &:hover {
+        img {
+            box-shadow: $shadow;
+            opacity: 0.2;
+        }
+        .overlay-team {
+            opacity: 0.6;
+        }
+        .team-icon {
+            opacity: 1;
+        }
+    }   
+}

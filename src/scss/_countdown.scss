@@ -1,0 +1,78 @@
+//
+// countdown.scss
+//
+//countdown
+.coming-soon, .maintenance, .error-page {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+#countdown, #eventdown {
+    .count-down {
+        display: inline-block;
+        margin: 30px 10px;
+        color: $white;
+        border-radius: 50%;
+        text-align: center;
+        border: 4px solid $gray-300;
+        height: 130px;
+        width: 130px;
+        .count-number {
+            font-size: 40px;
+            line-height: 95px;
+        }
+        .count-head {
+            display: block;
+            position: relative;
+            transform: translateY(-20px);
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+//Event(index-event.html)
+#eventdown {
+    .count-down {
+        margin: 10px !important;
+        border: 0;
+        height: 20px;
+        width: 80px;
+        .count-number {
+            line-height: 80px;
+        }
+        .count-head {
+            transform: translateY(-15px);
+        }
+    }
+}
+
+//maintenance
+#clock {
+    color: $white;
+    p {
+        width: 80px;
+        span {
+            font-size: 40px;
+            &.indicator {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (min-width: 200px) and (max-width: 767px){
+    .coming-soon, .maintenance, .error-page {
+        font-size: 32px;
+    }
+    #eventdown {
+        .count-down {
+            width: 60px;
+            .count-number {
+                font-size: 30px;
+            }
+            .count-head {
+                font-size: 10px;
+            }
+        }
+    }
+}

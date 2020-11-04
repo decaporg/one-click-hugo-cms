@@ -1,0 +1,432 @@
+//
+// work.scss
+//
+.work-container {
+    &.work-classic {
+        .work-image {
+            transition: all 0.5s ease;
+            &:hover {
+                box-shadow: $shadow;
+            }
+        }
+    }
+    &.work-classic,
+    &.work-grid,
+    &.work-modern {
+        .content {
+            .title {
+                font-size: 18px;
+                transition: all 0.5s ease;
+                &:hover {
+                    color: $primary !important;
+                }
+            }
+            .tag {
+                font-size: 15px !important;
+            }
+        }
+    }
+    &.work-modern {
+        img,
+        .overlay-work,
+        .content,
+        .client, 
+        .read_more,
+        .icons,
+        .icons .work-icon {
+            transition: all 0.5s ease;
+        }
+        .overlay-work,
+        .content,
+        .client, 
+        .read_more,
+        .icons {
+            position: absolute;
+        }
+        .overlay-work {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0; 
+            z-index: 1;
+        }
+        .content {
+            z-index: 1;
+            bottom: 5%;
+            left: 5%;
+        }
+        .content,
+        .client {
+            opacity: 0;
+        }
+        .client, 
+        .read_more {
+            z-index: 1;
+            right: 5%;
+            top: 5%;
+        }
+        .read_more {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+        }
+        .icons {
+            right: 0;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            opacity: 0;
+            .work-icon {
+                height: 45px;
+                width: 45px;
+                line-height: 45px;
+                &:hover {
+                    background: $primary !important;
+                    color: $white !important;
+                }
+            }
+        }
+        &:hover {
+            img {
+                transform: scale(1.1) rotate(3deg);
+            }
+            .overlay-work {
+                opacity: 0.65;
+            }
+            .icons {
+                opacity: 1;
+            }
+            .personal-port,
+            .content,
+            .client {
+                opacity: 1;
+            }
+        }
+    }
+    &.work-grid {
+        transition: all 0.5s ease;
+        img, .content, .content .title {
+            transition: all 0.5s ease;
+        }
+        .content {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            transform: translateY(150px);
+            overflow: hidden;
+        }
+        &:hover { 
+            box-shadow: $shadow;
+            img {
+                transform: translateY(-40px);
+            }
+            .content {
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+.work-details {
+    ul {
+        li {
+            b {
+                max-width: 90px;
+                width: 100%;
+                display: inline-block;
+            }
+        }
+    }
+}
+//Course (index-course.html)
+.courses-desc {
+    img {
+        transition: all 0.5s ease;
+    }
+    &:hover {
+        img {
+            transform: scale(1.1) rotate(3deg);
+        }
+    }
+}
+.courses-desc,
+.popular-tour {
+    .overlay-work {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0; 
+        transition: all 0.5s ease;
+    }
+    &:hover {
+        .overlay-work {
+            opacity: 0.6;
+        }
+    }
+}
+//Event (index-event.html)
+.event-schedule {
+    transition: all 0.5s ease;
+    .date {
+        .day {
+            font-size: 18px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background: rgba($primary, 0.1);
+            line-height: 48px;
+            border: 2px solid $white;
+            box-shadow: 0px 0px 2px 0.25px rgba($primary, 0.5);
+        }
+        .month {
+            font-size: 13px;
+        }
+    }
+    .content {
+        .title {
+            font-size: 20px;
+            transition: all 0.5s ease;
+            &:hover {
+                color: $primary !important;
+            }
+        }
+        .location-time {
+            font-size: 14px;
+        }
+    }
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow;
+        border-color: $primary !important;
+        background: $light !important;
+    }
+}
+
+//course.html
+.courses-desc {
+    transition: all 0.5s ease;
+    .content {
+        .title {
+            transition: all 0.5s ease;
+            &:hover {
+                color: $primary !important;
+            }
+        }
+    }
+    .collection, .preview {
+        position: absolute;
+        opacity: 0;
+        z-index: 1;
+    }
+    .collection {
+        top: 15px;
+        left: 15px;
+        i {
+            -webkit-text-stroke: 2px $danger;
+            -webkit-text-fill-color: transparent;
+            &:active {
+                -webkit-text-stroke: 0px $danger;
+                -webkit-text-fill-color: $danger;
+            }
+        }
+    }
+    .preview {
+        bottom: 15px;
+        right: 15px;
+    }
+    &:hover {
+        box-shadow: $shadow;
+        transform: translateY(-10px);
+        .collection, .preview {
+            opacity: 1;
+        }
+    }
+}
+
+//index-portfolio.html
+.personal-port {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+//index-portfolio.html
+.container-filter {
+    li {
+        a {
+            font-size: 13px;
+            padding: 0px 15px; 
+            margin: 5px 3px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            cursor: pointer;
+            line-height: 34px;
+            transition: all 0.5s ease;
+            &.active,
+            &:hover {
+                color: $primary !important;
+                border-color: $primary !important;
+            }
+        }
+    }
+}
+.spacing{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+
+//Shopping
+.shop-list {
+    .shop-image {
+        .overlay-work,
+        .shop-icons { 
+            position: absolute;
+            opacity: 0; 
+            transition: all 0.5s ease;
+        }
+        .overlay-work {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .shop-icons {
+            top: 15px;
+            right: 15px;
+            z-index: 2;
+            transform: translateX(100px);
+        }
+        &:hover {
+            .overlay-work,
+            .shop-icons {
+                opacity: 1;
+            }
+            .shop-icons {
+                transform: translateX(0px);
+            }
+        }
+    }
+    .content {
+        .product-name {
+            transition: all 0.5s ease;
+            &:hover {
+                color: $primary !important;
+            }
+        }
+    }
+}
+
+//Travel
+.popular-tour {
+    .content {
+        position: absolute;
+        bottom: 3%;
+        left: 5%;
+    }
+}
+
+
+//Timeline
+.main-icon {
+    border: 2px solid $gray-200;
+    height: 40px;
+    width: 40px;
+    line-height: 0;
+    text-align: center;
+    .fea {
+        height: 20px;
+    }
+}
+.timeline-page {
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 95%;
+        margin: auto;
+        width: 2px;
+        background-color: $gray-200 !important;
+    }
+    .timeline-item {
+        .date-label-left, .duration-right {
+            margin-right: 15px;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 12px;
+                width: 12px;
+                height: 12px;
+                z-index: 1;
+                background-color: $primary;
+                border-radius: 4px;
+                transform: rotate(45deg);
+            }
+        }
+        .date-label-left {            
+            float: right;
+            margin-right: 15px;
+            &:after {                
+                right: -37px;
+            }
+        }        
+        .duration-right {
+            float: left;
+            margin-left: 15px;
+            &:after {                
+                left: -37px;
+            }
+        }
+        .event {
+            transition: all 0.2s ease;
+            &.event-description-right {
+                margin-left: 15px;
+            }
+            &.event-description-left {
+                margin-right: 15px;
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .main-icon {
+        margin: 0 auto;        
+    }
+}
+
+@media (max-width: 767px) {
+    .timeline-page {
+        margin-left: 18px;
+        &:after {
+            margin: 0;
+        }
+        .timeline-item {
+            .duration {
+                float: left !important;
+                margin: 0 0 30px 15px !important;
+                text-align: left !important;
+                &:after {
+                    left: -21px !important;
+                }
+                .event {
+                    text-align: left !important;
+                    margin-left: 15px;
+                }
+            }
+            .event-description-left {
+                text-align: left !important;
+                margin: 0 0 0 15px;
+            }
+        }
+    }
+}

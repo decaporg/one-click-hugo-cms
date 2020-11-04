@@ -1,0 +1,368 @@
+//
+// home.scss
+//
+
+@mixin home-common {
+    background-size: cover;
+    align-self: center;
+    position: relative;
+    background-position: center center;
+}
+.bg-home {
+    height: 100vh;
+    @include home-common();
+}
+.bg-half-260 {
+    padding: 260px 0;
+    @include home-common();
+}
+.bg-half-170 {
+    padding: 170px 0;
+    @include home-common();
+}
+.bg-half {
+    padding: 184px 0 90px;
+    @include home-common();
+}
+
+//Gradient Home
+.gradient{
+    background: $primary !important;
+    background: linear-gradient(45deg, $primary, $primary) !important;
+    opacity: 0.9;
+}
+
+.bg-circle-gradiant {
+    background: radial-gradient(circle at 50% 50%, rgba($primary, 0.1) 0%,
+                                                   rgba($primary, 0.1) 33.333%,
+                                                   rgba($primary, 0.3) 33.333%,
+                                                   rgba($primary, 0.3) 66.666%,
+                                                   rgba($primary, 0.5) 66.666%,
+                                                   rgba($primary, 0.5) 99.999%);
+}
+
+//Saas
+.home-dashboard {
+    img {
+        position: relative;
+        top: 60px;
+        z-index: 1;
+    }
+}
+
+.classic-saas-image {
+    .bg-saas-shape {
+        &:after {
+            bottom: 3rem;
+            left: 0;
+            width: 75rem;
+            height: 55rem;
+            border-radius: 20rem;
+            opacity: 0.9;
+            transform: rotate(130deg);
+        }
+    }
+}
+
+//Studio
+.studio-home {
+    padding: 7%;
+}
+//Agency
+.agency-wrapper {
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 22rem;
+        right: 54rem;
+        width: 90rem;
+        height: 35rem;
+        border-radius: 17rem;
+        transform: rotate(45deg);
+        background-color: $light;
+        z-index: -1;
+    }
+}
+//Marketing
+.bg-marketing {
+    padding: 76px 0 120px;
+    @include home-common();
+}
+
+//Coworking Landing
+.home-slider {
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 5%;
+    }
+    .carousel-item,
+    .carousel {
+        height: 100vh;
+        width: 100%;
+    }
+    .carousel-item {
+        background-position: center center;
+        background-size: cover;
+        &.active {
+            display: flex;
+        }
+    }
+}
+
+//Hotel Landing
+.main-slider{
+    .slides {
+        .bg-slider {
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+            @include home-common();
+            &.shopping {
+                height: 75vh;
+            }
+        }
+    }
+}
+.flex-control-paging li a{
+    background: $white;
+    box-shadow: none;
+    &.flex-active {
+        background: $primary;
+        cursor: default;
+        font-size: 17px;
+        width: 15px;
+        height: 15px;
+        box-shadow: none;
+    }
+}
+.flex-control-nav {
+    display: none;
+}
+.bg-animation-left {
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 70%;
+        height: 100%;
+        background: rgba($white, 0.85);
+        clip-path: polygon(0 0, 90% 0, 70% 100%, 0% 100%);
+    }
+    &.dark-left {
+        &:after {
+            background: rgba($dark, 0.6);
+        }
+    }
+    &.crypto-home {
+        &:after {
+            background: $primary;
+            width:80%;
+            clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+        }
+    }
+    &.task-management-home {
+        &:after {
+            // FIXME background: url("../images/task/bg.png") $primary;
+            width:100%;
+            clip-path: circle(65% at 40% 25%);
+        }
+    }
+}
+
+//page-invoice.html
+.bg-invoice {
+    padding: 100px 0;
+    @include home-common();
+}
+
+//Application
+.classic-app-image {
+    .bg-app-shape {
+        &:after {
+            bottom: 3rem;
+            left: -8rem;
+            width: 55rem;
+            height: 35rem;
+            border-radius: 20rem;
+            transform: rotate(120deg);
+            opacity: 0.9;
+        }
+    }
+    .app-images {
+        position: absolute;
+        bottom: 60px;
+        right: -20px;
+    }
+}
+
+.classic-app-image .bg-app-shape,
+.classic-saas-image .bg-saas-shape {
+    &:after {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+    }
+}
+.classic-app-image .bg-app-shape,
+.classic-saas-image .bg-saas-shape {
+    &:after {
+        box-shadow: 0 0 40px rgba($primary, 0.5);
+        background-color: $primary;
+    }
+}
+
+//Landing one
+.shape-before {
+    .shape-img {
+        position: absolute;
+        top: -50px;
+        left: -35px;
+        z-index: -1;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+//corporate business
+.swiper-slider-hero {
+    .swiper-container,
+    .swiper-slide .slide-inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-container {
+        .swiper-button-prev,
+        .swiper-button-next {
+            background: transparent;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            margin-top: -30px;
+            &:before {
+                font-family: "Material Design Icons";
+                font-weight: 900;
+                color: $white;
+            }
+            &:hover {
+                background: $primary;
+                border-color: $primary !important;
+            }
+        }
+        .swiper-button-prev {
+            left: 10px;
+            &:before {
+                content: "\f0141";
+            }
+        }
+        .swiper-button-next {
+            right: 10px;
+            &:before {
+                content: "\f0142";
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        color: $gray-100;
+        background: transparent;
+    }
+    .swiper-pagination-bullet-active {
+        color: $white;
+    }
+    .swiper-container-horizontal
+    > .swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 45px;
+    }
+    .swiper-container-horizontal
+    > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 13px;
+    }
+}
+
+// Responsive
+@media (min-width: 769px){
+    //studio
+    .bg-studio {
+        &:after{
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 50%;
+            height: 100%;
+            background: $white none repeat scroll 0 0;
+            z-index: 2;
+        }
+    }
+}
+//Index-onepage.html
+@media (min-width:768px) {
+    .home-dashboard {
+        &.onepage-hero {
+            overflow: hidden;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .agency-wrapper {
+        &:before {
+            right: 12rem;
+        }
+    }
+    .bg-half {
+        padding: 169px 0 50px;
+    }
+    .wave-one, .wave-three {
+        background-size: 50% 50px;
+    }
+
+    .wave-two {
+        background-size: 50% 70px;
+    }
+    .classic-saas-image {
+        .bg-saas-shape {
+            img {
+                max-width: 550px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .bg-home, .bg-half-170, .bg-half-260, .main-slider .slides .bg-slider, .bg-marketing, .swiper-slider-hero .swiper-container .swiper-slide {
+        padding: 150px 0;
+        height: auto;
+    }
+    .agency-wrapper {
+        &:before {
+            right: 0;
+        }
+    }
+    .bg-animation-left {
+        &:after {
+            width: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+
+    .classic-saas-image {
+        .bg-saas-shape {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            &:after {
+                bottom: -5rem;
+                left: 10rem;
+                width: 30rem;
+                height: 30rem;
+                border-radius: 10rem;
+            }
+        }
+    }
+}

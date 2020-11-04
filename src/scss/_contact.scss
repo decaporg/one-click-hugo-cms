@@ -1,0 +1,82 @@
+//
+// contact.scss
+//
+.contact-detail {
+    .content {
+        .title {
+            font-size: 20px;
+        }
+    }
+}
+
+.form-group {
+    .icons {
+        position: absolute;
+        top: 43px;
+        left: 18px;
+    } 
+}
+
+.map {
+    line-height: 0;
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+.error {
+    margin: 8px 0px;
+    display: none;
+    color: $danger;
+}
+  
+#ajaxsuccess {
+    font-size: 16px;
+    width: 100%;
+    display: none;
+    clear: both;
+    margin: 8px 0px;
+}
+
+.error_message {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid $danger;
+    color: $danger;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.contact-loader {
+    display: none;
+}
+  
+#success_page {
+    text-align: center;
+    margin-bottom: 50px;
+    h3 {
+        color: $success;
+        font-size: 22px;
+    }
+}
+
+//Flatpicker 
+.flatpickr-day {
+    &.selected,  
+    &.selected:hover {
+        background: $primary;
+        border-color: $primary;
+    }
+}
+
+@media (min-width: 768px) {
+    .map {
+        &.map-height-two {
+            iframe {
+                height: 551px;
+            }
+        }
+    }
+}

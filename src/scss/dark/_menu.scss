@@ -1,0 +1,164 @@
+//
+// menu.scss
+//
+#topnav {
+    .logo {
+        color: $dark !important;
+        .l-dark {
+            display: none !important;
+        }
+        .l-light {
+            display: inline-block !important;
+        }
+    }
+    .has-submenu {
+        &.active {
+            a {
+                color: $white;
+            }
+        }
+    }
+    .has-submenu{
+        .submenu {
+            .submenu-arrow {
+                border: solid $dark;
+                border-width: 0 2px 2px 0;
+            }
+        }
+    }
+    .navbar-toggle {
+        span {
+            background-color: $dark;
+        }
+    }
+    
+    .navigation-menu {
+        > li {
+            > a {
+                color: $dark;
+            }
+        }
+        .has-submenu {
+            .menu-arrow {
+                border: solid $dark;
+                border-width: 0 2px 2px 0;
+            }
+        }
+    }
+    
+    &.scroll {
+        background-color: $white;
+        box-shadow: $shadow;
+        .navigation-menu {
+            > li {
+                > a {
+                    color: $dark;
+                }
+                
+                > .menu-arrow {
+                    border-color: $dark;
+                }
+            } 
+        }
+    }
+
+    &.nav-sticky{
+        background: $white;
+        box-shadow: $shadow;
+        .navigation-menu {
+            &.nav-light {
+                > li {
+                    > a {
+                        color: $dark;
+                    }
+                }
+                .has-submenu {
+                    .menu-arrow {
+                        border-color: $dark;
+                    }
+                }
+            }
+        }
+        .logo {
+            &.logo-light {
+                color: $dark !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #topnav {
+        .navigation-menu {
+            > .has-submenu {
+                > .submenu {
+                    > .has-submenu {
+                        > .submenu {
+                            &::before{
+                                box-shadow: 1px 1px 0px 0px rgba($dark, 0.15);
+                                border-color: transparent $white $white transparent;
+                            }
+                        }
+                    } 
+                }
+            } 
+            > li {
+                .submenu {
+                    background-color: $white;
+                    box-shadow: $shadow;
+                    &:before {
+                        border: 7px solid $gray-700;
+                        border-color: transparent transparent $white $white;
+                        box-shadow: -2px 2px 2px -1px rgba($dark, 0.15);
+                    }
+                    li {
+                        a {
+                            color: $dark !important;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+  
+@media (max-width: 991px) {
+    #topnav {
+        background-color: $white;
+        box-shadow: $shadow;
+        .navigation-menu {
+            > li {
+                .submenu {
+                    li {
+                        a {
+                            color: $dark !important;
+                        }
+                    }
+                    &.megamenu {
+                        > li {
+                            > ul {
+                                > li {
+                                    > span {
+                                        color: $muted;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                > a {
+                    color: $dark;
+                }
+            }
+        }
+        .menu-extras .menu-item {
+            border-color: $muted;
+        }
+    }
+
+    #navigation {
+        border-top: 1px solid darken($light,2%);
+        border-bottom: 1px solid darken($light,2%);
+        background-color: $white;
+    }
+}
