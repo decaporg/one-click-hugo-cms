@@ -1,5 +1,5 @@
 {{ if gt .Paginator.TotalPages 1 }}
- 
+
 <nav class="cf pa3">
     {{ if .Paginator.HasNext }}
     <a class="fl dib link dim black f6 f5-ns b pa2" title="Next Page" href="{{ .Paginator.Next.URL }}">
@@ -14,5 +14,17 @@
         {{ end }}
     </div>
 </nav>
- 
+
 {{ end }}
+
+{{/*
+<div class="col-12">
+    <ul class="pagination justify-content-center mb-0">
+        <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Previous">Prev</a></li>
+        <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Next">Next</a></li>
+    </ul>
+</div>
+*/}}

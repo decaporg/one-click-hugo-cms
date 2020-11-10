@@ -3,5 +3,6 @@
 import "./scss/style.scss";
 import "bootstrap";
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
+const feather = require('feather-icons');
+feather.replace();
+console.info('Made with ❤ by Greive.tech');
