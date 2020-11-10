@@ -1,7 +1,27 @@
 ---
-title: "Great coffee with a conscience"
-subtitle: Support sustainable farming while enjoying a cup
-image: /img/home-jumbotron.jpg
+title: "ASDRO – Advanced & Specialized Drone Solutions"
+subtitle: "High-Tech Geophysics für eine effiziente Vermessung, Inspektion und fachspezifische Bewertung von Oberflächen und Untergründen."
+image: img/3.jpg
+buttons:
+    primary:
+        label: "Unser Angebot"
+        link: "#"
+    secondary:
+        label: "Mehr erfahren"
+        link: "#"
+clients:
+    - image: img/client/amazon.svg
+      label: "Amazon"
+    - image: img/client/google.svg
+      label: "Google"
+    - image: img/client/lenovo.svg
+      label: "Lenovo"
+    - image: img/client/paypal.svg
+      label: "Paypal"
+    - image: img/client/shopify.svg
+      label: "Shopify"
+    - image: img/client/spotify.svg
+      label: "Spotify"
 blurb:
     heading: Why Kaldi?
     text: "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities."

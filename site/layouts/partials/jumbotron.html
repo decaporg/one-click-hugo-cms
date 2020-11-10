@@ -1,17 +1,16 @@
-<section class="bg-half-170 d-table w-100" style="background: url('img/3.jpg') center center;" id="home">
+<section class="bg-half-170 d-table w-100" style="background: url('{{ .image }}') center center;" id="home">
 	<div class="container">
 		<div class="row position-relative align-items-center pt-4">
 			<div class="col-lg-7 offset-lg-5">
 				<div class="title-heading studio-home rounded bg-white shadow mt-5">
-					<h1 class="heading mb-3">Present Your Work With <span class="text-primary">Landrick</span>
-						Studio</h1>
-					<p class="para-desc text-muted">Launch your campaign and benefit from our expertise on designing
-						and managing conversion centered bootstrap4 html page.</p>
+					<h1 class="heading mb-3">{{ .Title }}</h1>
+					<p class="para-desc text-muted">{{ .Subtitle }}</p>
 					<div class="mt-4">
-						<a href="page-contact-one.html" class="btn btn-primary mt-2 mr-2"><i class="mdi mdi-phone"></i> Get
-							Started</a>
-						<a href="documentation.html" class="btn btn-outline-primary mt-2"><i class="mdi mdi-book-outline"></i>
-							Documentation</a>
+						<a href="{{ .Buttons.primary.link }}" class="btn btn-primary mt-2 mr-2"><i
+								class="mdi mdi-phone"></i>{{ .Buttons.primary.label }}</a>
+						<a href="{{ .Buttons.secondary.link }}" class="btn btn-outline-primary mt-2"><i
+								class="mdi mdi-book-outline"></i>
+							{{ .Buttons.secondary.label }}</a>
 					</div>
 				</div>
 			</div>

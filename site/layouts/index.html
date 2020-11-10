@@ -1,12 +1,12 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+{{ partial "jumbotron" .Params }}
 
-{{ partial "clients" }}
+{{ partial "clients" .Params }}
 
 {{ partial "work-process" }}
 
-{{/* {{ partial "short-text" .Params.blurb}}
+{{/* {{ partial "short-text" .Params.blurb }}
 
 {{ partial "2-up" .Params }}
 

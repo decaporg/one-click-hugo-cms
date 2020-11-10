@@ -1,29 +1,11 @@
 <section class="py-4 bg-light">
   <div class="container">
     <div class="row justify-content-center">
+      {{ range .Clients }}
       <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-        <img src="img/client/amazon.svg" class="avatar avatar-ex-sm" alt="">
+        <img src="{{ .image }}" class="avatar avatar-ex-sm" alt="{{ .label }}">
       </div>
-
-      <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-        <img src="img/client/google.svg" class="avatar avatar-ex-sm" alt="">
-      </div>
-
-      <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-        <img src="img/client/lenovo.svg" class="avatar avatar-ex-sm" alt="">
-      </div>
-
-      <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-        <img src="img/client/paypal.svg" class="avatar avatar-ex-sm" alt="">
-      </div>
-
-      <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-        <img src="img/client/shopify.svg" class="avatar avatar-ex-sm" alt="">
-      </div>
-
-      <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-        <img src="img/client/spotify.svg" class="avatar avatar-ex-sm" alt="">
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
