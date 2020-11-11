@@ -1,15 +1,71 @@
 {{ define "main" }}
-
-  <div class="mw6 center ph3 pv4">
-    <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
-    <div class="flex justify-between grey-3">
-      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-      <p>Read in {{ .ReadingTime }} minutes</p>
-    </div>
-    <div class="cms mw6">
-      <p>{{ .Description }}</p>
-      {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
-      {{ .Content }}
+<section class="bg-half d-table w-100" {{ if .Params.image }}
+  style="background: url('{{ .Params.image }}') center center;" {{ end }}>
+  <div class="bg-overlay"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+        <div class="page-next-level">
+          <h4 class="title text-white title-dark">{{ .Title }}</h4>
+          <div class="page-next">
+            <nav aria-label="breadcrumb" class="d-inline-block">
+              <ul class="breadcrumb bg-white rounded shadow mb-0">
+                <li class="breadcrumb-item"><a href="/">Asdro</a></li>
+                <li class="breadcrumb-item"><a href="/post">Blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</section>
+
+<div class="position-relative">
+  <div class="shape overflow-hidden text-white">
+    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+    </svg>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row">
+          <div class="col-md-2 d-none d-md-block">
+            <ul class="list-unstyled text-center sticky-bar social-icon mb-0">
+              <li class="mb-3 h6">Share</li>
+              <li><a href="javascript:void(0)" class="rounded"><i data-feather="facebook"
+                    class="fea icon-sm fea-social"></i></a></li>
+              <li><a href="javascript:void(0)" class="rounded"><i data-feather="instagram"
+                    class="fea icon-sm fea-social"></i></a></li>
+              <li><a href="javascript:void(0)" class="rounded"><i data-feather="twitter"
+                    class="fea icon-sm fea-social"></i></a></li>
+              <li><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin"
+                    class="fea icon-sm fea-social"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-10">
+            {{ if .Description }}
+            <p class="text-muted">{{ .Description }}</p>
+            {{ end }}
+            <ul class="list-unstyled d-flex justify-content-between mt-4">
+              <li class="list-inline-item user mr-2">
+                <i class="mdi mdi-clock text-dark"></i> Read in {{ .ReadingTime }} minutes
+              </li>
+              <li class="list-inline-item date text-muted">
+                <i class="mdi mdi-calendar-check text-dark"></i> {{ .Date.Format "Mon, Jan 2, 2006" }}
+              </li>
+            </ul>
+            <p class="text-muted">{{ .Content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ end }}
