@@ -1,0 +1,768 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="317.25" height="416" viewBox="34 170 317.25 416">
+                  <defs><style type="text/css" xmlns="http://www.w3.org/1999/xhtml"><![CDATA[.blocklyText, 
+.blocklyFlyoutLabelText {
+font: normal 11pt sans-serif;
+}
+.blocklyText {
+fill: #fff;
+}
+.blocklyNonEditableText>rect,
+.blocklyEditableText>rect {
+fill: #fff;
+fill-opacity: .6;
+stroke: none;
+}
+.blocklyNonEditableText>text,
+.blocklyEditableText>text {
+fill: #000;
+}
+.blocklyFlyoutLabelText {
+fill: #000;
+}
+.blocklyText.blocklyBubbleText {
+fill: #000;
+}
+.blocklyEditableText:not(.editing):hover>rect {
+stroke: #fff;
+stroke-width: 2;
+}
+.blocklyHtmlInput {
+font-family: sans-serif;
+font-weight: normal;
+}
+.blocklySelected>.blocklyPath {
+stroke: #fc3;
+stroke-width: 3px;
+}
+.blocklyHighlightedConnectionPath {
+stroke: #fc3;
+}
+.blocklyPath {
+fill-opacity: .5;
+}
+.blocklyPathLight,
+.blocklyPathDark {
+display: none;
+}
+.blocklyInsertionMarker>.blocklyPath {
+fill-opacity: 0.2;
+stroke: none;
+}
+.blocklyInsertionMarker>.blocklyPathLight,
+.blocklyInsertionMarker>.blocklyPathDark {
+fill-opacity: 0.2;
+stroke: none;
+}.blocklySvg {
+background-color: #fff;
+outline: none;
+overflow: hidden;
+position: absolute;
+display: block;
+}
+.blocklyWidgetDiv {
+display: none;
+position: absolute;
+z-index: 99999;
+}
+.injectionDiv {
+height: 100%;
+position: relative;
+overflow: hidden;
+touch-action: none;
+}
+.blocklyNonSelectable {
+user-select: none;
+-ms-user-select: none;
+-webkit-user-select: none;
+}
+.blocklyWsDragSurface {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+}
+.blocklyWsDragSurface.blocklyOverflowVisible {
+overflow: visible;
+}
+.blocklyBlockDragSurface {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+overflow: visible !important;
+z-index: 50;
+}
+.blocklyBlockCanvas.blocklyCanvasTransitioning,
+.blocklyBubbleCanvas.blocklyCanvasTransitioning {
+transition: transform .5s;
+}
+.blocklyTooltipDiv {
+background-color: #ffffc7;
+border: 1px solid #ddc;
+box-shadow: 4px 4px 20px 1px rgba(0,0,0,.15);
+color: #000;
+display: none;
+font: 9pt sans-serif;
+opacity: .9;
+padding: 2px;
+position: absolute;
+z-index: 100000;
+}
+.blocklyDropDownDiv {
+position: absolute;
+left: 0;
+top: 0;
+z-index: 1000;
+display: none;
+border: 1px solid;
+border-color: #dadce0;
+background-color: #fff;
+border-radius: 2px;
+padding: 4px;
+box-shadow: 0 0 3px 1px rgba(0,0,0,.3);
+}
+.blocklyDropDownDiv.blocklyFocused {
+box-shadow: 0 0 6px 1px rgba(0,0,0,.3);
+}
+.blocklyDropDownContent {
+max-height: 300px;
+overflow: auto;
+overflow-x: hidden;
+position: relative;
+}
+.blocklyDropDownArrow {
+position: absolute;
+left: 0;
+top: 0;
+width: 16px;
+height: 16px;
+z-index: -1;
+background-color: inherit;
+border-color: inherit;
+}
+.blocklyDropDownButton {
+display: inline-block;
+float: left;
+padding: 0;
+margin: 4px;
+border-radius: 4px;
+outline: none;
+border: 1px solid;
+transition: box-shadow .1s;
+cursor: pointer;
+}
+.blocklyArrowTop {
+border-top: 1px solid;
+border-left: 1px solid;
+border-top-left-radius: 4px;
+border-color: inherit;
+}
+.blocklyArrowBottom {
+border-bottom: 1px solid;
+border-right: 1px solid;
+border-bottom-right-radius: 4px;
+border-color: inherit;
+}
+.blocklyResizeSE {
+cursor: se-resize;
+fill: #aaa;
+}
+.blocklyResizeSW {
+cursor: sw-resize;
+fill: #aaa;
+}
+.blocklyResizeLine {
+stroke: #515A5A;
+stroke-width: 1;
+}
+.blocklyHighlightedConnectionPath {
+fill: none;
+stroke: #fc3;
+stroke-width: 4px;
+}
+.blocklyPathLight {
+fill: none;
+stroke-linecap: round;
+stroke-width: 1;
+}
+.blocklySelected>.blocklyPathLight {
+display: none;
+}
+.blocklyDraggable {
+cursor: url("/media/blockly/handopen.cur"), auto;
+cursor: grab;
+cursor: -webkit-grab;
+}
+.blocklyDragging {
+cursor: url("/media/blockly/handclosed.cur"), auto;
+cursor: grabbing;
+cursor: -webkit-grabbing;
+}
+.blocklyDraggable:active {
+cursor: url("/media/blockly/handclosed.cur"), auto;
+cursor: grabbing;
+cursor: -webkit-grabbing;
+}
+.blocklyDraggable {
+cursor: url("/media/blockly/handclosed.cur"), auto;
+cursor: grabbing;
+cursor: -webkit-grabbing;
+}
+.blocklyDragging.blocklyDraggingDelete {
+cursor: url("/media/blockly/handdelete.cur"), auto;
+}
+.blocklyDragging>.blocklyPath,
+.blocklyDragging>.blocklyPathLight {
+fill-opacity: .8;
+stroke-opacity: .8;
+}
+.blocklyDragging>.blocklyPathDark {
+display: none;
+}
+.blocklyDisabled>.blocklyPath {
+fill-opacity: .5;
+stroke-opacity: .5;
+}
+.blocklyDisabled>.blocklyPathLight,
+.blocklyDisabled>.blocklyPathDark {
+display: none;
+}
+.blocklyInsertionMarker>.blocklyPath,
+.blocklyInsertionMarker>.blocklyPathLight,
+.blocklyInsertionMarker>.blocklyPathDark {
+fill-opacity: .2;
+stroke: none;
+}
+.blocklyMultilineText {
+font-family: monospace;
+}
+.blocklyNonEditableText>text {
+pointer-events: none;
+}
+.blocklyFlyout {
+position: absolute;
+z-index: 20;
+}
+.blocklyText text {
+cursor: default;
+}
+.blocklySvg text,
+.blocklyBlockDragSurface text {
+user-select: none;
+-ms-user-select: none;
+-webkit-user-select: none;
+cursor: inherit;
+}
+.blocklyHidden {
+display: none;
+}
+.blocklyFieldDropdown:not(.blocklyHidden) {
+display: block;
+}
+.blocklyIconGroup {
+cursor: default;
+}
+.blocklyIconGroup:not(:hover),
+.blocklyIconGroupReadonly {
+opacity: .6;
+}
+.blocklyIconShape {
+fill: #00f;
+stroke: #fff;
+stroke-width: 1px;
+}
+.blocklyIconSymbol {
+fill: #fff;
+}
+.blocklyMinimalBody {
+margin: 0;
+padding: 0;
+}
+.blocklyHtmlInput {
+border: none;
+border-radius: 4px;
+height: 100%;
+margin: 0;
+outline: none;
+padding: 0;
+width: 100%;
+text-align: center;
+display: block;
+box-sizing: border-box;
+}
+.blocklyHtmlInput::-ms-clear {
+display: none;
+}
+.blocklyMainBackground {
+stroke-width: 1;
+stroke: #c6c6c6;
+}
+.blocklyMutatorBackground {
+fill: #fff;
+stroke: #ddd;
+stroke-width: 1;
+}
+.blocklyFlyoutBackground {
+fill: #ddd;
+fill-opacity: .8;
+}
+.blocklyMainWorkspaceScrollbar {
+z-index: 20;
+}
+.blocklyFlyoutScrollbar {
+z-index: 30;
+}
+.blocklyScrollbarHorizontal,
+.blocklyScrollbarVertical {
+position: absolute;
+outline: none;
+}
+.blocklyScrollbarBackground {
+opacity: 0;
+}
+.blocklyScrollbarHandle {
+fill: #ccc;
+}
+.blocklyScrollbarBackground:hover+.blocklyScrollbarHandle,
+.blocklyScrollbarHandle:hover {
+fill: #bbb;
+}
+.blocklyScrollbarHandle {
+fill: #bbb;
+}
+.blocklyScrollbarBackground:hover+.blocklyScrollbarHandle,
+.blocklyScrollbarHandle:hover {
+fill: #aaa;
+}
+.blocklyInvalidInput {
+background: #faa;
+}
+.blocklyVerticalMarker {
+stroke-width: 3px;
+fill: rgba(255,255,255,.5);
+pointer-events: none;
+}
+.blocklyComputeCanvas {
+position: absolute;
+width: 0;
+height: 0;
+}
+.blocklyNoPointerEvents {
+pointer-events: none;
+}
+.blocklyContextMenu {
+border-radius: 4px;
+max-height: 100%;
+}
+.blocklyDropdownMenu {
+border-radius: 2px;
+padding: 0 !important;
+}
+.blocklyMenuItem {
+padding-left: 28px;
+}
+.blocklyMenuItemRtl {
+padding-left: 5px;
+padding-right: 28px;
+}
+.blocklyMenu {
+background: #fff;
+border: 1px solid transparent;
+box-shadow: 0 0 3px 1px rgba(0,0,0,.3);
+font: normal 13px Arial, sans-serif;
+margin: 0;
+outline: none;
+padding: 4px 0;
+position: absolute;
+overflow-y: auto;
+overflow-x: hidden;
+max-height: 100%;
+z-index: 20000;
+}
+.blocklyMenu.blocklyFocused {
+box-shadow: 0 0 6px 1px rgba(0,0,0,.3);
+}
+.blocklyMenu {
+font: normal 13px "Helvetica Neue", Helvetica, sans-serif;
+outline: none;
+z-index: 20000;
+}
+.blocklyMenuItem {
+border: none;
+color: #000;
+cursor: pointer;
+list-style: none;
+margin: 0;
+min-width: 7em;
+padding: 6px 15px;
+white-space: nowrap;
+}
+.blocklyMenuItemDisabled {
+color: #ccc;
+cursor: inherit;
+}
+.blocklyMenuItemHighlight {
+background-color: rgba(0,0,0,.1);
+}
+.blocklyMenuItemCheckbox {
+height: 16px;
+position: absolute;
+width: 16px;
+}
+.blocklyMenuItemCheckbox {
+background: url(/media/blockly/sprites.png) no-repeat -48px -16px;
+float: left;
+margin-left: -24px;
+position: static;
+}
+.blocklyMenuItemCheckbox {
+float: right;
+margin-right: -24px;
+}
+.blocklyCommentTextarea {
+background-color: #fef49c;
+border: 0;
+outline: 0;
+margin: 0;
+padding: 3px;
+resize: none;
+display: block;
+overflow: hidden;
+}
+.blocklyFlyoutButton {
+fill: #888;
+cursor: default;
+}
+.blocklyFlyoutButtonShadow {
+fill: #666;
+}
+.blocklyFlyoutButton:hover {
+fill: #aaa;
+}
+.blocklyFlyoutLabel {
+cursor: default;
+}
+.blocklyFlyoutLabelBackground {
+opacity: 0;
+}
+.blocklyTreeRow:not(.blocklyTreeSelected):hover {
+background-color: rgba(255, 255, 255, 0.2);
+}
+.blocklyToolboxCategory {
+margin: 1px 5px 1px 0;
+}
+.blocklyToolboxCategory {
+margin: 1px 0 1px 5px;
+}
+.blocklyTreeRow {
+height: 22px;
+line-height: 22px;
+margin-bottom: 3px;
+padding-right: 8px;
+white-space: nowrap;
+}
+.blocklyTreeRow {
+margin-left: 8px;
+padding-right: 0px
+}
+.blocklyTreeIcon {
+background-image: url(/media/blockly/sprites.png);
+height: 16px;
+vertical-align: middle;
+visibility: hidden;
+width: 16px;
+}
+.blocklyTreeIconClosed {
+background-position: -32px -1px;
+}
+.blocklyTreeIconClosed {
+background-position: 0 -1px;
+}
+.blocklyTreeSelected>.blocklyTreeIconClosed {
+background-position: -32px -17px;
+}
+.blocklyTreeSelected>.blocklyTreeIconClosed {
+background-position: 0 -17px;
+}
+.blocklyTreeIconOpen {
+background-position: -16px -1px;
+}
+.blocklyTreeSelected>.blocklyTreeIconOpen {
+background-position: -16px -17px;
+}
+.blocklyTreeLabel {
+cursor: default;
+font: 16px sans-serif;
+padding: 0 3px;
+vertical-align: middle;
+}
+.blocklyTreeLabel {
+cursor: url("/media/blockly/handdelete.cur"), auto;
+}
+.blocklyTreeLabel {
+color: #fff;
+}
+.blocklyTreeSeparator {
+border-bottom: solid #e5e5e5 1px;
+height: 0;
+margin: 5px 0;
+}
+.blocklyTreeSeparator {
+border-right: solid #e5e5e5 1px;
+border-bottom: none;
+height: auto;
+margin: 0 5px 0 5px;
+padding: 5px 0;
+width: 0;
+}
+.blocklyToolboxDelete {
+cursor: url("/media/blockly/handdelete.cur"), auto;
+}
+.blocklyToolboxGrab {
+cursor: url("/media/blockly/handclosed.cur"), auto;
+cursor: grabbing;
+cursor: -webkit-grabbing;
+}
+.blocklyToolboxDiv {
+background-color: #ddd;
+overflow-x: visible;
+overflow-y: auto;
+padding: 4px 0 4px 0;
+position: absolute;
+z-index: 70;
+-webkit-tap-highlight-color: transparent;
+}
+.blocklyToolboxContents {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+.blocklyToolboxContents:focus {
+outline: none;
+}
+.blocklyZoom>svg>image {
+opacity: .4;
+}
+.blocklyZoom>svg>image:hover {
+opacity: .6;
+}
+.blocklyZoom>svg>image:active {
+opacity: .8;
+}
+.blocklyAngleCircle {
+stroke: #444;
+stroke-width: 1;
+fill: #ddd;
+fill-opacity: .8;
+}
+.blocklyAngleMarks {
+stroke: #444;
+stroke-width: 1;
+}
+.blocklyAngleGauge {
+fill: #f88;
+fill-opacity: .8;
+pointer-events: none;
+}
+.blocklyAngleLine {
+stroke: #f00;
+stroke-width: 2;
+stroke-linecap: round;
+pointer-events: none;
+}
+.blocklyColourTable {
+border-collapse: collapse;
+display: block;
+outline: none;
+padding: 1px;
+}
+.blocklyColourTable>tr>td {
+border: .5px solid #888;
+box-sizing: border-box;
+cursor: pointer;
+display: inline-block;
+height: 20px;
+padding: 0;
+width: 20px;
+}
+.blocklyColourTable>tr>td.blocklyColourHighlighted {
+border-color: #eee;
+box-shadow: 2px 2px 7px 2px rgba(0,0,0,.3);
+position: relative;
+}
+.blocklyColourSelected:hover {
+border-color: #eee !important;
+outline: 1px solid #333;
+position: relative;
+}
+.blocklyHtmlTextAreaInput {
+font-family: monospace;
+resize: none;
+overflow: hidden;
+height: 100%;
+text-align: left;
+}
+
+    .blocklyModalOverlay {
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+      position: fixed;
+    }
+    .blocklyModalContainer {
+      background-color: white;
+      border: 1px solid gray;
+      font-family: Helvetica;
+      font-weight: 300;
+      padding: 1em;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0px 10px 20px grey;
+      z-index: 100;
+      margin: 15% auto;
+    }
+    .blocklyModalHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .blocklyModalHeaderTitle {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 1.2em;
+      line-height: 1.25;
+    }
+    .blocklyModalBtn {
+      margin-left: auto;
+      height: fit-content;
+    }
+    .blocklyModalBtnClose:before {
+      content: "\2715";
+    }
+    .blocklyModalBtn {
+      margin-right: .5em;
+      border: 1px solid gray;
+      font-weight: 500;
+      color: gray;
+      border-radius: 25px;
+    }
+    .blocklyModalBtnPrimary {
+      background-color: gray;
+      color: white;
+    }
+
+    .typedModalTitle {
+      font-weight: bold;
+      font-size: 1em;
+    }
+    .typedModalVariableInputContainer {
+      margin: 1em 0 1em 0;
+    }
+    .typedModalVariableLabel{
+      margin-right: .5em;
+    }
+    .typedModalTypes ul{
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+    }
+    .typedModalTypes li {
+      margin-right: 1em;
+      display: flex;
+    }
+.fieldSliderContainer {
+      align-items: center;
+      display: flex;
+      height: 32px;
+      justify-content: center;
+      width: 150px;
+    }
+    .fieldSlider {
+      -webkit-appearance: none;
+      background: transparent; /* override white in chrome */
+      margin: 4px;
+      padding: 0;
+      width: 100%;
+    }
+    .fieldSlider:focus {
+      outline: none;
+    }
+    /* Webkit */
+    .fieldSlider::-webkit-slider-runnable-track {
+      background: #ddd;
+      border-radius: 5px;
+      height: 10px;
+    }
+    .fieldSlider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px rgba(255,255,255,.15);
+      cursor: pointer;
+      height: 24px;
+      margin-top: -7px;
+      width: 24px;
+    }
+    /* Firefox */
+    .fieldSlider::-moz-range-track {
+      background: #ddd;
+      border-radius: 5px;
+      height: 10px;
+    }
+    .fieldSlider::-moz-range-thumb {
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px rgba(255,255,255,.15);
+      cursor: pointer;
+      height: 24px;
+      width: 24px;
+    }
+    .fieldSlider::-moz-focus-outer {
+      /* override the focus border style */
+      border: 0;
+    }
+    /* IE */
+    .fieldSlider::-ms-track {
+      /* IE wont let the thumb overflow the track, so fake it */
+      background: transparent;
+      border-color: transparent;
+      border-width: 15px 0;
+      /* remove default tick marks */
+      color: transparent;
+      height: 10px;
+      width: 100%;
+      margin: -4px 0;
+    }
+    .fieldSlider::-ms-fill-lower  {
+      background: #ddd;
+      border-radius: 5px;
+    }
+    .fieldSlider::-ms-fill-upper  {
+      background: #ddd;
+      border-radius: 5px;
+    }
+    .fieldSlider::-ms-thumb {
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px rgba(255,255,255,.15);
+      cursor: pointer;
+      height: 24px;
+      width: 24px;
+    }.blocklyPath {
+        fill-opacity: 1;
+      }
+      .blocklyPathDark {
+        display: flex;
+      }
+      .blocklyPathLight {
+        display: flex;
+      }  ]]></style></defs>"><g xmlns="http://www.w3.org/2000/svg" class="blocklyBlockCanvas"><g class="blocklyMarker"><g width="100" height="5"><rect width="100" height="5" style="display: none"/><rect class="blocklyVerticalMarker" rx="10" ry="10" style="display: none"/><path transform="" style="display: none"/><path transform="" style="display: none" fill="none" stroke-width="4"/></g></g><g class="blocklyCursor"><g width="100" height="5"><rect width="100" height="5" style="display: none"><animate attributeType="XML" attributeName="fill" dur="1s" values="#cc0a0a;transparent;transparent;" repeatCount="indefinite"/></rect><rect class="blocklyVerticalMarker" rx="10" ry="10" style="display: none"/><path transform="" style="display: none"><animate attributeType="XML" attributeName="fill" dur="1s" values="#cc0a0a;transparent;transparent;" repeatCount="indefinite"/></path><path transform="" style="display: none" fill="none" stroke-width="4"><animate attributeType="XML" attributeName="stroke" dur="1s" values="#cc0a0a;transparent;transparent;" repeatCount="indefinite"/></path></g></g><g data-id="QWW|$jB8+*EL;}|#uA" class="blocklyDraggable" transform="translate(34,170)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#7a4984" d=" m 0,0  m 0,8 a 8 8 0 0,1 8,-8  h 145  v 5  H 153  V 5  H 153  V 22  H 153  V 26  H 50  l -6,4  -3,0  -6,-4  h -7 a 8 8 0 0,0 -8,8  v 8 a 8 8 0 0,0 8,8  H 153  H 153  V 55  H 153  V 72  H 153  V 76  H 50  l -6,4  -3,0  -6,-4  h -7 a 8 8 0 0,0 -8,8  v 313 a 8 8 0 0,0 8,8  H 153  H 153  V 405  V 415  h -145 a 8 8 0 0,1 -8,-8 z&#xA;"/><path class="blocklyPath" stroke="none" fill="#995ba5" d=" m 0,0  m 0,8 a 8 8 0 0,1 8,-8  h 145  v 5  H 153  V 5  H 153  V 22  H 153  V 26  H 50  l -6,4  -3,0  -6,-4  h -7 a 8 8 0 0,0 -8,8  v 8 a 8 8 0 0,0 8,8  H 153  H 153  V 55  H 153  V 72  H 153  V 76  H 50  l -6,4  -3,0  -6,-4  h -7 a 8 8 0 0,0 -8,8  v 313 a 8 8 0 0,0 8,8  H 153  H 153  V 405  V 415  h -145 a 8 8 0 0,1 -8,-8 z&#xA;"/><path class="blocklyPathLight" stroke="#b88cc0" d=" m 0,0  m 0.5,8 a 7.5 7.5 0 0,1 8,-7.5  H 152.5  H 152.5  M 20,50  m 1.9895923599143455,-1.9895923599143455 a 8.5 8.5 0 0,0 6.0104076400856545,2.4895923599143455  l 124.5,0  H 152.5  M 20,405  m 1.9895923599143455,-1.9895923599143455 a 8.5 8.5 0 0,0 6.0104076400856545,2.4895923599143455  l 124.5,0  H 152.5  M 0,415  m 2.6966991411008934,-2.6966991411008934 a 7.5 7.5 0 0,1 -2.1966991411008934,-5.303300858899107  V 8 &#xA;"/><g transform="translate(10,5)"><text class="blocklyText" x="0" y="14">Arduino run first:</text></g><g transform="translate(10,55)"><text class="blocklyText" x="0" y="14">Arduino loop forever:</text></g><g data-id="},]b88saM;uka?t;7@,u" class="blocklyDraggable" style="display: block;" transform="translate(21,77)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498449" d=" m 0,0  m 0,8 a 8 8 0 0,1 8,-8  h 7  l 6,4  3,0  6,-4  h 121.625  v 5  H 151.625  V 5  H 151.625  V 22  H 151.625  V 32  H 151.625  V 49  H 151.625  V 59  H 151.625  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 29  H 151.625  V 113  H 151.625  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 29  H 151.625  V 167  H 151.625  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 29  H 151.625  V 221  H 151.625  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 29  H 151.625  V 275  H 151.625  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 29  H 151.625  V 319  V 323  h -122.125  l -6,4  -3,0  -6,-4  h -6.5 a 8 8 0 0,1 -8,-8 z&#xA;"/><path class="blocklyPath" stroke="none" fill="#5ba55b" d=" m 0,0  m 0,8 a 8 8 0 0,1 8,-8  h 7  l 6,4  3,0  6,-4  h 121.625  v 5  H 151.625  V 5  H 151.625  V 22  H 151.625  V 32  H 151.625  V 49  H 151.625  V 59  H 151.625  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 29  H 151.625  V 113  H 151.625  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 29  H 151.625  V 167  H 151.625  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 29  H 151.625  V 221  H 151.625  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 29  H 151.625  V 275  H 151.625  c 0,10  -8,-8  -8,7.5  s 8,-2.5  8,7.5  v 29  H 151.625  V 319  V 323  h -122.125  l -6,4  -3,0  -6,-4  h -6.5 a 8 8 0 0,1 -8,-8 z&#xA;"/><path class="blocklyPathLight" stroke="#8cc08c" d=" m 0,0  m 0.5,8 a 7.5 7.5 0 0,1 8,-7.5  H 14.5  h 0.5  l 6,4  3,0  6,-4  H 151.125  H 151.125  M 151.625,59  m -5,14.3  l 3.68,-2.1  M 151.625,113  m -5,14.3  l 3.68,-2.1  M 151.625,167  m -5,14.3  l 3.68,-2.1  M 151.625,221  m -5,14.3  l 3.68,-2.1  M 151.625,275  m -5,14.3  l 3.68,-2.1  M 0,323  m 2.6966991411008934,-2.6966991411008934 a 7.5 7.5 0 0,1 -2.1966991411008934,-5.303300858899107  V 8 &#xA;"/><g data-id="T/[~]i~|$(68ogJbqaeZ" style="display: block;" class="blocklyDraggable" transform="translate(144.625,54)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498449" d=" m 8,0  h 130.625  v 5  H 138.625  V 5  H 138.625  V 22  H 138.625  V 32  H 138.625  V 49  H 138.625  V 49  V 53  h -130.625  H 8  V 20  c 0,-10  -8,8  -8,-7.5  s 8,2.5  8,-7.5 z&#xA;"/><path class="blocklyPath" stroke="none" fill="#5ba55b" d=" m 8,0  h 130.625  v 5  H 138.625  V 5  H 138.625  V 22  H 138.625  V 32  H 138.625  V 49  H 138.625  V 49  V 53  h -130.625  H 8  V 20  c 0,-10  -8,8  -8,-7.5  s 8,2.5  8,-7.5 z&#xA;"/><path class="blocklyPathLight" stroke="#8cc08c" d=" m 8,0  m 0.5,0.5  H 138.125  H 138.125  M 8.5,52.5  M 8.5,52.5  V 20  v -1.5  m -7.36,-0.5  q -1.52,-5.5  0,-11  m 7.36,1  V 0.5 &#xA;"/><g transform="translate(18,5)"><text class="blocklyText" x="0" y="14">GPS Modul</text></g><g transform="translate(18,32)"><text class="blocklyText" x="0" y="14">value:</text></g><g class="blocklyEditableText" style="cursor: default;" transform="translate(61,32)"><rect rx="4" ry="4" x="0" y="0" height="17" width="72.625" class="blocklyFieldRect blocklyDropdownRect" stroke="#8cc08c" fill="transparent"/><text class="blocklyText blocklyDropdownText" text-anchor="start" x="5" y="14">latitude<tspan style="fill: rgb(91, 165, 91);"> ▾</tspan></text><image style="display: none;"/></g></g><g data-id="5QS-qJy9D=K:%WR6ARfS" style="display: block;" class="blocklyDraggable" transform="translate(144.625,108)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498449" d=" m 8,0  h 142.625  v 5  H 150.625  V 5  H 150.625  V 22  H 150.625  V 32  H 150.625  V 49  H 150.625  V 49  V 53  h -142.625  H 8  V 20  c 0,-10  -8,8  -8,-7.5  s 8,2.5  8,-7.5 z&#xA;"/><path class="blocklyPath" stroke="none" fill="#5ba55b" d=" m 8,0  h 142.625  v 5  H 150.625  V 5  H 150.625  V 22  H 150.625  V 32  H 150.625  V 49  H 150.625  V 49  V 53  h -142.625  H 8  V 20  c 0,-10  -8,8  -8,-7.5  s 8,2.5  8,-7.5 z&#xA;"/><path class="blocklyPathLight" stroke="#8cc08c" d=" m 8,0  m 0.5,0.5  H 150.125  H 150.125  M 8.5,52.5  M 8.5,52.5  V 20  v -1.5  m -7.36,-0.5  q -1.52,-5.5  0,-11  m 7.36,1  V 0.5 &#xA;"/><g transform="translate(18,5)"><text class="blocklyText" x="0" y="14">GPS Modul</text></g><g transform="translate(18,32)"><text class="blocklyText" x="0" y="14">value:</text></g><g class="blocklyEditableText" style="cursor: default;" transform="translate(61,32)"><rect rx="4" ry="4" x="0" y="0" height="17" width="84.625" class="blocklyFieldRect blocklyDropdownRect" stroke="#8cc08c" fill="transparent"/><text class="blocklyText blocklyDropdownText" text-anchor="start" x="5" y="14">longitude<tspan style="fill: rgb(91, 165, 91);"> ▾</tspan></text><image style="display: none;"/></g></g><g data-id="6(jSGI!gF3Af*8$jT0mG" style="display: block;" class="blocklyDraggable" transform="translate(144.625,162)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498449" d=" m 8,0  h 130.625  v 5  H 138.625  V 5  H 138.625  V 22  H 138.625  V 32  H 138.625  V 49  H 138.625  V 49  V 53  h -130.625  H 8  V 20  c 0,-10  -8,8  -8,-7.5  s 8,2.5  8,-7.5 z&#xA;"/><path class="blocklyPath" stroke="none" fill="#5ba55b" d=" m 8,0  h 130.625  v 5  H 138.625  V 5  H 138.625  V 22  H 138.625  V 32  H 138.625  V 49  H 138.625  V 49  V 53  h -130.625  H 8  V 20  c 0,-10  -8,8  -8,-7.5  s 8,2.5  8,-7.5 z&#xA;"/><path class="blocklyPathLight" stroke="#8cc08c" d=" m 8,0  m 0.5,0.5  H 138.125  H 138.125  M 8.5,52.5  M 8.5,52.5  V 20  v -1.5  m -7.36,-0.5  q -1.52,-5.5  0,-11  m 7.36,1  V 0.5 &#xA;"/><g transform="translate(18,5)"><text class="blocklyText" x="0" y="14">GPS Modul</text></g><g transform="translate(18,32)"><text class="blocklyText" x="0" y="14">value:</text></g><g class="blocklyEditableText" style="cursor: default;" transform="translate(61,32)"><rect rx="4" ry="4" x="0" y="0" height="17" width="72.625" class="blocklyFieldRect blocklyDropdownRect" stroke="#8cc08c" fill="transparent"/><text class="blocklyText blocklyDropdownText" text-anchor="start" x="5" y="14">altitude<tspan style="fill: rgb(91, 165, 91);"> ▾</tspan></text><image style="display: none;"/></g></g><g data-id="nB_nP#T0|rEwC2s^Vd#S" style="display: block;" class="blocklyDraggable" transform="translate(144.625,216)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498449" d=" m 8,0  h 125.625  v 5  H 133.625  V 5  H 133.625  V 22  H 133.625  V 32  H 133.625  V 49  H 133.625  V 49  V 53  h -125.625  H 8  V 20  c 0,-10  -8,8  -8,-7.5  s 8,2.5  8,-7.5 z&#xA;"/><path class="blocklyPath" stroke="none" fill="#5ba55b" d=" m 8,0  h 125.625  v 5  H 133.625  V 5  H 133.625  V 22  H 133.625  V 32  H 133.625  V 49  H 133.625  V 49  V 53  h -125.625  H 8  V 20  c 0,-10  -8,8  -8,-7.5  s 8,2.5  8,-7.5 z&#xA;"/><path class="blocklyPathLight" stroke="#8cc08c" d=" m 8,0  m 0.5,0.5  H 133.125  H 133.125  M 8.5,52.5  M 8.5,52.5  V 20  v -1.5  m -7.36,-0.5  q -1.52,-5.5  0,-11  m 7.36,1  V 0.5 &#xA;"/><g transform="translate(18,5)"><text class="blocklyText" x="0" y="14">GPS Modul</text></g><g transform="translate(18,32)"><text class="blocklyText" x="0" y="14">value:</text></g><g class="blocklyEditableText" style="cursor: default;" transform="translate(61,32)"><rect rx="4" ry="4" x="0" y="0" height="17" width="67.625" class="blocklyFieldRect blocklyDropdownRect" stroke="#8cc08c" fill="transparent"/><text class="blocklyText blocklyDropdownText" text-anchor="start" x="5" y="14">pDOP<tspan style="fill: rgb(91, 165, 91);"> ▾</tspan></text><image style="display: none;"/></g></g><g data-id="846H7Qk7}Xv7uO_D;EdJ" style="display: block;" class="blocklyDraggable" transform="translate(144.625,270.00000000000006)"><path class="blocklyPathDark" transform="translate(1,1)" fill="#498449" d=" m 8,0  h 138.625  v 5  H 146.625  V 5  H 146.625  V 22  H 146.625  V 32  H 146.625  V 49  H 146.625  V 49  V 53  h -138.625  H 8  V 20  c 0,-10  -8,8  -8,-7.5  s 8,2.5  8,-7.5 z&#xA;"/><path class="blocklyPath" stroke="none" fill="#5ba55b" d=" m 8,0  h 138.625  v 5  H 146.625  V 5  H 146.625  V 22  H 146.625  V 32  H 146.625  V 49  H 146.625  V 49  V 53  h -138.625  H 8  V 20  c 0,-10  -8,8  -8,-7.5  s 8,2.5  8,-7.5 z&#xA;"/><path class="blocklyPathLight" stroke="#8cc08c" d=" m 8,0  m 0.5,0.5  H 146.125  H 146.125  M 8.5,52.5  M 8.5,52.5  V 20  v -1.5  m -7.36,-0.5  q -1.52,-5.5  0,-11  m 7.36,1  V 0.5 &#xA;"/><g transform="translate(18,5)"><text class="blocklyText" x="0" y="14">GPS Modul</text></g><g transform="translate(18,32)"><text class="blocklyText" x="0" y="14">value:</text></g><g class="blocklyEditableText" style="cursor: default;" transform="translate(61,32)"><rect rx="4" ry="4" x="0" y="0" height="17" width="80.625" class="blocklyFieldRect blocklyDropdownRect" stroke="#8cc08c" fill="transparent"/><text class="blocklyText blocklyDropdownText" text-anchor="start" x="5" y="14">Fix Type<tspan style="fill: rgb(91, 165, 91);"> ▾</tspan></text><image style="display: none;"/></g></g><g transform="translate(10,5)"><text class="blocklyText" x="0" y="14">TTN Mapper</text></g><g transform="translate(10,32)"><text class="blocklyText" x="0" y="14">Fix Type Limit</text></g><g class="blocklyEditableText" style="cursor: default;" transform="translate(104,32)"><rect rx="4" ry="4" x="0" y="0" height="17" width="34.625" class="blocklyFieldRect blocklyDropdownRect" stroke="#8cc08c" fill="transparent"/><text class="blocklyText blocklyDropdownText" text-anchor="start" x="5" y="14">3<tspan style="fill: rgb(91, 165, 91);"> ▾</tspan></text><image style="display: none;"/></g><g transform="translate(10,59)"><text class="blocklyText" x="0" y="14">latitude</text></g><g transform="translate(10,113)"><text class="blocklyText" x="0" y="14">longitude</text></g><g transform="translate(10,167)"><text class="blocklyText" x="0" y="14">altitude</text></g><g transform="translate(10,221)"><text class="blocklyText" x="0" y="14">pDOP</text></g><g transform="translate(10,275)"><text class="blocklyText" x="0" y="14">Fix Type</text></g></g></g></g></svg>
