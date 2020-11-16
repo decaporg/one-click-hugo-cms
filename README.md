@@ -25,6 +25,22 @@ Clone this repository, and run `yarn` or `npm install` from the new folder to in
 
 Then start the development server with `yarn start` or `npm start`.
 
+### Alternative: Docker development environment
+
+First build the image.
+This will install npm dependencies and initialize the app with the current state of your local repository.
+```bash
+cd <checked-out repository>
+docker build -t lahr.codes .
+```
+
+Start the docker container. This automatically mounts your working directory through the option ``-v `pwd`:/usr/src/app``:
+```bash
+docker run -ti --name lahr.codes -v `pwd`:/usr/src/app -p 3000:3000 -d  lahr.codes:latest
+```
+
+Browse to [0.0.0.0:3000](0.0.0.0:3000)
+
 ## Layouts
 
 The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the `site/layouts/partials` folder for all available partials.

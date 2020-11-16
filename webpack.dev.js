@@ -1,6 +1,6 @@
 const merge = require("webpack-merge");
 const path = require("path");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const common = require("./webpack.common");
@@ -15,6 +15,7 @@ module.exports = merge(common, {
 
   devServer: {
     port: process.env.PORT || 3000,
+    host: process.env.HOST || "0.0.0.0",
     contentBase: path.join(process.cwd(), "./dist"),
     watchContentBase: true,
     quiet: false,
