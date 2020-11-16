@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Mitmachen!
 logo: img/lahr_codes_logo.svg
 contact_entries:
   - heading: Location

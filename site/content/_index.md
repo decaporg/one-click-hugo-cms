@@ -24,11 +24,13 @@ blurb:
 intro:
   heading: Projekte
   text: "Folgende Projekte sind gerade am Laufen oder abgeschlossen: "
-products:
-  - image: img/scrot-2020-11-09_12-01-04.png
-    text: LoRaWAN Empfang mappen in der Stadt Lahr
-values:
-  heading: Unsere Werte
+  projekte:
+    - image: img/scrot-2020-11-09_12-01-04.png
+      text: LoRaWAN Empfang mappen in der Stadt Lahr
+ziele:
+  heading: Unsere Ziele
+  image: img/undraw_town.svg
+  buttonLink: /ziele
   text: Unser Ziel ist es mit Konzepten wie Open Source  und Open Data einen
     Mehrwert für alle Bürger der Stadt Lahr zu erzielen. Die Initiative
     orientiert sich an Initiativen der Open Knowlegdge Foundation, im Speziellen

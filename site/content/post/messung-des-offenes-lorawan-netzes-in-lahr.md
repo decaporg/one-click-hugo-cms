@@ -1,8 +1,8 @@
 ---
-title: Messung des offenes LoRaWAN Netzes in Lahr
-date: 2020-11-11T13:07:00.000Z
-description: Anleitung zur Erstellung eines LoRaWAN-Reichweite Mappers mit The
-  Things Network.
+title: "Messung des offenes LoRaWAN Netzes in Lahr"
+type: post
+date: 2020-11-12T13:07:00.000Z
+description: "Anleitung zur Erstellung eines LoRaWAN-Reichweite Mappers mit The Things Network."
 image: img/radiusmap-lora-1.5km.png
 ---
 Autor: [David](https://github.com/synolus-david)

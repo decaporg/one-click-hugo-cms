@@ -1,5 +1,5 @@
 ---
-title: "Werte"
+title: "Ziele"
 image: /img/undraw_town.svg
-values:
+ziele:
 ---
