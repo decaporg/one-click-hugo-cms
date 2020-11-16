@@ -115,7 +115,7 @@ Glücklicherweise gibt es in Blockly die Option einen Code Block für den TTN-Ma
 
 **Statusanzeige mit der LED auf dem Mikrocontroller**
 
-Wir bauen in den Loop noch eine Funktion, welche mit Hilfe der eingebauten LEDs anzeigt ob gerade GPS-Empfang vorliegt oder nicht. Leuchtet die BUILTIN_1 LED (in der Farbe grün), wenn "Fix Type" größer als 3 ist, bedeutet das, dein Mapper hat ein gutes GPS-Signal. Leuchtet die BUILLTIN_2 LED (in der Farbe rot), hat dein Mapper keinen guten GPS-Empfang. Wir nutzen dafür die if/do/else Funktion und die LEDs aus der Schaltfläche aus. Mithilfe einer Wartezeit, verzögert sich der Loop, damit dein Auge auch ein Unterschied erkennt. 
+Wir bauen in den Loop noch eine Funktion, welche mit Hilfe der eingebauten LEDs anzeigt ob gerade GPS-Empfang vorliegt oder nicht. Leuchtet die BUILTIN_1 LED (in der Farbe grün), wenn "Fix Type" größer als 3 ist, bedeutet das, dein Mapper hat ein gutes GPS-Signal. Leuchtet die BUILLTIN_2 LED (in der Farbe rot), hat dein Mapper keinen guten GPS-Empfang. Wir nutzen dafür die if/do/else Funktion welche du in der Rubrik "Logik" findest und die LEDs aus der Schaltfläche aus. Mithilfe einer Wartezeit, timest du die Ausführung des Loops. 
 
 ![Die zwei Status LED auf dem Board zeigen an, ob der TTN Mapper gerade einen GPS Signal empfängt](img/status-led.png)
 
