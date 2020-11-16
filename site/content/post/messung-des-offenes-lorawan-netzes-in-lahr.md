@@ -1,8 +1,9 @@
 ---
 title: Messung des offenes LoRaWAN Netzes in Lahr
 date: 2020-11-11T13:07:00.000Z
-description: Anleitung zur Erstellung eines LoRaWAN Reichweite Mappers mit The
+description: Anleitung zur Erstellung eines LoRaWAN-Reichweite Mappers mit The
   Things Network.
+image: img/radiusmap-lora-1.5km.png
 ---
 Autor: David
 Stand: 11.11.2020
@@ -13,7 +14,7 @@ Seit längerem faszinieren wir uns für das Thema LoRaWAN, bzw. insbesondere das
 
 Mittlweile konnten wir als Initiatoren gemeinsam mit der Stadt Lahr und der Badenova AG ein Konzept aufbauen, bei welchem insgesamt 6 LoRaWAN Gateways in Lahr aufgebaut. 
 
-![Erwartete Abdeckung des öffentlichen LoRaWAN Netzes in Lahr mit 2km je Gateway](img/radius-krankenhaus-2km.png)
+![Erwartete Abdeckung des öffentlichen LoRaWAN Netzes in Lahr mit 2km je Gateway](img/radiusmap-lora-1.5km.png)
 
 ## Wo habe ich tatsächlich LoRaWAN Empfang?
 
@@ -37,13 +38,9 @@ Das LoRa-Bee steckt man auf XBee1 auf, sodass die Antenne des Bees vom Mikrocont
 
 Gehe auf deine [TTN-Console](https://console.thethingsnetwork.org/) und lege eine neue Applikation an (Falls du noch kein Konto hast, musst du dir noch eines erstellen. Du gelangst auf eine Übersicht, mit allen deiner Applikationen. Dort kannst du auf "add application" klicken um eine neue Applikation anzulegen. Bennene deine "Application ID" (z.B. ttn-mapper-real) und beschreibe deine Applikation und klicke dann auf "Add Application".
 
-
-
 ![Erster Schritt bei TTN ist das anlegen einer Applikation](img/application-anlegen.png)
 
 Dann erhälst du eine Übersicht mit deiner “Application ID” und die “Application EUIS”, welche du später brauchst. Nun musst du in deiner neuen Application noch ein Device hinzufügen. Gehe dafür unter der Rubrik “Devices” auf “register device”. Gib deinem Device eine “Device ID” ((z.B. ttn-mapper-real-device). Durch klicken auf die geschlungenen Pfeile (“generate”) bei “DeviceEUI” wird dir automatisch einen DeviceEUI generiert.
-
-
 
 ![Übersicht](img/device-anlegen.png)
 
@@ -83,8 +80,6 @@ function Decoder(b, port) {
 }
 ```
 
-
-
 ![Einfügen des Decoding Profils](img/decoding-anlegen.png)
 
 ### Programmieren des Mikrocontrollers
@@ -98,8 +93,6 @@ Blockly ist der Arduino Programmiersprache nachempfunden und besteht aus einer s
 Hier möchten wir nun, dass sich unser Mikrocontroller mit TTN verbindet. Dazu braucht man verschiedene Keys aus deinem Device, welche du in der Übersicht deiner TTN Konsole findest. In Blockly klickst du auf "LoRa" und dann auf "Activation" und ziehst den Block mit dem Namen "Initialize LoRa (ABP)" auf die Programmierfläche in den loop() Abschnitt. Hier hast du die Möglichkeit 4 Felder auszufüllen.
 
 > Falls in Eurer TTN Konsole die beschriebenen Begriffe nicht auftauchen, müsst ihr die "Activation Method" von OTAA auf ABP umstellen wie weiter oben beschrieben ;-) 
-
-
 
 1. in das Feld "Network Session Key (msb)" kopierst du den Code aus deiner Device Übersicht. Bevor du diesen kopierst: *Ändere das Format des Codes auf msb durch klicken auf das "<>" Symbol* 
 2. in das Feld "App Session Key (msb)" kopierst du den Code aus deiner Device Übersicht. Bitte ändere auch dort das Format auf msb. 
@@ -118,8 +111,6 @@ In der loop() Abschnitt des Codes kommen nun die Funktionen, die (solange das Bo
 Glücklicherweise gibt es in Blockly die Option einen Code Block für den TTN-Mapper, der einen Großteil der Programmierung schon vorgefertigt hast. Du findest in in der Rubrik "LoRa" unter "TTN Mapper". Das wichtigste was wir übertragen wollen, ist unsere aktuelle Position, damit später auf dem TTN Mapper angezeigt wird, ob es an dieser Stelle ein LoRa-Signal gibt. In "latitude" "longitude" "altitude" fügen wir jeweils den Block für den GPS Sensor ein, mit dem jeweiligen value. Diesen Block findest du unter "Sensoren". Dann musst du noch den pDOP [Dilution of Precision](https://de.m.wikipedia.org/wiki/Dilution_of_Precision) , ein Maß für die Streubreite der Messwerte bei Satellitennaviagationssystemen einfügen. Schließlich noch den sogenannten "Fix Type", ein Wert der Auskunft über die aktuelle Stärke des GPS Signals gibt. Am Anfang des Blockls, kannst du Einstellen, ab welcher Stärke des GPS-Signals Daten an LoRa geschickt werden sollen. Im folgenden haben wir den Wert 3 angegeben, also nur bei sehr guten GPS Signalen sollen Daten verschickt werden.
 
 ![Der Block für den TTN-Mapper](img/loop-ttnmapper.svg)
-
-
 
 *Statusanzeige mit der LED auf dem Mikrocontroller*
 Wir bauen in den Loop noch eine Funktion, welche mit Hilfe der eingebauten LEDs anzeigt ob gerade GPS-Empfang vorliegt oder nicht. Leuchtet die BUILTIN_1 LED (in der Farbe grün), wenn "Fix Type" größer als 3 ist, bedeutet das, dein Mapper hat ein gutes GPS-Signal. Leuchtet die BUILLTIN_2 LED (in der Farbe rot), hat dein Mapper keinen guten GPS-Empfang. Wir nutzen dafür die if/do/else Funktion und die LEDs aus der Schaltfläche aus. Mithilfe einer Wartezeit, verzögert sich der Loop, damit dein Auge auch ein Unterschied erkennt. 
