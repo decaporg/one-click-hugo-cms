@@ -99,25 +99,29 @@ Hier möchten wir nun, dass sich unser Mikrocontroller mit TTN verbindet. Dazu b
 3. Die "Device Address" kannst du einfach so kopieren
 4. Ins letzte Feld kannst du eingeben wie oft Daten vom Device übertragen werden sollen. Da der Mapper später mobil genutzt werden soll, macht es Sinn hier ein kleineres Intervall einzutragen.
 
-> Wenn du aber stationäre Devices aufbaust, solltest du immer längere Intervalle eingeben und dich an die [Fair Use Policy](https://www.thethingsnetwork.org/community/rhein-sieg/post/fair-use-policy-vom-nehmen-und-geben-bitte-danke) der TTN Community halten.
+Wenn du aber stationäre Devices aufbaust, solltest du immer längere Intervalle eingeben und dich an die [Fair Use Policy](https://www.thethingsnetwork.org/community/rhein-sieg/post/fair-use-policy-vom-nehmen-und-geben-bitte-danke) der TTN Community halten.
 
 ![Block für die Initialisierung](img/setup-lora.svg)
 
 ### 5. "Schleife"
 
-*TTN Mapper*
+**TTN Mapper**
+
+
 In der loop() Abschnitt des Codes kommen nun die Funktionen, die (solange das Board angeschalten ist) immer wieder wiederholt werden sollen. 
 
 Glücklicherweise gibt es in Blockly die Option einen Code Block für den TTN-Mapper, der einen Großteil der Programmierung schon vorgefertigt hast. Du findest in in der Rubrik "LoRa" unter "TTN Mapper". Das wichtigste was wir übertragen wollen, ist unsere aktuelle Position, damit später auf dem TTN Mapper angezeigt wird, ob es an dieser Stelle ein LoRa-Signal gibt. In "latitude" "longitude" "altitude" fügen wir jeweils den Block für den GPS Sensor ein, mit dem jeweiligen value. Diesen Block findest du unter "Sensoren". Dann musst du noch den pDOP [Dilution of Precision](https://de.m.wikipedia.org/wiki/Dilution_of_Precision) , ein Maß für die Streubreite der Messwerte bei Satellitennaviagationssystemen einfügen. Schließlich noch den sogenannten "Fix Type", ein Wert der Auskunft über die aktuelle Stärke des GPS Signals gibt. Am Anfang des Blockls, kannst du Einstellen, ab welcher Stärke des GPS-Signals Daten an LoRa geschickt werden sollen. Im folgenden haben wir den Wert 3 angegeben, also nur bei sehr guten GPS Signalen sollen Daten verschickt werden.
 
 ![Der Block für den TTN-Mapper](img/loop-ttnmapper.svg)
 
-*Statusanzeige mit der LED auf dem Mikrocontroller*
+**Statusanzeige mit der LED auf dem Mikrocontroller**
+
 Wir bauen in den Loop noch eine Funktion, welche mit Hilfe der eingebauten LEDs anzeigt ob gerade GPS-Empfang vorliegt oder nicht. Leuchtet die BUILTIN_1 LED (in der Farbe grün), wenn "Fix Type" größer als 3 ist, bedeutet das, dein Mapper hat ein gutes GPS-Signal. Leuchtet die BUILLTIN_2 LED (in der Farbe rot), hat dein Mapper keinen guten GPS-Empfang. Wir nutzen dafür die if/do/else Funktion und die LEDs aus der Schaltfläche aus. Mithilfe einer Wartezeit, verzögert sich der Loop, damit dein Auge auch ein Unterschied erkennt. 
 
 ![Die zwei Status LED auf dem Board zeigen an, ob der TTN Mapper gerade einen GPS Signal empfängt](img/status-led.png)
 
-*Statusanzeigt mit dem OLED-Display*
+**Statusanzeigt mit dem OLED-Display**
+
 Falls du einen zur senseBox passenden OLED-Display hast, kannst du auch diesen nutzen um dein GPS-Signal anzuzeigen. Nutze dazu den Block "Print on Display" und den "Show Measurements" Block welchen man nutzt um Sensorwerte anzuzeigen. Im folgenden zeigen wir die "latitude" und die "longitude" an. Erhälst du den Wert 0, hast du kein GPS-Empfang und musst etwas warten.
 
 > Vergesse nicht den Display im status() Abschnitt zu initialisieren!
