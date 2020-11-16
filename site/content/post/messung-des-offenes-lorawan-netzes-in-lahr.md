@@ -5,7 +5,7 @@ description: Anleitung zur Erstellung eines LoRaWAN-Reichweite Mappers mit The
   Things Network.
 image: img/radiusmap-lora-1.5km.png
 ---
-Autor: David
+Autor: [David](https://github.com/synolus-david)
 Stand: 11.11.2020
 
 ## Was ist LoRaWAN, TTN und warum gibt es das in Lahr?
@@ -147,7 +147,7 @@ Wenn dein Mapper funktioniert, sammelst du Werte welche auf der Website https://
 
 Deinen persönlichen TTN Mapper findest Du dann unter dem Namen deines Experiments. Öffne 
 
-https://ttnmapper.org/experiments/?experiment=EXPERIMENT_NAME
+>https://ttnmapper.org/experiments/?experiment=EXPERIMENT_NAME
 
 und ersetze EXPERIMENT_NAME mit dem Namen deines Experiments. Es dauert ein bisschen bis die senseBox GPS Daten empfängt. Zwischendurch kannst Du die Seite neu laden um die neuesten Messungen zu sehen.
 
@@ -155,8 +155,10 @@ und ersetze EXPERIMENT_NAME mit dem Namen deines Experiments. Es dauert ein biss
 
 Du kannst in der TTN Konsole nachschauen ob LoRa Daten bei TTN ankommen. Klicke in deiner Application auf den Data Tab und die neusten Nachrichten sollten nach kurzer Zeit auftauchen. Falls keine Nachrichten ankommen schau nochmal über deine Keys die du aus TTN-Console übertragen hast und insbesondere auf deren Format. Ansonsten könnte es sein, dass in deiner Umgebung kein LoRa Gateway in Reichweite ist.
 
-Es kann eine Weile dauern bis das GPS Modul Daten empfängt. Manchmal dauert es mehrere Stunden bei der ersten Nutzung. Wurden aber einmal Daten empfangen sollte es beim nächsten mal schneller funktionieren. Die Nutzung einer kleinen Knopfzelle verbessert den GPS Empfang.
+>Es kann eine Weile dauern bis das GPS Modul Daten empfängt. Manchmal dauert es mehrere Stunden bei der ersten Nutzung.
 
-Generell Hilfe zur senseBox findest du außerdem https://docs.sensebox.de und unter https://forum.sensebox.de.
+Wurden aber einmal Daten empfangen sollte es beim nächsten mal schneller funktionieren. Die Nutzung der Knopfzelle verbessert den GPS Empfang.
+
+Generell Hilfe zur senseBox findest du außerdem in der [Dokumentation](https://docs.sensebox.de) des Mikrocontrollers oder mit Hilfe anderer Nutzer in diesem [Forum](https://forum.sensebox.de). 
 
 Viel Spaß beim Nachbauen und Mappen!
