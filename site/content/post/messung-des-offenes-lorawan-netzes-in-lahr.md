@@ -20,11 +20,11 @@ Mittlweile konnten wir als Initiatoren gemeinsam mit der Stadt Lahr und der Bade
 
 Da die Reichweiten der Gateways stark von Umgebungsfaktoren abhängig sind (Lage des Gateways, Höhe, Bebauung etc.) hat sich die TTN-Community eine [Karte](https://ttnmapper.org/) aufgebaut, auf welcher die Abdeckung des Netzes kartographiert wird. Es gibt verschiedene Möglichkeiten auf die Karte zu mappen, zum Beispiel mit Hilfe einer App, welche die GPS Signal des Handys benutzt und einem LoRaWAN Device, oder mit speziellen TTN-Mappern, die direkt mit GPS Sensor ausgestattet sind. Da die diesjährige CodeWeek online stattfand, hatten wir beschlossen, die Teilnehmer TTN-Mapper bauen zu lassen und bei sich zu Hause Empfang zu messen. Es gibt einen [Blog Beitrag](http://integra-lahr.de/index.php/2020/10/19/4-social-hackathon-der-integra-lahr-ggmbh/) der IntegrA Lahr gGmbH, welche die Veranstaltung beschreibt. Da wir aber mit der benutzen Hardware nur in den Experimentiermodus der TTN-Map mappen konnten, haben wir gemeinsam mit Felix und Mario vom senseBox-Team aus Münster die benutzte Hardware weiterentwickelt. Im folgenden findet sich die Dokumentation zum Nachbau:
 
-## Bau eines TTN-Mappers
+## Einfacher Bau eines TTN-Mappers
 
 ### Einleitung
 
-Für den Bau des TTN-Mappers nutzen wir das [senseBox TTN-Mapper Set](https://sensebox.kaufen/product/sensebox-ttn-mapper-set) welches für 77 Euro erhältlich ist. Da viele auch noch einen [OLED-Display](https://sensebox.kaufen/product/led-display) verfügbar haben, wird auch die Option gezeigt, wie man diesen einbindet. Das Set mobil nutzen zu können, macht es Sinn außerdem noch eine CR1225 Knopfzelle für das GPS-Modul zu besorgen, eine Powerbank, oder [LiPo-Akku](https://eckstein-shop.de/LiPo-Akku-Lithium-Ion-Polymer-Batterie-37V-2000mAh-JST-PH-Connector)für mobile Stromversorgung und ein Micro-USB Kabel, welches für Dateinübertragung geeignet sein soll (z.B. altes Handykabel :-). 
+Für den Bau des TTN-Mappers nutzen wir das [senseBox TTN-Mapper Set](https://sensebox.kaufen/product/sensebox-ttn-mapper-set) welches für 77 Euro erhältlich ist. Da viele auch noch einen [OLED-Display](https://sensebox.kaufen/product/led-display) verfügbar haben, wird auch die Option gezeigt, wie man diesen einbindet. Das Set mobil nutzen zu können, macht es Sinn außerdem noch eine CR1225 Knopfzelle für das GPS-Modul zu besorgen, eine Powerbank, oder [LiPo-Akku](https://eckstein-shop.de/LiPo-Akku-Lithium-Ion-Polymer-Batterie-37V-2000mAh-JST-PH-Connector) für mobile Stromversorgung und ein Micro-USB Kabel, welches für Dateinübertragung geeignet sein soll (z.B. altes Handykabel :-) ). 
 
 ### Aufbau der Hardware
 
@@ -48,7 +48,7 @@ Danach landest du wieder in einer Übersicht, diesmal für die Device Einstellun
 
 ![Änderung der "Activation Method" auf "ABP"](img/abp-auswählen.png)
 
-Nach ändern der Activation Method landest du wieder im "Device Overview". Man sieht schon, dass nach der Umstellung drei neue Werte angezeigt werden die wir gleich für dien Programm Code brauchen, "Device Adress", "Network Session Key" und "App Session Key". 
+Nach ändern der Activation Method landest du wieder im "Device Overview". Man sieht schon, dass nach der Umstellung drei neue Werte angezeigt werden die wir gleich für dein Programm Code brauchen, "Device Adress", "Network Session Key" und "App Session Key". 
 
 ![Nach Änderung der "Activation Method" auf "ABP"](img/device-overview.png)
 
@@ -56,7 +56,7 @@ Nach ändern der Activation Method landest du wieder im "Device Overview". Man s
 
 Da wir die Daten später an den TTN Mapper senden möchten, musst Du außerdem eine “Integration” hinzufügen. Diese findest du oben in deinem Menü. Klicke darauf und klicke dann gleich auf den Button mit der Aufschrift “Add Integration”. Dort hast du dann die Möglichkeit, verschiedenste Integrations hinzuzufügen, um die Daten von TTN an andere Services weiterzuleiten. Wähle dort den “TTN Mapper” aus. Gib nun eine “Process ID” an, die du frei wählen kannst (z.B. ich wähle den gleichen Namen wie die Application). Gib auch deine E-Mail Adresse an, für den Fall das Rückfrage zu deinen Daten entstehen. 
 
-Dann kommt die Entscheidung, ob du deine Daten als Experiment verwenden möchtest, oder einfach nur Mappen willst. Deinem Experiment kannst du dort also einen Namen geben. Du könntest den Experimente Namen auch auslassen, bist dann aber nicht mehr in der Lage deine eigenen Messungen auf dem TTN Mapper zu identifizieren. Klicke dann auf “Add Integration”.
+Dann kommt die Entscheidung, ob du deine Daten als Experiment verwenden möchtest, oder einfach nur Mappen willst. Deinem Experiment kannst du dort also einen Namen geben. Wenn du den Experiment Namen auslässt dann bist du nicht mehr in der Lage deine eigenen Messungen auf dem TTN Mapper zu identifizieren. Klicke dann auf “Add Integration”.
 
 !["Die ausgefüllte Integration für den TTN-Mapper"](img/integration-anlegen.png)
 
