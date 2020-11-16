@@ -94,7 +94,7 @@ Hier möchten wir nun, dass sich unser Mikrocontroller mit TTN verbindet. Dazu b
 
 > Falls in Eurer TTN Konsole die beschriebenen Begriffe nicht auftauchen, müsst ihr die "Activation Method" von OTAA auf ABP umstellen wie weiter oben beschrieben ;-) 
 
-1. in das Feld "Network Session Key (msb)" kopierst du den Code aus deiner Device Übersicht. Bevor du diesen kopierst: *Ändere das Format des Codes auf msb durch klicken auf das "<>" Symbol* 
+1. in das Feld "Network Session Key (msb)" kopierst du den Code aus deiner Device Übersicht. Bevor du diesen kopierst: **Ändere das Format des Codes auf msb durch klicken auf das "<>" Symbol**
 2. in das Feld "App Session Key (msb)" kopierst du den Code aus deiner Device Übersicht. Bitte ändere auch dort das Format auf msb. 
 3. Die "Device Address" kannst du einfach so kopieren
 4. Ins letzte Feld kannst du eingeben wie oft Daten vom Device übertragen werden sollen. Da der Mapper später mobil genutzt werden soll, macht es Sinn hier ein kleineres Intervall einzutragen.
@@ -107,10 +107,9 @@ Wenn du aber stationäre Devices aufbaust, solltest du immer längere Intervalle
 
 **TTN Mapper**
 
-
 In der loop() Abschnitt des Codes kommen nun die Funktionen, die (solange das Board angeschalten ist) immer wieder wiederholt werden sollen. 
 
-Glücklicherweise gibt es in Blockly die Option einen Code Block für den TTN-Mapper, der einen Großteil der Programmierung schon vorgefertigt hast. Du findest in in der Rubrik "LoRa" unter "TTN Mapper". Das wichtigste was wir übertragen wollen, ist unsere aktuelle Position, damit später auf dem TTN Mapper angezeigt wird, ob es an dieser Stelle ein LoRa-Signal gibt. In "latitude" "longitude" "altitude" fügen wir jeweils den Block für den GPS Sensor ein, mit dem jeweiligen value. Diesen Block findest du unter "Sensoren". Dann musst du noch den pDOP [Dilution of Precision](https://de.m.wikipedia.org/wiki/Dilution_of_Precision) , ein Maß für die Streubreite der Messwerte bei Satellitennaviagationssystemen einfügen. Schließlich noch den sogenannten "Fix Type", ein Wert der Auskunft über die aktuelle Stärke des GPS Signals gibt. Am Anfang des Blockls, kannst du Einstellen, ab welcher Stärke des GPS-Signals Daten an LoRa geschickt werden sollen. Im folgenden haben wir den Wert 3 angegeben, also nur bei sehr guten GPS Signalen sollen Daten verschickt werden.
+Glücklicherweise gibt es in Blockly die Option einen Code Block für den TTN-Mapper, der einen Großteil der Programmierung schon vorgefertigt hast. Du findest in in der Rubrik "LoRa" unter "TTN Mapper". Das wichtigste was wir übertragen wollen, ist unsere aktuelle Position, damit später auf dem TTN Mapper angezeigt wird, ob es an dieser Stelle ein LoRa-Signal gibt. In "latitude" "longitude" und "altitude" ist schon der jeweils der Block für den GPS Sensor eingefügt, mit dem jeweiligen value. Diesen Block findest du sonst unter "Sensoren". Danach ist noch ein pDOP Wert (Abkürzung für [Dilution of Precision](https://de.m.wikipedia.org/wiki/Dilution_of_Precision)), ein Maß für die Streubreite der Messwerte bei Satellitennaviagationssystemen eingefügen. Schließlich noch den sogenannten "Fix Type", ein Wert der Auskunft über die aktuelle Stärke des GPS Signals gibt. Am Anfang des Blockls, kannst du Einstellen, ab welcher Stärke des GPS-Signals Daten an LoRa geschickt werden sollen. Ausgewählt ist der Wert 3, also nur bei sehr guten GPS Signalen sollen Daten verschickt werden.
 
 ![Der Block für den TTN-Mapper](img/loop-ttnmapper.svg)
 
