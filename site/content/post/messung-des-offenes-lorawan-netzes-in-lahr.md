@@ -123,7 +123,7 @@ Wir bauen in den Loop noch eine Funktion, welche mit Hilfe der eingebauten LEDs 
 
 Falls du einen zur senseBox passenden OLED-Display hast, kannst du auch diesen nutzen um dein GPS-Signal anzuzeigen. Nutze dazu den Block "Print on Display" und den "Show Measurements" Block welchen man nutzt um Sensorwerte anzuzeigen. Im folgenden zeigen wir die "latitude" und die "longitude" an. Erhälst du den Wert 0, hast du kein GPS-Empfang und musst etwas warten.
 
-> Vergesse nicht den Display im status() Abschnitt zu initialisieren!
+> Vergiss nicht den Display im status() Abschnitt zu initialisieren!
 
 ![Die zwei Status LED auf dem Board zeigen an, ob der TTN Mapper gerade einen GPS Signal empfängt](img/status-display.png)
 
