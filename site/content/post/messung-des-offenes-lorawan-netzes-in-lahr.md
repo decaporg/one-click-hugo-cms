@@ -1,8 +1,9 @@
 ---
-title: "Messung des offenes LoRaWAN Netzes in Lahr"
+title: Messung des offenes LoRaWAN Netzes in Lahr
 type: post
 date: 2020-11-12T13:07:00.000Z
-description: "Anleitung zur Erstellung eines LoRaWAN-Reichweite Mappers mit The Things Network."
+description: Anleitung zur Erstellung eines LoRaWAN-Reichweite Mappers mit The
+  Things Network.
 image: img/radiusmap-lora-1.5km.png
 ---
 Autor: [David](https://github.com/synolus-david)
@@ -112,12 +113,6 @@ In der loop() Abschnitt des Codes kommen nun die Funktionen, die (solange das Bo
 Glücklicherweise gibt es in Blockly die Option einen Code Block für den TTN-Mapper, der einen Großteil der Programmierung schon vorgefertigt hast. Du findest in in der Rubrik "LoRa" unter "TTN Mapper". Das wichtigste was wir übertragen wollen, ist unsere aktuelle Position, damit später auf dem TTN Mapper angezeigt wird, ob es an dieser Stelle ein LoRa-Signal gibt. In "latitude" "longitude" und "altitude" ist schon der jeweils der Block für den GPS Sensor eingefügt, mit dem jeweiligen value. Diesen Block findest du sonst unter "Sensoren". Danach ist noch ein pDOP Wert (Abkürzung für [Dilution of Precision](https://de.m.wikipedia.org/wiki/Dilution_of_Precision)), ein Maß für die Streubreite der Messwerte bei Satellitennaviagationssystemen eingefügen. Schließlich noch den sogenannten "Fix Type", ein Wert der Auskunft über die aktuelle Stärke des GPS Signals gibt. Am Anfang des Blockls, kannst du Einstellen, ab welcher Stärke des GPS-Signals Daten an LoRa geschickt werden sollen. Ausgewählt ist der Wert 3, also nur bei sehr guten GPS Signalen sollen Daten verschickt werden.
 
 ![Der Block für den TTN-Mapper](img/loop-ttnmapper.svg)
-
-**Statusanzeige mit der LED auf dem Mikrocontroller**
-
-Wir bauen in den Loop noch eine Funktion, welche mit Hilfe der eingebauten LEDs anzeigt ob gerade GPS-Empfang vorliegt oder nicht. Leuchtet die BUILTIN_1 LED (in der Farbe grün), wenn "Fix Type" größer als 3 ist, bedeutet das, dein Mapper hat ein gutes GPS-Signal. Leuchtet die BUILLTIN_2 LED (in der Farbe rot), hat dein Mapper keinen guten GPS-Empfang. Wir nutzen dafür die if/do/else Funktion welche du in der Rubrik "Logik" findest und die LEDs aus der Schaltfläche aus. Mithilfe einer Wartezeit, timest du die Ausführung des Loops. 
-
-![Die zwei Status LED auf dem Board zeigen an, ob der TTN Mapper gerade einen GPS Signal empfängt](img/status-led.png)
 
 **Statusanzeigt mit dem OLED-Display**
 
