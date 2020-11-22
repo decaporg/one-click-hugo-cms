@@ -1,7 +1,7 @@
 ---
 title: Lahr.codes
 subtitle: Offene Projekte, Daten und Software für unsere Stadt
-image: img/lahr_schwarzwald.png
+image: img/lahr_schwarzwald.svg
 blurb:
   heading: Wer sind wir?
   text: >-
