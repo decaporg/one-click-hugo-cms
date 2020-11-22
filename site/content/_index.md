@@ -25,7 +25,7 @@ intro:
   heading: Projekte
   text: "Folgende Projekte sind gerade am Laufen oder abgeschlossen: "
   projekte:
-    - image: img/scrot-2020-11-09_12-01-04.png
+    - image: img/lorawan-mapping-karte.png
       text: LoRaWAN Empfang mappen in der Stadt Lahr
 ziele:
   heading: Unsere Ziele

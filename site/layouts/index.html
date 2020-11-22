@@ -4,7 +4,7 @@
 
 {{ partial "short-md" .Params.blurb}}
 
-{{ partial "2-up" .Params.intro }}
+{{ partial "2-up" (dict "Page" . "Intro" .Params.intro ) }}
 
 {{ partial "text-and-image" .Params.ziele }}
 

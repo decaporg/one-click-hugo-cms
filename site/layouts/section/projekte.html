@@ -2,8 +2,21 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
 
-{{ partial "4-up" .Params.intro }}
+<div class="bg-off-white pv4">
+  <div class="ph3 mw7 center">
+  <h2 class="f2 b lh-title mb2">Was wir machen</h2>
+  <p class="mv4 mw6">
+    Folgende lahr.codes Projekte laufen gerade oder sind abgeschlossen:
+  </p>
+    <div class="flex-ns flex-wrap mhn2-ns mb3">
+{{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
+    {{ .Render "projekt_li" }}
+{{ end }}
+    </div>
+  </div>
+</div>
 
+{{ partial "pagination" . }}
 
 {{ with .Params.main }}
 <div class="mw7 center">
@@ -23,9 +36,8 @@
   {{ end }}
 </div>
 
+
 <!-- Full-width image -->
 <img src="{{ .Params.full_image }}" alt="" class="db w-100">
-
-{{ partial "table" .Params.pricing }}
 
 {{ end }}
