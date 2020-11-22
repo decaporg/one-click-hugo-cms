@@ -2,6 +2,8 @@
 
 .br1 {        border-radius: var(--border-radius); }
 
+.br2 {        border-radius: var(--border-radius-2); }
+
 .br-100 {     border-radius: 100%; }
 
 .br-pill {    border-radius: 9999px; }
@@ -27,6 +29,8 @@
 .br0-ns {     border-radius: 0; }
 
 .br1-ns {     border-radius: var(--border-radius); }
+
+.br2-ns {     border-radius: var(--border-radius-2); }
 
 .br-100-ns {  border-radius: 100%; }
 
@@ -55,6 +59,8 @@
 
 .br1-m {     border-radius: var(--border-radius); }
 
+.br2-m {     border-radius: var(--border-radius-2); }
+
 .br-100-m {  border-radius: 100%; }
 
 .br-pill-m { border-radius: 9999px; }
@@ -81,6 +87,8 @@
 .br0-l {     border-radius: 0; }
 
 .br1-l {     border-radius: var(--border-radius); }
+
+.br2-l {     border-radius: var(--border-radius-2); }
 
 .br-100-l {  border-radius: 100%; }
 
