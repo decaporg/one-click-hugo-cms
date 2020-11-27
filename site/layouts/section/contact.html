@@ -8,11 +8,11 @@
 		{{ .Content }}
 
 		<div class="flex-ns mb3">
-	        	{{ range .Params.contact_entries }}
-				<div>
-					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-					<p>{{ .text }}</p>
-				</div>
+			{{ range .Params.contact_entries }}
+			<div>
+				<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
+				<p>{{ .text }}</p>
+			</div>
 			{{ end }}
 		</div>
 
