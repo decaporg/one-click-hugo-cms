@@ -53,15 +53,12 @@ $(".navigation-menu a").each(function() {
 // Clickable Menu
 $(".has-submenu a").click(function(e) {
   if (window.innerWidth < 992) {
-    e.preventDefault();
-
-    if ($(this).parent().hasClass("open")) {
-      $(this).siblings(".submenu").removeClass("open");
-      $(this).parent().removeClass("open");
-    } else {
-      $(this).siblings(".submenu").addClass("open");
-      $(this).parent().addClass("open");
+    if ($(this).siblings(".submenu").length) {
+      e.preventDefault();
     }
+
+    $(this).siblings(".submenu").toggleClass("open");
+    $(this).parent().toggleClass("open");
   }
 });
 
