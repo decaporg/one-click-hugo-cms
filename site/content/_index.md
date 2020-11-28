@@ -1,5 +1,5 @@
 ---
-headline: "ASDRO – Die Überflieger mit dem Durchblick"
+headline: "ASDRO – Advanced & Specialized Drone Solutions"
 subtitle: "High-Tech Geophysics für eine effiziente Vermessung, Inspektion und fachspezifische Bewertung von Oberflächen und Untergründen."
 image: img/3.jpg
 title: "Home"

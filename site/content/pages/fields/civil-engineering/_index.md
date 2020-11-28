@@ -1,7 +1,7 @@
 ---
 title: Tiefbau
 layout: pages
-image: /img/pages/drone-header.jpg
+image: /img/products-jumbotron.jpg
 heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their

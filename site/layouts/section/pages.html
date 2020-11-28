@@ -2,6 +2,8 @@
 
 {{ partial "page-header" . (dict "Title" "Blog") }}
 
-{{ partial "text-wrapper" .Description }}
+{{ .Description }}
+
+{{ .Content }}
 
 {{ end }}
