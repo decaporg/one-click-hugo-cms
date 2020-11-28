@@ -1,0 +1,8 @@
+pre {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow: scroll;
+  margin-bottom: var(--spacing-medium);
+  background-color: var(--grey-1);
+  padding: var(--spacing-small);
+}

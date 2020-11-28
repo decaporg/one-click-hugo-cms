@@ -1,0 +1,80 @@
+/* Text colors */
+
+.primary {
+  color: var(--primary);
+}
+
+.highlight {
+  color: var(--highlight);
+}
+
+.white {
+  color: var(--white);
+}
+
+.off-white {
+  color: var(--off-white);
+}
+
+.grey-1 {
+  color: var(--grey-1);
+}
+
+.grey-2 {
+  color: var(--grey-2);
+}
+
+.grey-3 {
+  color: var(--grey-3);
+}
+
+.grey-4 {
+  color: var(--grey-4);
+}
+
+.black {
+  color: var(--black);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-highlight {
+  background-color: var(--highlight);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-off-white {
+  background-color: var(--off-white);
+}
+
+.bg-grey-1 {
+  background-color: var(--grey-1);
+}
+
+.bg-grey-2 {
+  background-color: var(--grey-2);
+}
+
+.bg-grey-3 {
+  background-color: var(--grey-4);
+}
+
+.bg-grey-4 {
+  background-color: var(--grey-4);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-fix-primary {
+  padding: 0 var(--spacing-small);
+  & :first-child {
+    box-shadow: var(--spacing-small) 0 0 var(--primary), -var(--spacing-small) 0 0 var(--primary);
+  }
+}
