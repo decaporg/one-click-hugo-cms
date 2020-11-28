@@ -2,7 +2,7 @@
 // variables.scss
 //
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600,700&display=swap');
 
 // Color
 $white:                     #ffffff;
@@ -14,7 +14,7 @@ $warning:                   #f17425;
 $info:                      #17a2b8;
 $danger:                    #e43f52;
 $dark:                      #3c4858;
-$black:                     #161c2d;
+$black:                     #111827; // 161c2d
 $muted:                     #8492a6;
 $light:                     #f8f9fc;
 
@@ -36,13 +36,13 @@ $bg-overlay-white:          rgba($white, 0.5);
 $shadow:                    0 0 3px rgba($dark,.15);
 $shadow-md:                 0 5px 13px rgba($dark, .2);
 $shadow-lg:                 0 10px 25px rgba($dark, 0.15);
-$footer:                    lighten($black, 6%);
+$footer:                    lighten($black, 4%);
 
 // Base font
 $font-size-base:            16px;
 
-$font-family-base:          'Nunito', sans-serif;
-$font-family-secondary:     'Nunito', sans-serif;
+$font-family-base:          'Lato', sans-serif;
+$font-family-secondary:     'Lato', sans-serif;
 
 //Color Picker/Switcher
 $default:                   #2f55d4;
