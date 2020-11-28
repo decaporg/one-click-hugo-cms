@@ -2,6 +2,11 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Asdro Drone Solutions"
+[params]
+  [params.contact]
+    email = "hallo@asdro.de"
+    phoneHuman = "+49 (0) 208 / 741 752 64"
+    phoneMachine = "+4920874175264"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:

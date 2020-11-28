@@ -1,4 +1,9 @@
 {{ define "main" }}
-<script>alert('hi')</script>
+
+{{ partial "page-header" . (dict "Title" "Blog") }}
+
+{{ .Description }}
+
+{{ .Content }}
 
 {{ end }}

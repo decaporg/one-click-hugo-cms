@@ -1,24 +1,136 @@
 {{ define "main" }}
+	{{ partial "page-header" . (dict "Title" "Blog") }}
 
-<div class="ph3 bg-off-white">
-	<div class="center mw6 pv3">
-
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
-
-		{{ .Content }}
-
-		<div class="flex-ns mb3">
-			{{ range .Params.contact_entries }}
-			<div>
-				<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-				<p>{{ .text }}</p>
+	<section class="section pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card contact-detail text-center border-0">
+						<div class="card-body p-0">
+							<div class="icon">
+								<img src="/img/icons/bitcoin.svg" class="avatar avatar-small" alt="">
+							</div>
+							<div class="content mt-3">
+								<h4 class="title font-weight-bold">{{ .Params.entries.phone.Heading }}</h4>
+								<p class="text-muted">{{ .Params.entries.phone.Text }}</p>
+								<a href="tel:{{ .Site.Params.contact.phoneMachine }}" class="text-primary">{{ .Site.Params.contact.phoneHuman }}</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+					<div class="card contact-detail text-center border-0">
+						<div class="card-body p-0">
+							<div class="icon">
+								<img src="/img/icons/email.svg" class="avatar avatar-small" alt="">
+							</div>
+							<div class="content mt-3">
+								<h4 class="title font-weight-bold">{{ .Params.entries.email.Heading }}</h4>
+								<p class="text-muted">{{ .Params.entries.email.Text }}</p>
+								<a href="mailto:{{ .Site.Params.contact.email }}" class="text-primary">{{ .Site.Params.contact.email }}</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{ with .Params.entries.location }}
+					<div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+						<div class="card contact-detail text-center border-0">
+							<div class="card-body p-0">
+								<div class="icon">
+									<img src="/img/icons/location.svg" class="avatar avatar-small" alt="">
+								</div>
+								<div class="content mt-3">
+									<h4 class="title font-weight-bold">{{ .Heading }}</h4>
+									<p class="text-muted">{{ .Text }}</p>
+									<a href="{{ .MapEmbedLink }}"
+									class="video-play-icon text-primary">{{ .Cta }}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				{{ end }}
 			</div>
-			{{ end }}
 		</div>
 
-		{{ partial "contact-form" . }}
+		<div class="container mt-100 mt-60">
+			<div class="row align-items-center">
+				<div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1">
+					<div class="card shadow rounded border-0">
+						<div class="card-body py-5">
+							<h4 class="card-title">Wir freuen uns auf Ihre Nachricht!</h4>
+							<div class="custom-form mt-4">
+								<div id="message"></div>
+								<form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group position-relative">
+												<label>Name <span class="text-danger">*</span></label>
+												<i data-feather="user" class="fea icon-sm icons"></i>
+												<input name="name" id="name" type="text" class="form-control pl-5" placeholder="Name">
+											</div>
+										</div>
 
-	</div>
-</div>
+										<div class="col-md-6">
+											<div class="form-group position-relative">
+												<label>Email <span class="text-danger">*</span></label>
+												<i data-feather="mail" class="fea icon-sm icons"></i>
+												<input name="email" id="email" type="email" class="form-control pl-5" placeholder="Email">
+											</div>
+										</div>
 
+										<div class="col-md-12">
+											<div class="form-group position-relative">
+												<label>Betreff</label>
+												<i data-feather="book" class="fea icon-sm icons"></i>
+												<input name="subject" id="subject" type="text" class="form-control pl-5" placeholder="Betreff">
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<div class="form-group position-relative">
+												<label>Nachricht</label>
+												<i data-feather="message-circle" class="fea icon-sm icons"></i>
+												<textarea name="comments" id="comments" rows="4" class="form-control pl-5"
+													placeholder="Ihre Nachricht"></textarea>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-12 text-center">
+											<input type="submit" id="submit" name="send" class="submitBtn btn btn-primary btn-block"
+												value="Absenden">
+											<div id="simple-msg"></div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-7 col-md-6 order-1 order-md-2">
+					<div class="card border-0">
+						<div class="card-body p-0">
+							<img src="/img/illustrations/contact.svg" class="img-fluid" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid mt-100 mt-60">
+			<div class="row">
+				<div class="col-12 p-0">
+					<div class="card map border-0">
+						<div class="card-body p-0">
+							<iframe
+								src="{{ .Params.entries.location.MapEmbedLink }}"
+								style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 {{ end }}
