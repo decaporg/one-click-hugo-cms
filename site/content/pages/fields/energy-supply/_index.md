@@ -1,7 +1,7 @@
 ---
 title: Energieversorgung
 type: fields
-image: /img/products-jumbotron.jpg
+image: /img/pages/drone-header.jpg
 heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their

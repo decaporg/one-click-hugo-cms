@@ -1,6 +1,7 @@
 ---
 title: Über Asdro
-image: /img/about-jumbotron.jpg
+image: /img/pages/aboutus-header.jpg
+navTransparent: true
 values:
   - heading: "Shade-grown coffee"
     text: >
@@ -43,3 +44,18 @@ values:
       coffee farming on our blog.
     imageUrl: "/img/about-reinvest-profits.jpg"
 ---
+as doasdo ansd a
+d a
+
+ dasd a
+ d as
+
+
+  sad asd a
+
+
+  as dasdd Asdro
+
+
+
+   asd asd
