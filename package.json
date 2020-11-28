@@ -48,6 +48,7 @@
     "hugo-bin": "^0.64.0",
     "imports-loader": "^0.8.0",
     "jquery": "^3.5.1",
+    "magnific-popup": "^1.1.0",
     "mini-css-extract-plugin": "^0.12.0",
     "netlify-cms-app": "^2.9.6",
     "node-sass": "^4.10.0",

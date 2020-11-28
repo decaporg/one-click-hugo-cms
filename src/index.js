@@ -4,8 +4,10 @@ import "./scss/style.scss";
 import $ from "jquery";
 import "bootstrap";
 import feather from "feather-icons";
+import "magnific-popup";
+import "./css/vendor/magnific-popup.css";
 
-console.info('Made with ❤ by Greive.tech');
+console.info("Made with ❤ by Greive.tech");
 
 /* Template Name: Landrick - Saas & Software Landing Page Template
    Author: Shreethemes
@@ -16,41 +18,32 @@ console.info('Made with ❤ by Greive.tech');
    File Description: Main JS file of the template
 */
 
-/****************************/
-/*         INDEX            */
-/*===========================
- *     01.  Loader          *
- *     02.  Menu            *
- *     03.  Sticky Menu     *
- *     03.  Back to top     *
- ===========================*/
-
 // Loader
-$(window).on('load', function () {
-  $('#status').fadeOut();
-  $('#preloader').delay(350).fadeOut('slow');
-  $('body').delay(350).css({
-    'overflow': 'visible'
+$(window).on("load", function() {
+  $("#status").fadeOut();
+  $("#preloader").delay(350).fadeOut("slow");
+  $("body").delay(350).css({
+    "overflow": "visible"
   });
 });
 
 // Menu
-$('.navbar-toggle').on('click', function (event) {
-  $(this).toggleClass('open');
-  $('#navigation').slideToggle(400);
+$(".navbar-toggle").on("click", function(event) {
+  $(this).toggleClass("open");
+  $("#navigation").slideToggle(400);
 });
 
-$('.navigation-menu>li').slice(-1).addClass('last-elements');
+$(".navigation-menu>li").slice(-1).addClass("last-elements");
 
-$('.menu-arrow,.submenu-arrow').on('click', function (e) {
+$(".menu-arrow,.submenu-arrow").on("click", function(e) {
   if ($(window).width() < 992) {
     e.preventDefault();
-    $(this).parent('li').toggleClass('open').find('.submenu:first').toggleClass('open');
+    $(this).parent("li").toggleClass("open").find(".submenu:first").toggleClass("open");
   }
 });
 
-$(".navigation-menu a").each(function () {
-  if (this.href == window.location.href) {
+$(".navigation-menu a").each(function() {
+  if (this.href === window.location.href) {
     $(this).parent().addClass("active");
     $(this).parent().parent().parent().addClass("active");
     $(this).parent().parent().parent().parent().parent().addClass("active");
@@ -58,30 +51,30 @@ $(".navigation-menu a").each(function () {
 });
 
 // Clickable Menu
-$(".has-submenu a").click(function (e) {
+$(".has-submenu a").click(function(e) {
   if (window.innerWidth < 992) {
     e.preventDefault();
 
-    if ($(this).parent().hasClass('open')) {
-      $(this).siblings('.submenu').removeClass('open');
-      $(this).parent().removeClass('open');
+    if ($(this).parent().hasClass("open")) {
+      $(this).siblings(".submenu").removeClass("open");
+      $(this).parent().removeClass("open");
     } else {
-      $(this).siblings('.submenu').addClass('open');
-      $(this).parent().addClass('open');
+      $(this).siblings(".submenu").addClass("open");
+      $(this).parent().addClass("open");
     }
   }
 });
 
-$('.mouse-down').on('click', function (event) {
+$(".mouse-down").on("click", function(event) {
   var $anchor = $(this);
-  $('html, body').stop().animate({
-    scrollTop: $($anchor.attr('href')).offset().top - 72
-  }, 1500, 'easeInOutExpo');
+  $("html, body").stop().animate({
+    scrollTop: $($anchor.attr("href")).offset().top - 72
+  }, 1500, "easeInOutExpo");
   event.preventDefault();
 });
 
-//Sticky
-$(window).scroll(function () {
+// Sticky
+$(window).scroll(function() {
   var scroll = $(window).scrollTop();
 
   if (scroll >= 50) {
@@ -92,26 +85,38 @@ $(window).scroll(function () {
 });
 
 // Back to top
-$(window).scroll(function () {
+$(window).scroll(function() {
   if ($(this).scrollTop() > 100) {
-    $('.back-to-top').fadeIn();
+    $(".back-to-top").fadeIn();
   } else {
-    $('.back-to-top').fadeOut();
+    $(".back-to-top").fadeOut();
   }
 });
-$('.back-to-top').click(function () {
-  $("html, body").animate({ scrollTop: 0 }, 3000);
+$(".back-to-top").click(function() {
+  $("html, body").animate({scrollTop: 0}, 3000);
   return false;
 });
 
-//Tooltip
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+// Tooltip
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
 });
-//Popover
-$(function () {
-  $('[data-toggle="popover"]').popover()
+// Popover
+$(function() {
+  $('[data-toggle="popover"]').popover();
 });
 
-// feather icons
+// Feather Icons
 feather.replace();
+
+// Magnific Popup
+$(document).ready(function() {
+  $(".video-play-icon").magnificPopup({
+    disableOn: 375,
+    type: "iframe",
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
+  });
+});
