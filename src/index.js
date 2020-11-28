@@ -111,12 +111,14 @@ feather.replace();
 
 // Magnific Popup
 $(document).ready(function() {
-  $(".video-play-icon").magnificPopup({
-    disableOn: 375,
-    type: "iframe",
-    mainClass: "mfp-fade",
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: false,
-  });
+  if ($(".video-play-icon").length) {
+    $(".video-play-icon").magnificPopup({
+      disableOn: 375,
+      type: "iframe",
+      mainClass: "mfp-fade",
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false,
+    });
+  }
 });
