@@ -4,9 +4,17 @@
 
 {{ partial "clients" .Params }}
 
-{{ partial "work-process" }}
+<section class="section">
+  {{ partial "work-process" }}
+</section>
 
-{{ partial "how-it-works" }}
+<section class="section bg-light">
+  {{ partial "faq-container" . }}
+</section>
+
+{{/*  <section class="section bg-light border-bottom">
+  {{ partial "how-it-works" }}
+</section>  */}}
 
 {{/* {{ partial "short-text" .Params.blurb }}
 

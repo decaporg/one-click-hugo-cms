@@ -1,7 +1,9 @@
 {{ define "main" }}
 
-{{ partial "page-header" . (dict "Title" "Blog") }}
+  {{ partial "page-header" . (dict "Title" "Blog") }}
 
-{{ partial "text-wrapper" .Description }}
+  <section class="section">
+    {{ partial "text-wrapper" .Description }}
+  </section>
 
 {{ end }}

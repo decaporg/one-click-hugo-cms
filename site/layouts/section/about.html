@@ -1,6 +1,9 @@
 {{ define "main" }}
 
   {{ partial "page-header" . }}
-  {{ partial "text-wrapper" .Content }}
+
+  <section class="section">
+    {{ partial "text-wrapper" .Content }}
+  </section>
 
 {{ end }}

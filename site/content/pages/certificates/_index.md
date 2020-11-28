@@ -1,6 +1,6 @@
 ---
 title: Zertifikate
-image: /img/about-jumbotron.jpg
+image: /img/pages/perspective-header.jpg
 values:
   - heading: "Shade-grown coffee"
     text: >
