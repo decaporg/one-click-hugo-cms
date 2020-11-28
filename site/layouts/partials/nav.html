@@ -1,18 +1,31 @@
-<header id="topnav" class="defaultscroll sticky bg-white">
-	<div class="container">
+{{ $transparent := .Params.NavTransparent }}
 
+<header id="topnav" class="defaultscroll sticky{{ if not $transparent }} bg-white{{ end }}">
+	<div class="container">
 		<div>
 			<a class="logo" href="index.html">
-				<img src="/img/logo-dark.png" height="24" alt="">
+				{{ $logos := slice "dark" }}
+				{{ if $transparent }}
+					{{ $logos = slice "dark" "light"}}
+				{{ end }}
+				{{ range $logos }}
+					<img {{ if $transparent }}class="l-{{ . }}" {{ end }}src="/img/logo-{{ . }}.png" height="24" alt="">
+				{{ end }}
 			</a>
 		</div>
 		<div class="buy-button">
-			<a href="/contact" class="btn btn-primary">Kontakt aufnehmen</a>
+
+			{{ $ctaButtons := slice "primary" }}
+			{{ if $transparent }}
+				{{ $ctaButtons = slice "primary" "light" }}
+			{{ end }}
+			{{ range $ctaButtons }}
+				<a href="/contact" class="btn btn-{{ . }}{{ if $transparent }} login-btn-{{ . }}{{ end }}">Kontakt</a>
+			{{ end }}
 		</div>
 
 		<div class="menu-extras">
 			<div class="menu-item">
-
 				<a class="navbar-toggle">
 					<div class="lines">
 						<span></span>
@@ -20,12 +33,11 @@
 						<span></span>
 					</div>
 				</a>
-
 			</div>
 		</div>
 
 		<div id="navigation">
-			<ul class="navigation-menu">
+			<ul class="navigation-menu{{ if $transparent }} nav-light{{ end }}">
 				<li><a href="index.html">Home</a></li>
 				<li class="has-submenu">
 					<a href="/pages/fields">Branchen</a><span class="menu-arrow"></span>
@@ -79,10 +91,10 @@
 					</ul>
 				</li>
 				<li class="has-submenu">
-					<a href="/pages/about">Unternehmen</a><span class="menu-arrow"></span>
+					<a href="/about/about-us">Unternehmen</a><span class="menu-arrow"></span>
 					<ul class="submenu">
-						<li><a href="/pages/about/about-us">Über Asdro</a></li>
-						<li><a href="/pages/about/certificates">Zertifikate</a></li>
+						<li><a href="/about/about-us">Über Asdro</a></li>
+						<li><a href="/pages/certificates">Zertifikate</a></li>
 					</ul>
 				</li>
 			</ul>
