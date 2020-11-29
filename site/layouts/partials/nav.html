@@ -3,7 +3,7 @@
 <header id="topnav" class="defaultscroll sticky{{ if not $transparent }} bg-white{{ end }}">
 	<div class="container">
 		<div>
-			<a class="logo" href="index.html">
+			<a class="logo" href="/">
 				{{ $logos := slice "dark" }}
 				{{ if $transparent }}
 					{{ $logos = slice "dark" "light"}}
@@ -38,63 +38,33 @@
 
 		<div id="navigation">
 			<ul class="navigation-menu{{ if $transparent }} nav-light{{ end }}">
-				<li><a href="index.html">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li class="has-submenu">
-					<a href="/pages/fields">Branchen</a><span class="menu-arrow"></span>
+					<a href="/pages/fields/">Branchen</a><span class="menu-arrow"></span>
 					<ul class="submenu">
 						<li>
 							<ul>
-								<li><a href="/pages/fields/civil-engineering">Tiefbau</a></li>
-								<li><a href="/pages/fields/infrastructure">Infrastruktur</a></li>
-								<li><a href="/pages/fields/energy-supply">Energieversorgung</a></li>
+								<li><a href="/pages/fields/civil-engineering/">Tiefbau</a></li>
+								<li><a href="/pages/fields/infrastructure/">Infrastruktur</a></li>
+								<li><a href="/pages/fields/energy-supply/">Energieversorgung</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
 
 				<li class="has-submenu">
-					<a href="/pages/services">Leistungen</a><span class="menu-arrow"></span>
+					<a href="/pages/services/">Leistungen</a><span class="menu-arrow"></span>
 					<ul class="submenu">
-						<li class="has-submenu"><a href="/pages/services/geo-physics">Geophysik</a><span class="submenu-arrow"></span>
-							<ul class="submenu">
-								<li><a href="page-aboutus.html"> About Us</a></li>
-								<li><a href="page-aboutus-two.html"> About Us Two <span
-											class="badge badge-success rounded">New</span></a></li>
-								<li><a href="page-services.html">Services</a></li>
-								<li><a href="page-history.html">History <span class="badge badge-success rounded">New</span></a></li>
-								<li><a href="page-team.html"> Team</a></li>
-								<li><a href="page-pricing.html">Pricing</a></li>
-							</ul>
-						</li>
-						<li class="has-submenu"><a href="/pages/services/surveying">Vermessung</a><span class="submenu-arrow"></span>
-							<ul class="submenu">
-								<li><a href="account-profile.html">Profile</a></li>
-								<li><a href="account-members.html">Members <span class="badge badge-success rounded">New</span></a></li>
-								<li><a href="account-works.html">Works <span class="badge badge-success rounded">New</span></a></li>
-								<li><a href="account-messages.html">Messages <span class="badge badge-success rounded">New</span></a>
-								</li>
-								<li><a href="account-payments.html">Payments <span class="badge badge-success rounded">New</span></a>
-								</li>
-								<li><a href="account-setting.html">Setting</a></li>
-								<li><a href="page-invoice.html">Invoice</a></li>
-							</ul>
-						</li>
-						<li class="has-submenu"><a href="/pages/services/software">Software</a><span class="submenu-arrow"></span>
-							<ul class="submenu">
-								<li><a href="shop-products.html">All Products</a></li>
-								<li><a href="shop-product-detail.html">Product Details</a></li>
-								<li><a href="shop-cart.html">Shop Cart</a></li>
-								<li><a href="shop-checkouts.html">Checkouts</a></li>
-								<li><a href="shop-myaccount.html">My Account</a></li>
-							</ul>
-						</li>
+						<li><a href="/pages/services/geo-physics/">Geophysik</a></li>
+						<li><a href="/pages/services/surveying/">Vermessung</a></li>
+						<li><a href="/pages/services/software/">Software</a></li>
 					</ul>
 				</li>
 				<li class="has-submenu">
-					<a href="/about/about-us">Unternehmen</a><span class="menu-arrow"></span>
+					<a href="/about/about-us/">Unternehmen</a><span class="menu-arrow"></span>
 					<ul class="submenu">
-						<li><a href="/about/about-us">Über Asdro</a></li>
-						<li><a href="/pages/certificates">Zertifikate</a></li>
+						<li><a href="/about/about-us/">Über Asdro</a></li>
+						<li><a href="/pages/certificates/">Zertifikate</a></li>
 					</ul>
 				</li>
 			</ul>
