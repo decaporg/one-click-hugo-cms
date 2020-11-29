@@ -1,13 +1,13 @@
 // JS Goes here - ES6 supported
 
-import "./scss/style.scss";
-import $ from "jquery";
 import "bootstrap";
 import feather from "feather-icons";
+import $ from "jquery";
 import "magnific-popup";
 import "./css/vendor/magnific-popup.css";
+import "./scss/style.scss";
 
-console.info("Made with ❤ by Greive.tech");
+console.info("Made with ❤ by greive.tech");
 
 /* Template Name: Landrick - Saas & Software Landing Page Template
    Author: Shreethemes
@@ -42,11 +42,16 @@ $(".menu-arrow,.submenu-arrow").on("click", function(e) {
   }
 });
 
-$(".navigation-menu a").each(function() {
-  if (this.href === window.location.href) {
-    $(this).parent().addClass("active");
-    $(this).parent().parent().parent().addClass("active");
-    $(this).parent().parent().parent().parent().parent().addClass("active");
+document.querySelectorAll(".navigation-menu a").forEach((item) => {
+  if (item.href === window.location.href) {
+    const menuLinks = [
+      item.closest("li"),
+      item.closest(".has-submenu"),
+      item.closest(".navigation-menu > .has-submenu")
+    ];
+    menuLinks.forEach((nav) => {
+      nav ? nav.classList.add("active") : null;
+    });
   }
 });
 
