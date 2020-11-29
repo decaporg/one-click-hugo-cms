@@ -45,11 +45,16 @@ $font-family-base:          'Lato', sans-serif;
 $font-family-secondary:     'Lato', sans-serif;
 
 //Color Picker/Switcher
+$default:                   #2f55d4;
 $green:                     #6dc77a;
 $red:                       #ff5b69;
+$purple:                    #7952B3;
 $skyblue:                   #32c2ec;
 $skobleoff:                 #0f7173;
 $cyan:                      #00c9a7;
+$slateblue:                 #766df4;
+$yellow:                    #f7961c;
+
 
 $colors: (
     "white": $white,
@@ -65,3 +70,19 @@ $colors: (
     "blue": $primary,
     "footer": $footer,
 );
+
+$heading-font-sizes: (
+    "h1": 42px,
+    "h2": 36px,
+    "h3": 30px,
+    "h4": 24px,
+    "h5": 18px,
+    "h6": 16px,
+);
+
+$display-font-sizes: (
+    "display-1": 80px,
+    "display-2": 72px,
+    "display-3": 64px,
+    "display-4": 56px,
+)

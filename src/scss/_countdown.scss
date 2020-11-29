@@ -5,6 +5,10 @@
 .coming-soon, .maintenance, .error-page {
     font-size: 40px;
     letter-spacing: 1px;
+    
+@media (max-width: 767px) {
+        font-size: 32px;
+    }
 }
 #countdown, #eventdown {
     .count-down {
@@ -38,11 +42,21 @@
         border: 0;
         height: 20px;
         width: 80px;
+        @media (max-width: 767px){
+            width: 60px;
+        }
         .count-number {
             line-height: 80px;
+            @media (max-width: 767px){
+                font-size: 30px;
+            }
         }
+
         .count-head {
             transform: translateY(-15px);
+            @media (max-width: 767px){
+                font-size: 10px;
+            }
         }
     }
 }
@@ -56,22 +70,6 @@
             font-size: 40px;
             &.indicator {
                 font-size: 18px;
-            }
-        }
-    }
-}
-@media (min-width: 200px) and (max-width: 767px){
-    .coming-soon, .maintenance, .error-page {
-        font-size: 32px;
-    }
-    #eventdown {
-        .count-down {
-            width: 60px;
-            .count-number {
-                font-size: 30px;
-            }
-            .count-head {
-                font-size: 10px;
             }
         }
     }

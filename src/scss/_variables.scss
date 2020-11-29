@@ -2,7 +2,7 @@
 // variables.scss
 //
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap');
 
 // Color
 $white:                     #ffffff;
@@ -53,6 +53,7 @@ $skyblue:                   #32c2ec;
 $skobleoff:                 #0f7173;
 $cyan:                      #00c9a7;
 $slateblue:                 #766df4;
+$yellow:                    #f7961c;
 
 $colors: (
     "primary": $primary,
@@ -67,3 +68,19 @@ $colors: (
     "blue": $primary,
     "footer": $footer
 );
+
+$heading-font-sizes: (
+    "h1": 42px,
+    "h2": 36px,
+    "h3": 30px,
+    "h4": 24px,
+    "h5": 20px,
+    "h6": 16px,
+);
+
+$display-font-sizes: (
+    "display-1": 80px,
+    "display-2": 72px,
+    "display-3": 64px,
+    "display-4": 56px,
+)

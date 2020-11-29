@@ -24,6 +24,21 @@
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
 }
+
+//spinner-border
+@keyframes spinner-border {
+    to {
+        transform: rotate(-180deg);
+    }
+}
+
+//Dropdown
+.dropdown-menu {
+    &.show {
+        transform: translate3d(0px, 55px, 0px) !important;
+    }
+}
+
 //margin padding
 .ml-auto {
     margin-right: auto;
@@ -134,7 +149,7 @@
         margin-left: 48px !important;
         margin-right: auto !important;
     }
-    
+
     .ml-lg-3 {
         margin-right: 16px !important;
         margin-left: auto !important;
@@ -165,7 +180,7 @@
     .offset-lg-4 {
         margin-right: 33.333333%;
     }
-        
+
     .offset-lg-6 {
         margin-right: 50%;
     }

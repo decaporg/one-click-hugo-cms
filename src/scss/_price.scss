@@ -5,46 +5,99 @@
     position: relative;
     z-index: 1;
     border-bottom: 3px solid $gray-500 !important;
-    .title {
-        font-weight: 700;
-        font-size: 16px;
-    }
+    transition: all 0.5s ease;
     .price {
         font-weight: 400;
     }
     &.business-rate {
-        transition: all 0.3s ease-in-out;
         &:hover {
+            transform: scale(1.03);
+            z-index: 2;
+            border-color: $primary !important;
+            box-shadow: $shadow-md !important;
+            background-color: $white !important;
             .title {
                 color: $primary;
             }
-            transform: scale(1.03);
-            z-index: 2;
-            border-color: $primary;
-            box-shadow: $shadow-md !important;
-            background-color: $white !important;
         }
     }
+
     &.starter-plan {
         transform: scale(1.05);
         z-index: 2;
-        border-color: $primary;
-    }
-    &.best-plan {
-        transition: all 0.5s ease;
-        .lable {
-            width: 200px;
-            position: absolute;
-            top: 15px;
-            right: -65px;
-            transform: rotate(45deg);
-            z-index: 1;
-            h6 {
-                font-size: 12px;
-            }
+        border-color: $primary !important;
+
+        @media (max-width: 767px) {
+            transform: scale(1);
         }
+    }
+
+    &.best-plan {
         &:hover {
             transform: translateY(-10px);
+        }
+    }
+}
+
+.ribbon {
+    @each $name,
+    $value in $colors {
+        &.ribbon-#{$name} {
+            span {
+                background-color: #{$value} !important;
+                &:before {
+                    border-left-color: darken($value, 10%);
+                    border-top-color: darken($value, 10%);
+                }
+
+                &:after {
+                    border-right-color: darken($value, 10%);
+                    border-top-color: darken($value, 10%);
+                }
+            }
+        }
+    }
+}
+
+.ribbon {
+    position: absolute;
+    top: -5px;
+    width: 75px;
+    height: 75px;
+    z-index: 2;
+    &.ribbon-right {
+        right: -5px;
+        span {
+            right: -21px;
+            transform: rotate(45deg);
+        }
+    }
+    &.ribbon-left {
+        left: -5px;
+        span {
+            left: -21px;
+            transform: rotate(-45deg);
+        }
+    }
+    span {
+        position: absolute;
+        top: 19px;
+        width: 100px;
+        color: $white;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            z-index: -1;
+            border: 3px solid transparent;
+        }
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
         }
     }
 }
@@ -55,13 +108,5 @@
         font-weight: 700;
         font-size: 27px;
         letter-spacing: 1px;
-    }
-}
-
-@media (max-width: 767px) {
-    .pricing-rates {
-        &.starter-plan {
-            transform: scale(1);
-        }
     }
 }

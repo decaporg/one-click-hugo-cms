@@ -91,11 +91,24 @@
     .buy-button {
         float: right;
         line-height: 68px;
+        > li {
+            line-height: initial;
+        }
         .login-btn-primary {
             display: none;
         }
         .login-btn-light {
             display: inline-block;
+        }
+    }
+    .buy-button,
+    .buy-menu-btn {
+        .dropdown {
+            .dropdown-toggle {
+                &:after {
+                    display: none;
+                }
+            }
         }
     }
     .navbar-toggle {
@@ -172,7 +185,7 @@
                 position: absolute;
                 transition: all 0.5s;
                 right: -1px;
-                top: 15px;
+                top: 30px;
             }
             &:hover {
                 .menu-arrow {
@@ -303,9 +316,6 @@
                         }
                     }
                 }
-                .menu-arrow {
-                    top: 30px !important;
-                }
                 &:hover {
                     .menu-arrow {
                         top: 33px !important;
@@ -313,7 +323,7 @@
                 }
                 &.active {
                     .menu-arrow {
-                        top: 30px!important;
+                        top: 30px;
                     }
                 }
             }
@@ -706,6 +716,13 @@
             display: block !important;
             margin: 0 10px;
             padding: 10px 20px;
+            .dropdown {
+                .dropdown-menu {
+                    &.show {
+                        transform: translate3d(0px, -54px, 0px) !important;
+                    }
+                }
+            }
         }
         .navbar-toggle {
             .lines {

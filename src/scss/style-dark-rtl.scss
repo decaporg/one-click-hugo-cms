@@ -2,10 +2,11 @@
    Author: Shreethemes
    E-mail: shreethemes@gmail.com
    Created: August 2019
-   Version: 2.5.1
-   Updated: August 2020
+   Version: 2.6
+   Updated: November 2020
    File Description: Main Css file of the template
 */
+
 /*********************************/
 /*         INDEX                 */
 /*================================
@@ -28,14 +29,31 @@
  *     17.  Contact              *
  *     18.  Footer               *
  *********************************
+
  *********************************
  *         RTL SCSS              *
  *********************************
+ *     01.  Bootstrap Custom RTL *
+ *     02.  Components RTL       *
+ *     03.  Helper RTL           *
+ *     04.  Menu RTL             *
+ ================================*
+
+ *********************************
+ *         Dark SCSS             *
+ *********************************
+ *     01.  Variables            *
+ *     02.  Bootstrap Custom     *
+ *     03.  Components           *
+ *     04.  General              *
+ *     05.  Helper               *
+ *     06.  Menu                 *
+ ================================*
+
+ *********************************
+ *         Dark RTL SCSS         *
+ *********************************
  *     01.  General RTL          *
- *     02.  Helper RTL           *
- *     03.  Bootstrap Custom RTL *
- *     04.  Components RTL       *
- *     05.  Menu RTL             *
  ================================*/
 
 @import "variables";
@@ -57,7 +75,13 @@
 @import "contact";
 @import "footer";
 
-//Dark 
+// RTL Version
+@import "rtl/bootstrap-custom-rtl";
+@import "rtl/components-rtl";
+@import "rtl/helper-rtl";
+@import "rtl/menu-rtl";
+
+//Dark
 @import "dark/variables";
 @import "dark/bootstrap-custom";
 @import "dark/components";
@@ -65,10 +89,5 @@
 @import "dark/helper";
 @import "dark/menu";
 
-
-// RTL Version
+//Dark RTL Version
 @import "dark/rtl/general-rtl";
-@import "dark/rtl/helper-rtl";
-@import "dark/rtl/bootstrap-custom-rtl";
-@import "dark/rtl/components-rtl";
-@import "dark/rtl/menu-rtl";

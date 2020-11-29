@@ -32,7 +32,7 @@ $value in $colors {
     .btn-outline-#{$name} {
         border: 1px solid #{$value};
         color: #{$value};
-        background-color: transparent;    
+        background-color: transparent;
         &:hover, &:focus, &:active, &.active, &.focus, &:not(:disabled):not(.disabled):active{
             background-color: #{$value};
             border-color: #{$value};
@@ -48,20 +48,20 @@ $value in $colors {
         border: 1px solid $gray-100 !important;
         &:hover, &:focus, &:active, &.active, &.focus {
             background-color: darken($dark, 5%) !important;
-            color: $white !important; 
+            color: $white !important;
         }
-    }    
+    }
     &.btn-soft-dark {
         color: rgba($dark, 0.5) !important;
         border: 1px solid $gray-100 !important;
         &:hover, &:focus, &:active, &.active, &.focus{
-            color: $white !important; 
+            color: $white !important;
         }
-    }    
+    }
     &.btn-outline-dark {
         border: 1px solid $gray-100 !important;
         color: $dark !important;
-        background-color: transparent;    
+        background-color: transparent;
         &:hover, &:focus, &:active, &.active, &.focus {
             background-color: $dark !important;
             color: $white !important;
@@ -74,14 +74,14 @@ $value in $colors {
             background-color: lighten($light, 10%) !important;
             color: $dark !important;
         }
-    }    
+    }
     &.btn-soft-light {
         color: rgba($dark, 0.5) !important;
         border: 1px solid darken($gray-200, 15%) !important;
         &:hover, &:focus, &:active, &.active, &.focus{
-            color: $dark !important; 
+            color: $dark !important;
         }
-    }    
+    }
     &.btn-outline-light {
         border-color: darken($gray-200, 15%) !important;
         color: $dark !important;
@@ -95,7 +95,7 @@ $value in $colors {
 button:not(:disabled) {
     outline: none;
 }
-//Shadow 
+//Shadow
 .shadow {
     box-shadow: $shadow !important;
 }
@@ -175,23 +175,23 @@ $value in $colors {
             color: $dark;
         }
         &:after {
-            color: $dark; 
-        }     
+            color: $dark;
+        }
     }
 }
 
 //Pagination
-.pagination {   
+.pagination {
     .page-item {
         .page-link {
             color: $dark;
             border: 1px solid $gray-100;
-            background: $white; 
+            background: $white;
             &:hover {
                 color: $dark !important;
             }
         }
-    }              
+    }
     .active a {
         color: $dark;
     }
@@ -216,6 +216,15 @@ $value in $colors {
     background: lighten($white, 10%);
     .nav-link{
         color: $dark !important;
+        &.nav-link-alt {
+            color: $dark !important;
+            &:hover {
+                background: none !important;
+            }
+            &.active {
+                background: $white !important;
+            }
+        }
         &:hover {
             background: lighten($white, 8%);
         }
@@ -253,7 +262,7 @@ $value in $colors {
         &::placeholder{
             color: $gray-300;
         }
-    } 
+    }
 }
 
 .custom-radio .custom-control-label::before,
@@ -284,7 +293,7 @@ $value in $colors {
         thead th {
             border-bottom-color: $gray-100;
         }
-    } 
+    }
     .table-center {
         tbody {
             tr {
@@ -363,13 +372,13 @@ $value in $colors {
             }
         }
     }
-    .blog-catagories {
+    .blog-categories {
         li {
             a {
                 color: $gray-300 !important;
             }
         }
-    }  
+    }
     .post-recent {
         .post-recent-content {
             a {
@@ -412,14 +421,8 @@ $value in $colors {
     color: $white;
 }
 
-//Features
-//index-crypto.html and index-course.html
-.crypto-table, .course-feature {
-    box-shadow: $shadow;
-}
-
 //index-job.html
-.catagories {
+.categories {
     &:hover {
         box-shadow: $shadow;
     }
@@ -451,7 +454,7 @@ $value in $colors {
                 color: $gray-300;
             }
         }
-    } 
+    }
     .text-foot {
         color: $gray-300;
     }
@@ -461,10 +464,11 @@ $value in $colors {
                 &:hover {
                     color: lighten($gray-300, 20%);
                 }
-            }         
+            }
         }
-    }    
-    &.footer-bar {
+    }
+    &.footer-bar,
+    &.footer-border {
         border-top: 1px solid lighten($footer, 5%);
     }
 }
@@ -497,18 +501,22 @@ $value in $colors {
     }
 }
 
-//Price 
+//Price
 .pricing-rates {
     border-bottom: 3px solid $gray-500;
+    &.business-rate {
+        &:hover {
+            background-color: $white !important;
+        }
+    }
 }
-
 //Team
 .team {
     &:hover {
         img {
             box-shadow: $shadow;
         }
-    }   
+    }
 }
 
 //Testi
@@ -558,9 +566,9 @@ $value in $colors {
     }
 }
 
-// Responsive 
-@media (min-width: 769px){    
-    //studio 
+// Responsive
+@media (min-width: 769px){
+    //studio
     .bg-studio {
         &:after{
             background: $white none repeat scroll 0 0;

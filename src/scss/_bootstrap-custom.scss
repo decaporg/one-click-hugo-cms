@@ -2,14 +2,28 @@
 // Bootstrap-custom.scss
 //
 
+@each $heading,
+$size in $heading-font-sizes {
+    #{$heading} {
+        font-size: $size !important;
+    }
+}
+
+@each $heading,
+$size in $display-font-sizes {
+    .#{$heading} {
+        font-size: $size !important;
+    }
+}
+
 @each $name,
 $value in $colors {
     .bg-#{$name} {
         background-color: #{$value} !important;
     }
     .bg-soft-#{$name} {
-        background-color: rgba($value, 0.2) !important;
-        border: 1px solid rgba($value, 0.2) !important;
+        background-color: rgba($value, 0.1) !important;
+        border: 1px solid rgba($value, 0.1) !important;
         color: #{$value} !important;
     }
     .text-#{$name} {

@@ -2,27 +2,35 @@
 // features.scss
 //
 .features {
-    .icon,
-    .icons {
+    .icon {
         background: rgba($primary, 0.1);
-    }
-    .icons {
-        height: 80px;
-        line-height: 80px;
-        margin: 0 auto;
     }
     .image {
         &:before {
             content: "";
             position: absolute;
             bottom: 5px;
-            right: -15px;
-            width: 70px;
-            height: 70px;
+            left: 5px;
+            width: 64px;
+            height: 64px;
             border-radius: 6px;
             transform: rotate(33.75deg);
-            background: linear-gradient(45deg, transparent, rgba($primary, 0.09));
-            z-index: -1;
+            background: linear-gradient(45deg, transparent, rgba($primary, 0.1));
+        }
+    }
+    &.feature-clean {
+        .icons {
+            i {
+                height: 65px;
+                width: 65px;
+                line-height: 65px;
+                background-color: rgba($primary, 0.1);
+            }
+        }
+        .title {
+            &:hover {
+                color: $primary !important;
+            }
         }
     }
     .ride-image {
@@ -31,14 +39,11 @@
             border-radius: 100% 100% 100% 0;
         }
     }
-    .title-2 {
-        font-size: 20px;
-    }
     &:hover {
         .image {
             &:before {
-                background: rgba($primary, 0.07);
-                animation: spinner-border 5s linear infinite;
+                background: rgba($primary, 0.1);
+                animation: spinner-border 5s linear infinite !important;
             }
         }
     }
@@ -82,7 +87,7 @@
 .features,
 .key-feature {
     .title {
-        font-size: 18px;
+        font-size: 18px !important;
     }
     .icon {
         height: 45px;
@@ -105,9 +110,6 @@
 // Work process
 .work-process {
     transition: all 0.5s ease;
-    .title {
-        font-size: 20px;
-    }
     .step, .step-icon {
         opacity: 0.06;
     }
@@ -124,6 +126,10 @@
             left: 80%;
             // FIXME background: url("../images/process.png") center center no-repeat;
             z-index: 1;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
         }
         &:hover {
             transform: none !important;
@@ -141,52 +147,52 @@
 
 //course.html
 .course-feature {
-    .title {
-        font-size: 20px;
-        &:hover {
-            color: $primary !important;
-        }
-    }
+    transition: all 0.5s ease;
     .full-img {
         position: absolute;
-        bottom: 0;
+        bottom: 50%;
+        transform: translateY(50%);
         left: 0;
         right: 0;
         opacity: 0;
         margin: 0 auto;
         z-index: -2;
         transition: all 0.5s ease;
+        font-size: 250px;
     }
     &:hover {
         transform: translateY(-10px);
         .full-img {
-            opacity: 0.08;
+            opacity: 0.05;
         }
     }
 }
 
 //index-crypto.html and index-course.html
-.crypto-table,
-.course-feature,
 .features-absolute {
     position: relative;
     z-index: 2;
     transition: all 0.5s ease;
 }
-.crypto-table,
-.course-feature {
-    margin: -260px 0 0px;
-}
 
 .features-absolute {
     margin: -200px 0 0px;
+
+    @media (max-width: 768px) {
+        margin: -140px 0 0;
+    }
+
     &.blog-search {
         margin: -120px 0 0px;
+
+        @media (max-width: 768px) {
+            margin: -90px 0 0px;
+        }
     }
 }
 
 //index-job.html
-.catagories {
+.categories {
     transition: all 0.5s ease;
     &:hover {
         transform: translateY(-10px);
@@ -214,6 +220,10 @@
     &:after {
         left: 10rem;
         transform: rotate(150deg);
+
+        @media (max-width: 768px) {
+            left: 0;
+        }
     }
 }
 
@@ -221,11 +231,21 @@
     &:after {
         right: 10rem;
         transform: rotate(210deg);
+
+        @media (max-width: 768px) {
+            right: 0;
+        }
     }
 }
+
 .app-subscribe {
     position: absolute;
     top: -200px;
+
+    @media (max-width: 767px) {
+        position: relative;
+        top: 0;
+    }
 }
 
 //Classic Saas
@@ -237,6 +257,13 @@
         height: 35rem;
         border-radius: 15rem;
         transform: rotate(145deg);
+
+        @media (max-width: 767px) {
+            bottom: -1rem;
+            width: 25rem;
+            height: 25rem;
+            border-radius: 10rem;
+        }
     }
 }
 .saas-feature-shape-left {
@@ -284,18 +311,34 @@
         height: 520px;
         border-radius: 30px;
         bottom: -75px;
+        @media (max-width: 768px) {
+            width: 300px;
+            height: 400px;
+            bottom: -65px;
+        }
+
+        @media (max-width: 575px) {
+            bottom: -35px;
+        }
     }
 }
 .social-feature-left {
     &:after {
         right: -200px;
+        @media (max-width: 575px) {
+            right: 60px;
+        }
     }
 }
 .social-feature-right {
     &:after {
         left: -200px;
+        @media (max-width: 575px) {
+            left: 60px;
+        }
     }
 }
+
 .explore-feature {
     transition: all 0.5s ease;
     .icon {
@@ -313,77 +356,9 @@
     }
 }
 
-@media (max-width: 768px) {
-    .app-feature-shape-right {
-        &:after {
-            left: 0;
-        }
-    }
-
-    .app-feature-shape-left {
-        &:after {
-            right: 0;
-        }
-    }
-    .social-feature-left,
-    .social-feature-right  {
-        &:after {
-            width: 300px;
-            height: 400px;
-            bottom: -65px;
-        }
-    }
-
-    .features-absolute {
-        margin: -140px 0 0;
-        &.blog-search {
-            margin: -90px 0 0px;
-        }
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .process-arrow {
-        &:after {
-            display: none;
-        }
-    }
-    .course-feature, .crypto-table {
-        margin: 0 0 30px;
-    }
-    .app-subscribe {
-        position: relative;
-        top: 0;
-    }
-
-    .saas-feature-shape-left,
-    .saas-feature-shape-right {
-        &:after{
-            bottom: -1rem;
-            width: 25rem;
-            height: 25rem;
-            border-radius: 10rem;
-        }
-    }
-}
-
-@media (max-width: 575px) {
-    .social-feature-left,
-    .social-feature-right  {
-        &:after {
-            bottom: -35px;
-        }
-    }
-
-    .social-feature-left  {
-        &:after {
-            right: 60px;
-        }
-    }
-
-    .social-feature-right  {
-        &:after {
-            left: 60px;
-        }
-    }
+//Construction
+.construction-img {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
 }

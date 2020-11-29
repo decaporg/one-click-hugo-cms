@@ -25,6 +25,11 @@
     @include home-common();
 }
 
+.bg-auth-home {
+    padding: 142px 0;
+    @include home-common();
+}
+
 //Gradient Home
 .gradient{
     background: $primary !important;
@@ -48,6 +53,13 @@
         top: 60px;
         z-index: 1;
     }
+
+    //Index-onepage.html
+    @media (min-width:768px) {
+        &.onepage-hero {
+            overflow: hidden;
+        }
+    }
 }
 
 .classic-saas-image {
@@ -60,6 +72,25 @@
             border-radius: 20rem;
             opacity: 0.9;
             transform: rotate(130deg);
+
+            @media (max-width: 767px) {
+                bottom: -5rem;
+                left: 10rem;
+                width: 30rem;
+                height: 30rem;
+                border-radius: 10rem;
+            }
+        }
+
+        img {
+            @media (max-width: 768px) {
+                max-width: 550px;
+            }
+
+            @media (max-width: 767px) {
+                max-width: 100%;
+                height: auto;
+            }
         }
     }
 }
@@ -68,6 +99,7 @@
 .studio-home {
     padding: 7%;
 }
+
 //Agency
 .agency-wrapper {
     &:before {
@@ -81,8 +113,17 @@
         transform: rotate(45deg);
         background-color: $light;
         z-index: -1;
+
+        @media (max-width: 768px) {
+            right: 12rem;
+        }
+
+        @media (max-width: 767px) {
+            right: 0;
+        }
     }
 }
+
 //Marketing
 .bg-marketing {
     padding: 76px 0 120px;
@@ -148,6 +189,11 @@
         height: 100%;
         background: rgba($white, 0.85);
         clip-path: polygon(0 0, 90% 0, 70% 100%, 0% 100%);
+
+        @media (max-width: 767px) {
+            width: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
     }
     &.dark-left {
         &:after {
@@ -300,36 +346,10 @@
         }
     }
 }
-//Index-onepage.html
-@media (min-width:768px) {
-    .home-dashboard {
-        &.onepage-hero {
-            overflow: hidden;
-        }
-    }
-}
+
 @media (max-width: 768px) {
-    .agency-wrapper {
-        &:before {
-            right: 12rem;
-        }
-    }
     .bg-half {
         padding: 169px 0 50px;
-    }
-    .wave-one, .wave-three {
-        background-size: 50% 50px;
-    }
-
-    .wave-two {
-        background-size: 50% 70px;
-    }
-    .classic-saas-image {
-        .bg-saas-shape {
-            img {
-                max-width: 550px;
-            }
-        }
     }
 }
 
@@ -337,32 +357,5 @@
     .bg-home, .bg-half-170, .bg-half-260, .main-slider .slides .bg-slider, .bg-marketing, .swiper-slider-hero .swiper-container .swiper-slide {
         padding: 150px 0;
         height: auto;
-    }
-    .agency-wrapper {
-        &:before {
-            right: 0;
-        }
-    }
-    .bg-animation-left {
-        &:after {
-            width: 100%;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
-    }
-
-    .classic-saas-image {
-        .bg-saas-shape {
-            img {
-                max-width: 100%;
-                height: auto;
-            }
-            &:after {
-                bottom: -5rem;
-                left: 10rem;
-                width: 30rem;
-                height: 30rem;
-                border-radius: 10rem;
-            }
-        }
     }
 }

@@ -181,5 +181,14 @@
                 margin-right: auto;
             }
         }
+        .buy-menu-btn {
+            .dropdown {
+                .dropdown-menu {
+                    &.show {
+                        transform: translate3d(-197px, -54px, 0px) !important;
+                    }
+                }
+            }
+        }
     }
 }

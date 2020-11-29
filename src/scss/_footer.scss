@@ -10,14 +10,13 @@
         font-size: 22px;
     }
     .footer-head {
-        font-size: 20px;
         letter-spacing: 1px;
         font-weight: 500;
     }
     .foot-subscribe {
         .form-control {
-            background-color: lighten($footer, 5%);
-            border: 1px solid lighten($footer, 8%);
+            background-color: lighten($black, 5%);
+            border: 1px solid lighten($black, 8%);
             color: $light;
             &:focus {
                 box-shadow: none;
@@ -52,8 +51,11 @@
             }
         }
     }
+    &.footer-border,
+    &.footer-bar {
+        border-top: 1px solid lighten($footer, 5%);
+    }
     &.footer-bar {
         padding: 30px 0;
-        border-top: 1px solid lighten($footer, 5%);
     }
 }

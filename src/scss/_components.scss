@@ -40,8 +40,8 @@ $value in $colors {
     }
 
     .btn-soft-#{$name} {
-        background-color: rgba($value, 0.2) !important;
-        border: 1px solid rgba($value, 0.2) !important;
+        background-color: rgba($value, 0.1) !important;
+        border: 1px solid rgba($value, 0.1) !important;
         color: #{$value} !important;
         box-shadow: 0 3px 5px 0 rgba($value, 0.3);
         &:hover, &:focus, &:active, &.active, &.focus{
@@ -168,11 +168,21 @@ $value in $colors {
         color: #{$value} !important;
         border: 1px solid #{$value} !important;
     }
+    .badge-soft-#{$name} {
+        background-color: rgba($value, 0.1) !important;
+        border: 1px solid rgba($value, 0.1) !important;
+        color: #{$value} !important;
+    }
 }
 .badge {
-    padding: 5px 8px;
-    border-radius: 3px;
+    display: inline-block;
     letter-spacing: 0.5px;
+    padding: 4px 8px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
     &.badge-light {
         color: $dark !important;
         background-color: $light !important;
@@ -180,7 +190,7 @@ $value in $colors {
 
     &.badge-outline-light {
         color: $dark !important;
-        border: 1px solid darken($light, 20%) !important;
+        border: 1px solid lighten($light, 5%) !important;
         background-color: transparent !important;
     }
     &.badge-pill {
@@ -300,6 +310,10 @@ $value in $colors {
         position: relative;
         top: 110px;
         z-index: 99;
+
+        @media (max-width: 768px) {
+            top: 70px;
+        }
     }
 }
 
@@ -430,7 +444,7 @@ $value in $colors {
                 display: block;
                 font-family: 'Material Design Icons';
                 font-size: 18px;
-                color: $dark;
+                color: $primary;
                 position: absolute;
                 right: 20px;
                 top: 50%;
@@ -448,9 +462,6 @@ $value in $colors {
                 }
             }
         }
-        .title {
-            font-size: 16px;
-        }
     }
 }
 
@@ -462,18 +473,18 @@ $value in $colors {
         color: $gray-700 !important;
         padding: 5px;
         transition: all 0.5s ease;
+        &.nav-link-alt {
+            color: $white !important;
+            &.active {
+                background: $dark !important;
+            }
+        }
         &.active {
             background: $primary;
             color: $white !important;
             .tab-para {
                 color: rgba($white, 0.65) !important;
             }
-        }
-    }
-    a {
-        .title {
-            font-size: 17px;
-            font-weight: 700;
         }
     }
 }
@@ -606,6 +617,12 @@ $value in $colors {
         th {
             vertical-align: middle;
         }
+        &.table-nowrap {
+            th, 
+            td {
+                white-space: nowrap;
+            }
+        }
     }
     .table-center {
         th {
@@ -735,7 +752,7 @@ $value in $colors {
 
 //back-to-home
 .back-to-home {
-    position: absolute;
+    position: fixed;
     top: 4%;
     right: 2%;
     z-index: 1;
@@ -776,20 +793,6 @@ $value in $colors {
     }
 }
 
-//Display
-.display-1 {
-    font-size: 80px !important;
-}
-.display-2 {
-    font-size: 72px !important;
-}
-.display-3 {
-    font-size: 64px !important;
-}
-.display-4 {
-    font-size: 56px !important;
-}
-
 [class^=uil-], 
 [class*=" uil-"] {
     &:before {
@@ -802,11 +805,6 @@ $value in $colors {
 }
 
 @media (max-width: 768px) {
-    .page-next-level {
-        .page-next {
-            top: 70px;
-        }
-    } 
     .display-1 {
         font-size: 56px !important;
     }

@@ -8,7 +8,6 @@
             line-height: 1.2;
         }
         .title {
-            font-size: 20px;
             transition: all 0.5s ease;
             &:hover {
                 color: $primary !important;
@@ -123,11 +122,8 @@
                 pointer-events: none;
             }
         }
-        .widget-title {
-            font-size: 18px;
-        }
         
-        .blog-catagories{
+        .blog-categories{
             li {
                 padding-bottom: 10px;
                 &:last-child {
@@ -193,10 +189,6 @@
 }
 
 // single blog
-.page-title {
-    font-size: 20px;
-}
-
 .media-list {
     .media {
         .media-heading {
@@ -260,6 +252,32 @@
         }
     }
     &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+//Page Candidate list & Page Comapny list
+.candidate-list {
+    .like {
+        -webkit-text-stroke: 1px $muted;
+        -webkit-text-fill-color: transparent;
+        &:hover, &:focus {
+            -webkit-text-stroke: $danger;
+            -webkit-text-fill-color: $danger;
+        }
+    }
+}
+
+.candidate-list, 
+.company-list {
+    transition: all 0.5s ease;
+    .name {
+        &:hover {
+            color: $primary !important;
+        }
+    }
+    &:hover {
+        box-shadow: $shadow-md !important;
         transform: translateY(-5px);
     }
 }
