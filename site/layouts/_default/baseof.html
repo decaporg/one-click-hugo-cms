@@ -10,6 +10,10 @@
 
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
+  <a href="#" class="btn btn-icon btn-soft-primary back-to-top" style="display: inline;">
+    <i data-feather="arrow-up" class="icons"></i>
+  </a>
+
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}
   <script src="{{ relURL . }}"></script>

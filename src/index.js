@@ -68,7 +68,7 @@ $(".has-submenu a").click(function(e) {
 });
 
 $(".mouse-down").on("click", function(event) {
-  var $anchor = $(this);
+  const $anchor = $(this);
   $("html, body").stop().animate({
     scrollTop: $($anchor.attr("href")).offset().top - 72
   }, 1500, "easeInOutExpo");
@@ -77,7 +77,7 @@ $(".mouse-down").on("click", function(event) {
 
 // Sticky
 $(window).scroll(function() {
-  var scroll = $(window).scrollTop();
+  const scroll = $(window).scrollTop();
 
   if (scroll >= 50) {
     $(".sticky").addClass("nav-sticky");
@@ -87,15 +87,16 @@ $(window).scroll(function() {
 });
 
 // Back to top
+const btnBackTop = $(".back-to-top");
 $(window).scroll(function() {
   if ($(this).scrollTop() > 100) {
-    $(".back-to-top").fadeIn();
+    btnBackTop.fadeIn();
   } else {
-    $(".back-to-top").fadeOut();
+    btnBackTop.fadeOut();
   }
 });
-$(".back-to-top").click(function() {
-  $("html, body").animate({scrollTop: 0}, 3000);
+btnBackTop.click(function() {
+  $("html, body").animate({scrollTop: 0}, 500);
   return false;
 });
 
