@@ -89,14 +89,14 @@ Der einfachste Weg die senseBox zu Programmieren ist mit Hilfe der visuellen Pro
 
 ### 4. "Initialisierung"
 
-Blockly ist der Arduino Programmiersprache nachempfunden und besteht aus einer setup() und einer loop() Abschnitt im Code. im setup() werden Funktionen definiert die beim Start des Mikrocontrollers ausgeführt werden sollen. 
+Blockly ist der Arduino Programmiersprache nachempfunden und besteht aus einer `setup()` und einer `loop()` Abschnitt im Code. im `setup()` werden Funktionen definiert die beim Start des Mikrocontrollers ausgeführt werden sollen. 
 
-Hier möchten wir nun, dass sich unser Mikrocontroller mit TTN verbindet. Dazu braucht man verschiedene Keys aus deinem Device, welche du in der Übersicht deiner TTN Konsole findest. In Blockly klickst du auf "LoRa" und dann auf "Activation" und ziehst den Block mit dem Namen "Initialize LoRa (ABP)" auf die Programmierfläche in den loop() Abschnitt. Hier hast du die Möglichkeit 4 Felder auszufüllen.
+Hier möchten wir nun, dass sich unser Mikrocontroller mit TTN verbindet. Dazu braucht man verschiedene Keys aus deinem Device, welche du in der Übersicht deiner TTN Konsole findest. In Blockly klickst du auf "LoRa" und dann auf "Activation" und ziehst den Block mit dem Namen `Initialize LoRa (ABP)` auf die Programmierfläche in den `setup()` Abschnitt. Hier hast du die Möglichkeit 4 Felder auszufüllen.
 
-> Falls in Eurer TTN Konsole die beschriebenen Begriffe nicht auftauchen, müsst ihr die "Activation Method" von OTAA auf ABP umstellen wie weiter oben beschrieben ;-) 
+> Falls in Eurer TTN Konsole die beschriebenen Begriffe nicht auftauchen, müsst ihr die `Activation Method` von OTAA auf ABP umstellen wie weiter oben beschrieben ;-) 
 
-1. in das Feld "Network Session Key (msb)" kopierst du den Code aus deiner Device Übersicht. Bevor du diesen kopierst: **Ändere das Format des Codes auf msb durch klicken auf das "<>" Symbol**
-2. in das Feld "App Session Key (msb)" kopierst du den Code aus deiner Device Übersicht. Bitte ändere auch dort das Format auf msb. 
+1. in das Feld `Network Session Key (msb)` kopierst du den Code aus deiner Device Übersicht. Bevor du diesen kopierst: **Ändere das Format des Codes auf msb durch klicken auf das "<>" Symbol**
+2. in das Feld `App Session Key (msb)` kopierst du den Code aus deiner Device Übersicht. Bitte ändere auch dort das Format auf msb. 
 3. Die "Device Address" kannst du einfach so kopieren
 4. Ins letzte Feld kannst du eingeben wie oft Daten vom Device übertragen werden sollen. Da der Mapper später mobil genutzt werden soll, macht es Sinn hier ein kleineres Intervall einzutragen.
 
@@ -108,9 +108,9 @@ Wenn du aber stationäre Devices aufbaust, solltest du immer längere Intervalle
 
 **TTN Mapper**
 
-In der loop() Abschnitt des Codes kommen nun die Funktionen, die (solange das Board angeschalten ist) immer wieder wiederholt werden sollen. 
+In der `loop()` Abschnitt des Codes kommen nun die Funktionen, die (solange das Board angeschalten ist) immer wieder wiederholt werden sollen. 
 
-Glücklicherweise gibt es in Blockly die Option einen Code Block für den TTN-Mapper, der einen Großteil der Programmierung schon vorgefertigt hast. Du findest in in der Rubrik "LoRa" unter "TTN Mapper". Das wichtigste was wir übertragen wollen, ist unsere aktuelle Position, damit später auf dem TTN Mapper angezeigt wird, ob es an dieser Stelle ein LoRa-Signal gibt. In "latitude" "longitude" und "altitude" ist schon der jeweils der Block für den GPS Sensor eingefügt, mit dem jeweiligen value. Diesen Block findest du sonst unter "Sensoren". Danach ist noch ein pDOP Wert (Abkürzung für [Dilution of Precision](https://de.m.wikipedia.org/wiki/Dilution_of_Precision)), ein Maß für die Streubreite der Messwerte bei Satellitennaviagationssystemen eingefügen. Schließlich noch den sogenannten "Fix Type", ein Wert der Auskunft über die aktuelle Stärke des GPS Signals gibt. Am Anfang des Blockls, kannst du Einstellen, ab welcher Stärke des GPS-Signals Daten an LoRa geschickt werden sollen. Ausgewählt ist der Wert 3, also nur bei sehr guten GPS Signalen sollen Daten verschickt werden.
+Glücklicherweise gibt es in Blockly die Option einen Code Block für den TTN-Mapper, der einen Großteil der Programmierung schon vorgefertigt hast. Du findest in der Rubrik "LoRa" den "TTN Mapper"-Block. Das Wichtigste was wir übertragen wollen, ist unsere aktuelle Position, damit später auf dem TTN Mapper angezeigt wird, ob es an dieser Stelle ein LoRa-Signal gibt. In `latitude` `longitude` und `altitude` ist schon der jeweils der Block für den GPS Sensor eingefügt, mit dem jeweiligen Wert. Diesen Block findest du sonst unter "Sensoren". Danach ist noch ein pDOP Wert (Abkürzung für [Dilution of Precision](https://de.m.wikipedia.org/wiki/Dilution_of_Precision)), ein Maß für die Streubreite der Messwerte bei Satellitennaviagationssystemen eingefügen. Schließlich noch den sogenannten "Fix Type", ein Wert der Auskunft über die aktuelle Stärke des GPS Signals gibt. Am Anfang des Blocks, kannst du Einstellen, ab welcher Stärke des GPS-Signals Daten an LoRa geschickt werden sollen. Ausgewählt ist der Wert 3, also nur bei sehr guten GPS Signalen sollen Daten verschickt werden.
 
 ![Der Block für den TTN-Mapper](img/loop-ttnmapper.svg)
 
@@ -118,7 +118,7 @@ Glücklicherweise gibt es in Blockly die Option einen Code Block für den TTN-Ma
 
 Falls du einen zur senseBox passenden OLED-Display hast, kannst du auch diesen nutzen um dein GPS-Signal anzuzeigen. Nutze dazu den Block "Print on Display" und den "Show Measurements" Block welchen man nutzt um Sensorwerte anzuzeigen. Im folgenden zeigen wir die "latitude" und die "longitude" an. Erhälst du den Wert 0, hast du kein GPS-Empfang und musst etwas warten.
 
-> Vergiss nicht den Display im status() Abschnitt zu initialisieren!
+> Vergiss nicht den Display im `status()` Abschnitt zu initialisieren!
 
 ![Die zwei Status LED auf dem Board zeigen an, ob der TTN Mapper gerade einen GPS Signal empfängt](img/status-display.png)
 
