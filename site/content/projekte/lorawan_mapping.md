@@ -13,4 +13,4 @@ Nach dem Aufbau der LoRaWAN Gatesways sind wir aktuell in der Phase des sogenann
 
 Hierzu nutzen wir die Kartenanwendung [TTN-Mapper](https://ttnmapper.org/) auf welcher du auch schon sehen kanns, wo es guten Empfang gibt. Du bist dir nicht sicher und interessierst dich dafür, ob an deinem Garten, Haus, oder Waldstück LoRaWAN Empfang ist? Gerne kannst du ein Messgerät kostenlos bei uns ausleihen, oder zuhause nachbauen mit dieser [Anleitung](https://lahr.codes/post/messung-des-offenes-lorawan-netzes-in-lahr/) aus unserem Blog. 
 
-Mehr Ifos zu TTN findest du auch in der [Community](https://www.thethingsnetwork.org/community/ortenau/) des Ortenaukreises.
+Mehr Infos zu TTN findest du auch in der [Community](https://www.thethingsnetwork.org/community/ortenau/) des Ortenaukreises.
