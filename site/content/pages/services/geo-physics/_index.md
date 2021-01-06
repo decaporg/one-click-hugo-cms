@@ -100,3 +100,6 @@ pricing:
 ---
 
 
+
+Mithilfe der Geomagnetik ist es uns möglich unterirdische Leitungen, Archäologische Funde sowie Störkörper wie beispielsweise Blindgänger zu orten und ihre Position zu bestimmen. Dank dieser Methode können zerstörungsfrei, effizient und genau Daten aufgenommen und anschließend ausgewertet werden. Die Positionsgenauigkeit beträgt dabei 20 cm und die Eindringtiefe 5 m.
+Neben der Geomagnetik nutzen wir auch noch das Georadar um bekannte sowie unbekannte Leitungen bis in eine Tiefe von 8 m zu finden. Der Vorteil des Verfahrens ist, dass auch nicht metallische Leitungen geortet werden können.

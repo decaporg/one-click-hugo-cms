@@ -100,3 +100,11 @@ pricing:
 ---
 
 
+Die Sondierung von Pipelines gehört mit zu unseren Aufgabengebieten. Die Lagegenauigkeit erreicht 1 cm – 2 cm und die Höhengenauigkeit 2 cm – 3 cm. Dies ist durch eine geschickte Kombination aus den 3D-Geländedaten und einem ortsreferenzierten Abbild des Magnetfelds möglich. Neben den Pipelines können auch stromführende und nichtstromführende Leitungen bis in eine tiefe von 5 Metern detektiert werden.
+
+### Stichpunkte:
+
+Kampfmittel, Pipeline, Stromkabel, Leitung, Leitungsortung
+
+### Lösung/ Hilfe:
+

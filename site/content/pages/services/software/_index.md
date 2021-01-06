@@ -100,3 +100,6 @@ pricing:
 ---
 
 
+Für die Auswertung, Kalibration und Kompensation der gemessenen Daten wird die eigens entwickelte Software „MagSurv“ verwendet. Sie benutzt modernste Kartenplattformen zur Darstellung der Messergebnisse und entspricht so den aktuellen Standards. Durch den Einsatz von Künstlicher Intelligenz (KI) können Bearbeitungsprozesse optimiert und beschleunigt werden, sodass eine Auswertung nur noch ein Bruchteil der herkömmlichen Zeit beansprucht.
+
+Neben der automatisierten Analyse begutachtet ein erfahrener Geophysiker den Datensatz und prüft die Auswertung der Software. Nach dem Bestehen der Qualitätsprüfung werden die klassifizierten Anomalien als digitale Datei gespeichert und zu einer Shape-Datei oder einem Bericht weiterverarbeitet. Die gesammelten Daten mit der dazugehörigen Auswertung werden als digitale Shape-Dateien zur Verfügung gestellt und lassen sich in alle gängigen Geoinformationssysteme und 3D-Verarbeitungssoftware (zum Beispiel CAD) integrieren.

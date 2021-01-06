@@ -99,25 +99,11 @@ pricing:
       price: '?'
 ---
 
+Ein großer Vorteil unserer Messmethode ist neben der schnellen und zuverlässigen Detektion auch die Zerstörungsfreie Analyse. Dank diesem Faktor sind wir in der Lage in Naturschutzgebieten sowie schwerzugänglichen Gebieten für die Natur und Tierwelt nicht spürbare Messung durchzuführen.
+Somit sind wir bei der Landschaftsplanung und Infrastrukturprojekten wie Bahnprojekten ein zuverlässiger und schneller Partner. Auch die Planung und Kartierung eines neuen Bahnhofs gehört bereits zu unseren abgeschlossenen Projekten.
 
-adaskda speakerdeck  sd
-a sd a
-sd as
-d
-asd
- as
- d as
- d
- asd
-  as
-  d
-  as
-  d
-  a
+### Stichpunkte:
 
-  asdas
-  da
-  s
+Landschaftsplanung, Kampfmittel, Bahnprojekte, Bahnhofbau, Naturschutzgebiete
 
-  asda
-   >
+### Lösung / Hilfe:

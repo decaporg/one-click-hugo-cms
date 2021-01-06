@@ -3,11 +3,8 @@ title: Tiefbau
 layout: pages
 image: /img/pages/drone-header.jpg
 heading: What we offer
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+description:
+  Die Vermessung und Kartierung neuer Baugebiete/-grundstücke spielt oft für Bauvorhaben eine entscheidende Rolle.
 intro:
   blurbs:
     - image: /img/illustrations-coffee.svg
@@ -99,4 +96,13 @@ pricing:
       price: '?'
 ---
 
-asdasd
+Die Vermessung und Kartierung neuer Baugebiete/-grundstücke spielt oft für Bauvorhaben eine entscheidende Rolle. Außerdem sind bei der Erschließung Bodenanalysen notwendig, die besonders bei Bahnschienen und Wasserstraßen nahen Flächen einen Entscheidenden Einfluss auf Ihr Bauvorhaben haben können.
+
+Die Detektierung von Kampfmitteln und Munitionsresten spielt dabei eine wichtige Rolle, da diese zu unerkannten Gefahren für den Mensch und die Natur werden können.
+Des Weiteren sind wir dank unserer Leitungsortung in der Lage unterirdische Leitungen zu finden und für Sie zu dokumentieren. Dank dem Einsatz von Drohnen ist es uns auch möglich in schwer zugänglichen Gebieten eine schnelle und zuverlässige Kartierung durchzuführen.
+
+### Unsere Lösung
+
+Um die benötigten Bodenanalysen schnellstmöglich durchzuführen und wichtige freigaben zu erhalten, scannen wir den Untergrund mithilfe von Drohnen-Geomagnetik und werten die gemessenen Daten für sie aus.
+
+Somit können die Kartierten und vermessenen Gebiete direkt in Ihre Bauplanung mit einfließen und Sie sparen Zeit und Geld. Dank der Bodenanalyse erhalten Sie nicht nur eine Kartierte Auswertung, sondern können auch Störkörper wie Kampfmittel, Leitungen und Fundamente im Untergrund Ihrer Baufläche sehen.

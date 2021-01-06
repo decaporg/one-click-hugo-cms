@@ -100,3 +100,4 @@ pricing:
 ---
 
 
+Bei der Drohnen-Photogrammetrie werden aktuelle und hochauflösende Aufnahmen der Oberfläche aus der Luft erstellt. Mithilfe dieser Bilder lassen sich 3D-Modelle aus den Bilddaten berechnen sowie 2D-Karten erstellen. Die Datensätze zeigen Flächen in einem aktuellen Zustand und sind  hochauflösender als Satellitenbilder. Außerdem bietet diese Methode eine Lagegenauigkeit von 1 cm – 2 cm und eine Höhengenauigkeit von 2 cm – 3 cm.
