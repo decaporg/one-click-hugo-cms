@@ -1,10 +1,12 @@
 // JS Goes here - ES6 supported
 
+import $ from "jquery";
 import "bootstrap";
 import feather from "feather-icons";
-import $ from "jquery";
 import "magnific-popup";
 import "./css/vendor/magnific-popup.css";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel";
 import "./scss/style.scss";
 
 console.info("Made with ❤ by greive.tech");
@@ -124,4 +126,6 @@ $(document).ready(function() {
       fixedContentPos: false,
     });
   }
+
+  $(".owl-carousel").owlCarousel();
 });

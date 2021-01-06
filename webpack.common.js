@@ -29,7 +29,6 @@ module.exports = {
       },
       {
         test: /\.(sa|sc|c)ss$/,
-        exclude: /node_modules/,
         use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
       }
     ]
@@ -49,9 +48,14 @@ module.exports = {
       }
     ]),
     new HtmlWebpackPlugin({
-      filename: 'admin/index.html',
-      template: 'src/cms.html',
+      filename: "admin/index.html",
+      template: "src/cms.html",
       inject: false,
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
     }),
   ]
 };
