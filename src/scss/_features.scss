@@ -20,7 +20,7 @@
     }
     &.feature-clean {
         .icons {
-            i {
+            span {
                 height: 65px;
                 width: 65px;
                 line-height: 65px;
@@ -124,7 +124,7 @@
             height: 40px;
             top: 80px;
             left: 80%;
-            // FIXME background: url("../images/process.png") center center no-repeat;
+            background: url("/img/process.png") center center no-repeat;
             z-index: 1;
 
             @media (max-width: 767px) {
@@ -361,4 +361,10 @@
     position: absolute;
     bottom: 0;
     right: 20px;
+}
+
+// Services Wrapper
+
+.services-wrapper .features svg {
+  transform: scale(1.4) translate(5px, -8px)
 }

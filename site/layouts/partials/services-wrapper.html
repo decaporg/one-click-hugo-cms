@@ -1,68 +1,18 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-10">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="media features feature-clean core-feature rounded shadow p-4">
-            <div class="icons text-primary text-center mx-auto">
-              <i class="mdi mdi-magnet-on d-block rounded h3 mb-0"></i>
-            </div>
-            <div class="media-body ml-4">
-              <a href="javascript:void(0)" class="title text-dark h5">Geomagnetik</a>
-              <p class="text-muted mt-2 mb-0">Composed in a pseudo-Latin language which more or less pseudo-Latin
-                language corresponds.</p>
-            </div>
+<div class="container services-wrapper">
+  <div class="row">
+    {{ range .Services }}
+      <div class="col-md-4 col-12 mt-5 mb-4">
+        <div class="features">
+          <div class="image position-relative d-inline-block">
+            <i data-feather="{{ .icon }}" class="text-primary"></i>
           </div>
-        </div>
 
-        <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-          <div class="media features feature-clean core-feature rounded shadow p-4">
-            <div class="icons text-primary text-center mx-auto">
-              <i class="mdi mdi-camera d-block rounded h3 mb-0"></i>
-            </div>
-            <div class="media-body ml-4">
-              <a href="javascript:void(0)" class="title text-dark h5">Photogrammetrie</a>
-              <p class="text-muted mt-2 mb-0">Composed in a pseudo-Latin language which more or less pseudo-Latin
-                language corresponds.</p>
-            </div>
+          <div class="content mt-3">
+            <h5>{{ .heading }}</h5>
+            <p class="text-muted mb-0">{{ .text }}</p>
           </div>
-        </div>
-
-        <div class="col-md-6 mt-4 pt-2">
-          <div class="media features feature-clean core-feature rounded shadow p-4">
-            <div class="icons text-primary text-center mx-auto">
-              <i class="mdi mdi-bomb d-block rounded h3 mb-0"></i>
-            </div>
-            <div class="media-body ml-4">
-              <a href="javascript:void(0)" class="title text-dark h5">Störkörpersuche</a>
-              <p class="text-muted mt-2 mb-0">Composed in a pseudo-Latin language which more or less pseudo-Latin
-                language corresponds.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 pt-2">
-          <div class="media features feature-clean core-feature rounded shadow p-4">
-            <div class="icons text-primary text-center mx-auto">
-              <i class="mdi mdi-cube-scan d-block rounded h3 mb-0"></i>
-            </div>
-            <div class="media-body ml-4">
-              <a href="javascript:void(0)" class="title text-dark h5">3D-Vermessung</a>
-              <p class="text-muted mt-2 mb-0">Composed in a pseudo-Latin language which more or less pseudo-Latin
-                language corresponds.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 mt-4 pt-2 text-center">
-          <a href="javascript:void(0)" class="text-primary h6">Services entdecken <svg xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg></a>
         </div>
       </div>
-    </div>
+    {{ end }}
   </div>
 </div>

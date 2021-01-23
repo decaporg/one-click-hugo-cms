@@ -1,6 +1,7 @@
 ---
 title: Branchen
 type: fields
+layout: fields
 image: /img/pages/drone-header.jpg
 heading: What we offer
 description: >-
