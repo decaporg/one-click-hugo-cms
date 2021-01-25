@@ -27,7 +27,8 @@ Die [senseBox](https://sensebox.de) ist ein einfach zu programmierender Mikrocon
 
 **Termine:**
 
-22.01.2021 den 29.01.2021 und den 05.02.2021 (die Termine bauen aufeinander auf)
+~~22.01.2021 den 29.01.2021 und den 05.02.2021~~ (die Termine bauen aufeinander auf) 
+**TERMINE VERSCHOBEN WEGEN COVID-19 LOCKDOWN REGELUNG**
 
 **Anmeldung:**
 
