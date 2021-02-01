@@ -4009,13 +4009,12 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-exports-loader@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/exports-loader/-/exports-loader-0.7.0.tgz#84881c784dea6036b8e1cd1dac3da9b6409e21a5"
-  integrity sha512-RKwCrO4A6IiKm0pG3c9V46JxIHcDplwwGJn6+JJ1RcVnh/WSGJa0xkmk5cRVtgOPzCAtTMGj2F7nluh9L0vpSA==
+exports-loader@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/exports-loader/-/exports-loader-2.0.0.tgz#ca7861b86726997bb4e55001888d2af940935979"
+  integrity sha512-k/VFrVEUmotfkk8vZ+njG5NEXpr5Ee+BonV+AYINV2hNo3o+/UB8nEuCUQk2k6IyWIoobmXoTFO0igxrQcMV4Q==
   dependencies:
-    loader-utils "^1.1.0"
-    source-map "0.5.0"
+    source-map "^0.6.1"
 
 express@^4.17.1:
   version "4.17.1"
@@ -10003,11 +10002,6 @@ source-map-url@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
   integrity sha1-PpNdfd1zYxuXZZlW1VEo6HtQhKM=
-
-source-map@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.0.tgz#0fe96503ac86a5adb5de63f4e412ae4872cdbe86"
-  integrity sha1-D+llA6yGpa213mP05BKuSHLNvoY=
 
 source-map@^0.4.2:
   version "0.4.4"
