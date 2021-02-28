@@ -5,11 +5,13 @@ image: /img/home-header.jpg
 title: "Home"
 buttons:
     primary:
-        label: "Unser Angebot"
-        link: "#"
+        label: "Unser Ansatz"
+        link: "/pages/our-approach"
+        icon: "account-check"
     secondary:
-        label: "Mehr erfahren"
-        link: "#"
+        label: "Leistungen"
+        link: "/pages/services"
+        icon: "book-outline"
 clients:
     - image: img/client/amazon.svg
       label: "Amazon"
@@ -26,25 +28,25 @@ clients:
 blurb:
     heading: Why Kaldi?
     text: "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities."#
-services: 
-    - heading: Geomagnetik
-      text: Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam aenean elementum semper.
-      icon: shield-off
-    - heading: Photogrammetrie
-      text: Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam aenean elementum semper.
-      icon: crosshair
-    - heading: Störkörpersuche
-      text: Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam aenean elementum semper.
+services:
+    - heading: Kampfmittelsondierung
+      text: Zertifizierte Fachfirma nach SprengG 7 & SprengG 20. Schnell & transparent!
       icon: search
+    - heading: Leitungsortung
+      text: Ortung von Bestandsleitung und Fremdleitung mit höchster Präzision
+      icon: crosshair
+    - heading: Altlasten-Check
+      text: Fundamente, Keller, Bunker und sonstige Störkörper zuverlässig vor dem Baustart dokumentieren.
+      icon: home
     - heading: 3D-Vermessung
-      text: Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam aenean elementum semper.
+      text: Vollflächige Vermessung mit Zentimeter-Genauigkeit
       icon: box
-    - heading: Geomagnetik
-      text: Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam aenean elementum semper.
-      icon: edit
-    - heading: Geomagnetik
-      text: Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam aenean elementum semper.
-      icon: edit
+    - heading: Geo-Physik
+      text: Fragestellung rund um die Geophysik durch fachmännisches Personal
+      icon: book-open
+    - heading: Bestandsaufnahme
+      text: Dokumentation, Schadensanalyse und Visualsierung von Beständen
+      icon: folder
 intro:
     heading: "What we offer"
     text: "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone."

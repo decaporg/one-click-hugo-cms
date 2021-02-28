@@ -44,18 +44,6 @@ values:
       coffee farming on our blog.
     imageUrl: "/img/about-reinvest-profits.jpg"
 ---
-as doasdo ansd a
-d a
+ASDRO ist ein junges und dynamisches Unternehmen aus dem Ruhrgebiet. Mit den Wurzeln aus dem geophysikalischen Institut der Universität Münster ist es international aufgestellt und vereint Know-How mit Leading Edge Dienstleistungen.
 
- dasd a
- d as
-
-
-  sad asd a
-
-
-  as dasdd Asdro
-
-
-
-   asd asd
+Unser Anspruch ist es stets einen Schritt Voraus zu sein um die Technologien und Lösungen von morgen zu entwickeln. Dazu können wir bereits jetzt Lösungen anbieten, die der Masstab für fortschrittlichste und dabei präziseste Arbeit darstellt.

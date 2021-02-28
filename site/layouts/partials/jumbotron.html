@@ -6,10 +6,12 @@
 					<h1 class="heading mb-3">{{ .Headline }}</h1>
 					<p class="para-desc text-muted">{{ .Subtitle }}</p>
 					<div class="mt-4">
-						<a href="{{ .Buttons.primary.link }}" class="btn btn-primary mt-2 mr-2"><i class="mdi mdi-phone"></i>
+						<a href="{{ .Buttons.primary.link }}" class="btn btn-primary mt-2 mr-2">
+							<i class="mdi mdi-{{ .Buttons.primary.icon }}"></i>
 							{{ .Buttons.primary.label }}</a>
-						<a href="{{ .Buttons.secondary.link }}" class="btn btn-outline-primary mt-2"><i
-								class="mdi mdi-book-outline"></i> {{ .Buttons.secondary.label }}</a>
+						<a href="{{ .Buttons.secondary.link }}" class="btn btn-outline-primary mt-2">
+							<i class="mdi mdi-{{ .Buttons.secondary.icon }}"></i>
+							{{ .Buttons.secondary.label }}</a>
 					</div>
 				</div>
 			</div>
