@@ -87,8 +87,8 @@
 .br-pill-l { border-radius: 9999px; }
 
 .br--bottom-l {
-		border-radius-top-left: 0;
-		border-radius-top-right: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
 }
 .br--top-l {
 		border-bottom-left-radius: 0;
