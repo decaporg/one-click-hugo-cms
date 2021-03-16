@@ -21,7 +21,7 @@ console.info("Made with ❤ by greive.tech");
 */
 
 // Loader
-$(window).on("load", function() {
+$(window).on("load", function () {
   $("#status").fadeOut();
   $("#preloader").delay(350).fadeOut("slow");
   $("body").delay(350).css({
@@ -30,14 +30,14 @@ $(window).on("load", function() {
 });
 
 // Menu
-$(".navbar-toggle").on("click", function(event) {
+$(".navbar-toggle").on("click", function (event) {
   $(this).toggleClass("open");
   $("#navigation").slideToggle(400);
 });
 
 $(".navigation-menu>li").slice(-1).addClass("last-elements");
 
-$(".menu-arrow,.submenu-arrow").on("click", function(e) {
+$(".menu-arrow,.submenu-arrow").on("click", function (e) {
   if ($(window).width() < 992) {
     e.preventDefault();
     $(this).parent("li").toggleClass("open").find(".submenu:first").toggleClass("open");
@@ -58,7 +58,7 @@ document.querySelectorAll(".navigation-menu a").forEach((item) => {
 });
 
 // Clickable Menu
-$(".has-submenu a").click(function(e) {
+$(".has-submenu a").on("click", function (e) {
   if (window.innerWidth < 992) {
     if ($(this).siblings(".submenu").length) {
       e.preventDefault();
@@ -69,7 +69,7 @@ $(".has-submenu a").click(function(e) {
   }
 });
 
-$(".mouse-down").on("click", function(event) {
+$(".mouse-down").on("click", function (event) {
   const $anchor = $(this);
   $("html, body").stop().animate({
     scrollTop: $($anchor.attr("href")).offset().top - 72
@@ -78,7 +78,7 @@ $(".mouse-down").on("click", function(event) {
 });
 
 // Sticky
-$(window).scroll(function() {
+$(window).on("scroll", function () {
   const scroll = $(window).scrollTop();
 
   if (scroll >= 50) {
@@ -90,24 +90,24 @@ $(window).scroll(function() {
 
 // Back to top
 const btnBackTop = $(".back-to-top");
-$(window).scroll(function() {
+$(window).on("scroll", function () {
   if ($(this).scrollTop() > 100) {
     btnBackTop.fadeIn();
   } else {
     btnBackTop.fadeOut();
   }
 });
-btnBackTop.click(function() {
-  $("html, body").animate({scrollTop: 0}, 500);
+btnBackTop.on("click", function () {
+  $("html, body").animate({ scrollTop: 0 }, 500);
   return false;
 });
 
 // Tooltip
-$(function() {
+$(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
 // Popover
-$(function() {
+$(function () {
   $('[data-toggle="popover"]').popover();
 });
 
@@ -115,7 +115,7 @@ $(function() {
 feather.replace();
 
 // Magnific Popup
-$(document).ready(function() {
+$(document).ready(function () {
   if ($(".video-play-icon").length) {
     $(".video-play-icon").magnificPopup({
       disableOn: 375,
@@ -148,3 +148,33 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function () {
+  const counter = document.querySelectorAll('.counter-value');
+  const speed = 2500; // The lower the slower
+
+  counter.forEach(counter_value => {
+    const updateCount = () => {
+      const target = +counter_value.getAttribute('data-count');
+      const count = +counter_value.innerText;
+
+      // Lower inc to slow and higher to slow
+      var inc = target / speed;
+
+      if (inc < 1) {
+        inc = 1;
+      }
+
+      // Check if target is reached
+      if (count < target) {
+        // Add inc to count and output in counter_value
+        counter_value.innerText = (count + inc).toFixed(0);
+        // Call function every ms
+        setTimeout(updateCount, 1);
+      } else {
+        counter_value.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+});
