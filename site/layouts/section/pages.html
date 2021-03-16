@@ -2,6 +2,10 @@
 
   {{ partial "page-header" . }}
 
+  {{ if .Params.intro }}
+    {{ partial "page-intro" . }}
+  {{ end }}
+
   <section class="section">
     {{ partial "text-wrapper" .Content }}
   </section>

@@ -13,18 +13,18 @@ buttons:
         link: "/pages/services"
         icon: "book-outline"
 clients:
-    - image: img/client/amazon.svg
-      label: "Amazon"
-    - image: img/client/google.svg
-      label: "Google"
-    - image: img/client/lenovo.svg
-      label: "Lenovo"
-    - image: img/client/paypal.svg
-      label: "Paypal"
-    - image: img/client/shopify.svg
-      label: "Shopify"
-    - image: img/client/spotify.svg
-      label: "Spotify"
+    - image: img/client/duisport.svg
+      label: "Duisport"
+    - image: img/client/siemens.svg
+      label: "Siemens"
+    - image: img/client/oge.svg
+      label: "OGE"
+    - image: img/client/evonik.svg
+      label: "Evonik"
+    - image: img/client/goldbeck.svg
+      label: "Goldbeck"
+    - image: img/client/telekom.svg
+      label: "Telekom"
 blurb:
     heading: Why Kaldi?
     text: "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities."#
