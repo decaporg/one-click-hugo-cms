@@ -85,88 +85,35 @@
       <div class="col-md-4 mt-4 pt-2">
         <ul class="nav nav-pills nav-justified flex-column bg-white rounded shadow p-3 mb-0 sticky-bar" id="pills-tab"
           role="tablist">
-          <li class="nav-item">
-            <a class="nav-link rounded active" id="webdeveloping" data-toggle="pill" href="#developing" role="tab"
-              aria-controls="developing" aria-selected="false">
-              <div class="text-center py-1">
-                <h6 class="mb-0">Tiefbau</h6>
-              </div>
-            </a>
-          </li>
-
-          <li class="nav-item mt-2">
-            <a class="nav-link rounded" id="database" data-toggle="pill" href="#data-analise" role="tab"
-              aria-controls="data-analise" aria-selected="false">
-              <div class="text-center py-1">
-                <h6 class="mb-0">Oil & Gas</h6>
-              </div>
-            </a>
-          </li>
-
-          <li class="nav-item mt-2">
-            <a class="nav-link rounded" id="server" data-toggle="pill" href="#security" role="tab"
-              aria-controls="security" aria-selected="false">
-              <div class="text-center py-1">
-                <h6 class="mb-0">Infrastruktur</h6>
-              </div>
-            </a>
-          </li>
-
-          <li class="nav-item mt-2">
-            <a class="nav-link rounded" id="webdesigning" data-toggle="pill" href="#designing" role="tab"
-              aria-controls="designing" aria-selected="true">
-              <div class="text-center py-1">
-                <h6 class="mb-0">Weitere Branchen</h6>
-              </div>
-            </a>
-          </li>
+          {{ range $i, $e := .Params.accordion }}
+            <li class="nav-item">
+              <a class="nav-link rounded{{ if eq $i 0}} active{{ end }}" id="webdeveloping" data-toggle="pill" href="#{{ .title | urlize }}" role="tab"
+                aria-controls="developing" aria-selected="false">
+                <div class="text-center py-1">
+                  <h6 class="mb-0">{{ .title }}</h6>
+                </div>
+              </a>
+            </li>
+          {{ end }}
         </ul>
       </div>
 
       <div class="col-md-8 col-12 mt-4 pt-2">
         <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade bg-white p-4 rounded shadow active show" id="developing" role="tabpanel"
-            aria-labelledby="webdeveloping">
-            <img src="/img/pages/excavator.jpg" class="img-fluid rounded shadow" alt="">
-            <div class="mt-4">
-              <p class="text-muted">This is required when, for example, the final text is not yet available. Dummy text
-                is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.</p>
-              <a href="javascript:void(0)" class="text-primary">Mehr zu Tiefbau <i data-feather="arrow-right"
-                  class="fea icon-sm"></i></a>
+          {{ range $i, $e := .Params.accordion }}
+            <div class="tab-pane fade bg-white p-4 rounded shadow{{ if eq $i 0}} active show{{ end }}" id="{{ .title | urlize }}" role="tabpanel" aria-labelledby="webdeveloping">
+              <img src="{{ .image }}" class="img-fluid rounded shadow" alt="{{ .title }}">
+              <div class="mt-4">
+                <p class="text-muted">{{ .description }}</p>
+                {{ if .link }}
+                  <a href="{{ .link.url }}" class="text-primary">
+                    {{ .link.label }}
+                    <i data-feather="arrow-right" class="fea icon-sm"></i>
+                  </a>
+                {{ end }}
+              </div>
             </div>
-          </div>
-
-          <div class="tab-pane fade bg-white p-4 rounded shadow" id="data-analise" role="tabpanel"
-            aria-labelledby="database">
-            <img src="/img/pages/pipeline.jpg" class="img-fluid rounded shadow" alt="">
-            <div class="mt-4">
-              <p class="text-muted">This is required when, for example, the final text is not yet available. Dummy text
-                is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.</p>
-              <a href="javascript:void(0)" class="text-primary">Mehr zu Oil & Gas <i data-feather="arrow-right"
-                  class="fea icon-sm"></i></a>
-            </div>
-          </div>
-
-          <div class="tab-pane fade bg-white p-4 rounded shadow" id="security" role="tabpanel" aria-labelledby="server">
-            <img src="/img/pages/harbor.jpg" class="img-fluid rounded shadow" alt="">
-            <div class="mt-4">
-              <p class="text-muted">This is required when, for example, the final text is not yet available. Dummy text
-                is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.</p>
-              <a href="javascript:void(0)" class="text-primary">Mehr zu Infrastruktur <i data-feather="arrow-right"
-                  class="fea icon-sm"></i></a>
-            </div>
-          </div>
-
-          <div class="tab-pane fade bg-white p-4 rounded shadow" id="designing" role="tabpanel"
-            aria-labelledby="webdesigning">
-            <img src="/img/pages/exhibition.jpg" class="img-fluid rounded shadow" alt="">
-            <div class="mt-4">
-              <p class="text-muted">This is required when, for example, the final text is not yet available. Dummy text
-                is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.</p>
-              <a href="javascript:void(0)" class="text-primary">weitere Branchen <i data-feather="arrow-right"
-                  class="fea icon-sm"></i></a>
-            </div>
-          </div>
+          {{ end }}
         </div>
       </div>
     </div>
@@ -192,15 +139,15 @@
                 <div class="row align-items-center">
                   <div class="col-md-6 mt-4 pt-2">
                     <div class="section-title text-md-left">
-                      <h6 class="text-white-50">Team</h6>
-                      <h4 class="title text-white title-dark mb-0">Meet Experience <br> Team Member</h4>
+                      <h6 class="text-white-50">Wir beraten Sie gern!</h6>
+                      <h4 class="title text-white title-dark mb-0">Lassen Sie uns über <br> Ihr Projekt reden</h4>
                     </div>
                   </div>
                   <div class="col-md-6 col-12 mt-4 pt-md-2">
                     <div class="section-title text-md-left">
                       <p class="text-white-50 para-desc">Start working with Landrick that can provide everything you
                         need to generate awareness, drive traffic, connect.</p>
-                      <a href="javascript:void(0)" class="text-white title-dark">Read More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
+                      <a href="/contact" class="text-white title-dark">Nehmen Sie Kontakt auf <i data-feather="arrow-right" class="fea icon-sm"></i></a>
                     </div>
                   </div>
                 </div>

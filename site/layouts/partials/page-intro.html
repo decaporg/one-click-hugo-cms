@@ -1,29 +1,65 @@
 <section class="section pb-0">
     <div class="container">
-        <div class="row align-items-center" id="counter">
-            <div class="col-md-6">
-                <img src="{{ .Params.intro.image }}" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                <div class="ml-lg-4">
-                    <div class="d-flex mb-4">
-                        <span class="text-primary h1 mb-0">
-                            {{ if .Params.intro.counter.prefix }}
-                                <span class="display-1 font-weight-bold">{{ .Params.intro.counter.prefix }}</span>
-                            {{ end }}
-                            <span class="counter-value display-1 font-weight-bold" data-count="{{ .Params.intro.counter.target }}">1</span>
-                            {{ .Params.intro.counter.suffix }}
-                        </span>
-                        <span class="h6 align-self-end ml-2">{{ safeHTML .Params.intro.counter.label }}</span>
+        {{ if eq .Type "services" }}
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="position-relative">
+                        <img src="{{ .Params.intro.image }}" class="rounded img-fluid mx-auto d-block" alt="{{ .Params.intro.heading }}">
+                        {{ if .Params.intro.video }}
+                            <div class="play-icon">
+                                <a href="https://www.youtube.com/watch?v={{ .Params.intro.video.id }}" class="play-btn video-play-icon">
+                                    <i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
+                                </a>
+                            </div>
+                        {{ end }}
                     </div>
-                    <div class="section-title">
+                </div>
+
+                <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="section-title ms-lg-4">
                         <h4 class="title mb-4">{{ .Params.intro.heading }}</h4>
                         <p class="text-muted">{{ safeHTML .Params.intro.description }}</p>
-                        <a href="{{ .Params.intro.button.link }}" class="btn btn-primary mt-3">{{ .Params.intro.button.label }}</a>
+                        {{ if .Params.intro.bulletpoints }}
+                            <ul class="intro-bulletpoints list-unstyled text-muted">
+                                {{ range .Params.intro.bulletpoints }}
+                                    <li class="mb-2">
+                                        <span class="text-primary mr-2">
+                                            <i data-feather="check-circle" class="align-middle"></i>
+                                        </span>
+                                        <span class="align-middle">{{ . }}</span>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        {{ end }}
                     </div>
                 </div>
             </div>
-        </div>
+        {{ else }}
+            <div class="row align-items-center" id="counter">
+                <div class="col-md-6">
+                    <img src="{{ .Params.intro.image }}" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="ml-lg-4">
+                        <div class="d-flex mb-4">
+                            <span class="text-primary h1 mb-0">
+                                {{ if .Params.intro.counter.prefix }}
+                                    <span class="display-1 font-weight-bold">{{ .Params.intro.counter.prefix }}</span>
+                                {{ end }}
+                                <span class="counter-value display-1 font-weight-bold" data-count="{{ .Params.intro.counter.target }}">1</span>
+                                {{ .Params.intro.counter.suffix }}
+                            </span>
+                            <span class="h6 align-self-end ml-2">{{ safeHTML .Params.intro.counter.label }}</span>
+                        </div>
+                        <div class="section-title">
+                            <h4 class="title mb-4">{{ .Params.intro.heading }}</h4>
+                            <p class="text-muted">{{ safeHTML .Params.intro.description }}</p>
+                            <a href="{{ .Params.intro.button.link }}" class="btn btn-primary mt-3">{{ .Params.intro.button.label }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
     </div>
 </section>

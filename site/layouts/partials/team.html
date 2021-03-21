@@ -1,0 +1,31 @@
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h4 class="title">{{ .title }}</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            {{ range .members }}
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="d-flex align-items-center">
+                        <img src="{{ .image }}" class="avatar avatar-medium rounded-circle img-thumbnail" alt="{{ .name }}">
+                        <div class="content ml-3">
+                            <h5 class="mb-0">
+                                {{ if .link }}
+                                    <a href="{{ .link }}" class="text-dark">{{ .name }}</a>
+                                {{ else }}
+                                    <span class="text-dark">{{ .name }}</span>
+                                {{ end }}
+                            </h5>
+                            <small class="position text-muted">{{ .position }}</small>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
