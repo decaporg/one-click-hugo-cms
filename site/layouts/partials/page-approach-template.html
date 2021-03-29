@@ -1,0 +1,54 @@
+<section class="section">
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <img src="/img/illustrations/interactiondesign-amico.svg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="section-title ml-lg-5 intro-bulletpoints">
+                    <h4 class="title mb-4">{{ .Params.listOne.title }}</h4>
+
+                    {{ range .Params.listOne.list }}
+                        <h5><i data-feather="{{ .icon }}" class="text-primary mr-1 align-middle"></i><span class="align-middle">{{ .title }}</span></h5>
+                        <p class="text-muted para-desc ml-4 pl-2">{{ .description }}</p>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6 order-1 order-md-2">
+                <img src="/img/dashboard.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="section-title me-lg-5 intro-bulletpoints">
+                    <h4 class="title mb-4">{{ .Params.listTwo.title }}</h4>
+                    <p class="text-muted">{{ .Params.listTwo.description }}</p>
+                    <ul class="list-unstyled text-muted">
+                        {{ range .Params.listTwo.list }}
+                            <li class="mb-0">
+                                <span class="text-primary h5 me-2">
+                                    <i data-feather="check-circle" class="align-middle"></i>
+                                </span>
+                                {{ . }}
+                            </li>
+                        {{ end }}
+                    </ul>
+                    <div class="mt-4">
+                        <a href="javascript:void(0)" class="btn btn-primary">Read More <svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-arrow-right fea icon-sm">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -6,8 +6,13 @@
     {{ partial "page-intro" . }}
   {{ end }}
 
-  <section class="section">
-    {{ partial "text-wrapper" .Content }}
-  </section>
+  {{ if .Content }}
+    <section class="section">
+      {{ partial "text-wrapper" .Content }}
+    </section>
+  {{ end }}
 
+  {{ if eq .Type "approach" }}
+    {{ partial "page-approach-template" . }}
+  {{ end }}
 {{ end }}
