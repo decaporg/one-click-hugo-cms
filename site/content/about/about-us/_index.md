@@ -3,7 +3,7 @@ title: Über Asdro
 image: /img/pages/aboutus-header.jpg
 navTransparent: true
 intro:
-  image: /img/work/2.jpg
+  image: /img/about-asdro.png
   button:
     label: Buy now
     link: /

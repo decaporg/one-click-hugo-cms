@@ -22,7 +22,7 @@
                         {{ if .Params.intro.bulletpoints }}
                             <ul class="intro-bulletpoints list-unstyled text-muted">
                                 {{ range .Params.intro.bulletpoints }}
-                                    <li class="mb-2">
+                                    <li class="mb-2 d-flex align-items-center">
                                         <span class="text-primary mr-2">
                                             <i data-feather="check-circle" class="align-middle"></i>
                                         </span>
@@ -55,6 +55,18 @@
                         <div class="section-title">
                             <h4 class="title mb-4">{{ .Params.intro.heading }}</h4>
                             <p class="text-muted">{{ safeHTML .Params.intro.description }}</p>
+                            {{ if .Params.intro.bulletpoints }}
+                                <ul class="intro-bulletpoints list-unstyled text-muted">
+                                    {{ range .Params.intro.bulletpoints }}
+                                        <li class="mb-2 d-flex align-items-center">
+                                            <span class="text-primary mr-2">
+                                                <i data-feather="check-circle" class="align-middle"></i>
+                                            </span>
+                                            <span class="align-middle">{{ . }}</span>
+                                        </li>
+                                    {{ end }}
+                                </ul>
+                            {{ end }}
                             <a href="{{ .Params.intro.button.link }}" class="btn btn-primary mt-3">{{ .Params.intro.button.label }}</a>
                         </div>
                     </div>
