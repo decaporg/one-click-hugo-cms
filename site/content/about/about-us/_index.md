@@ -2,6 +2,11 @@
 title: Über Asdro
 image: /img/pages/aboutus-header.jpg
 navTransparent: true
+intro:
+  image: /img/work/2.jpg
+  button:
+    label: Buy now
+    link: /
 team:
   title: Die ASDROnauten
   members:

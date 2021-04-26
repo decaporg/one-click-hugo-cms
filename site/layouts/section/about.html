@@ -2,9 +2,26 @@
 
   {{ partial "page-header" . }}
 
-  <section class="section">
-    {{ partial "text-wrapper" .Content }}
-  </section>
+  <section class="section pb-0">
+    <div class="container">
+      <div class="row align-items-center" id="counter">
+          <div class="col-md-6">
+              <img src="{{ .Params.intro.image }}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+              <div class="ml-lg-4">
+                <div class="section-title">
+                    <h4 class="title mb-4">{{ .Params.intro.heading }}</h4>
+                    <p class="text-muted">{{ safeHTML .Content }}</p>
+                    <a href="{{ .Params.intro.button.link }}" class="btn btn-primary mt-3">{{ .Params.intro.button.label }}</a>
+                </div>
+              </div>
+          </div>
+      </div>
+
+    </div>
+</section>
 
   {{ partial "team" .Params.team }}
 
