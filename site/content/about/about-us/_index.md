@@ -10,12 +10,41 @@ intro:
 team:
   title: Die ASDROnauten
   members:
-    - name: Alexander Weyer
-      image: /img/testimonial.jpg
-      position: CEO
     - name: Julian Beautemps
-      image: /img/testimonial.jpg
+      image: /img/team/Julian Beautemps.jpg
       position: CEO
+      ressort: Management, Strategy, Sales
+    - name: Alexander Weyer
+      image: /img/team/Alexander Weyer.jpg
+      position: CTO
+      ressort: R&D, Projects, Software
+    - name: Patrick Lendle
+      image: /img/team/Patrick Lendle.jpg
+      position: Reporting & Austria
+      ressort: M.Sc. Geophysik
+    - name: Malin Chrzon
+      image: /img/team/Malin Chrzon.jpg
+      position: Projects & Innovation
+      ressort: M.Sc. Geophysik
+    - name: Catharina van Alen
+      image: /img/team/Catharina van Alen.jpg
+      position: Sales & Marketing
+      ressort: M.Sc. Geophysik
+    - name: Jan Graßhof
+      image: /img/team/Jan Graßhof.jpg
+      position: Technic & Processes
+      ressort: B.Sc. Maschinenbau
+    - name: Florian Scholz
+      image: /img/team/Florian Scholz.jpg
+      position: GIS & Software
+      ressort: B.Sc. Geoinformatik
+    - name: Peter Beautemps
+      image:
+      position: Account Manager
+    - name: Fabian Weidt
+      image:
+      position: Intern
+
 ---
 ASDRO ist ein junges und dynamisches Unternehmen aus dem Ruhrgebiet. Mit den Wurzeln aus dem geophysikalischen Institut der Universität Münster ist es international aufgestellt und vereint Know-How mit Leading Edge Dienstleistungen.
 

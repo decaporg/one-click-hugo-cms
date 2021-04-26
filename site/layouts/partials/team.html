@@ -12,7 +12,8 @@
             {{ range .members }}
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                     <div class="d-flex align-items-center">
-                        <img src="{{ .image }}" class="avatar avatar-medium rounded-circle img-thumbnail" alt="{{ .name }}">
+                        <img src="{{ if .image }}{{ .image }}{{ else }}/img/team/no-image.jpg{{ end }}" class="avatar avatar-medium rounded-circle img-thumbnail" alt="{{ .name }}">
+
                         <div class="content ml-3">
                             <h5 class="mb-0">
                                 {{ if .link }}
@@ -21,7 +22,8 @@
                                     <span class="text-dark">{{ .name }}</span>
                                 {{ end }}
                             </h5>
-                            <small class="position text-muted">{{ .position }}</small>
+                            <strong class="position text-primary">{{ .position }}</strong>
+                            <small class="d-block position text-muted">{{ .ressort }}</small>
                         </div>
                     </div>
                 </div>
