@@ -150,11 +150,10 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   const counter = document.querySelectorAll('.counter-value');
-  const speed = 2500; // The lower the slower
-
   counter.forEach(counter_value => {
     const updateCount = () => {
       const target = +counter_value.getAttribute('data-count');
+      const speed = counter_value.getAttribute('data-speed') || 2500; // The lower the slower
       const count = +counter_value.innerText;
 
       // Lower inc to slow and higher to slow

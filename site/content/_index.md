@@ -25,6 +25,23 @@ clients:
       label: "Goldbeck"
     - image: img/client/telekom.svg
       label: "Telekom"
+counter:
+    - icon: fast-forward
+      title: schneller
+      count: 10
+      description: Projektzeiten werden durch den Einsatz von Drohnen erheblich verkürzt. Stillstände werden vermieden und ein reibungsloser Ablauf wird garantiert.
+      suffix: x
+    - icon: shield
+      title: Sicherheit
+      count: 100
+      description: Durch den Einsatz von sicheren Drohnen wird ein Ausfall des Systems vorgebeugt. Die Sicherheit von Mensch und Maschine steht stets im Vordergrund.
+      suffix: "%"
+    - icon: maximize
+      title: Hektar
+      count: 1000
+      speed: 500
+      description: Diese Fläche wurde von ASDRO im vergangenen Jahr erfolgreich vermessen. Innerhalb kürzester Zeit und mit größter Präzision.
+      suffix: +
 blurb:
     heading: Why Kaldi?
     text: "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities."#

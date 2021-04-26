@@ -1,0 +1,19 @@
+<section class="secion">
+    <div class="container">
+        <div class="position-relative py-5 rounded">
+            <div class="bg-overlay rounded bg-light bg-gradient"></div>
+            <div class="row">
+                {{ range .counter }}
+                    <div class="col-lg-4 col-6 my-4">
+                        <div class="counter-box text-center px-lg-4">
+                            <i class="text-muted h2" data-feather="{{ .icon }}"></i>
+                            <div class="h1 mb-0 text-primary"><span class="counter-value" data-count="{{ .count }}" {{ if .speed }}data-speed="{{ .speed }}"{{ end }}>0</span>{{ .suffix }}</div>
+                            <div class="h5 counter-head text-black">{{ .title }}</div>
+                            <p class="text-muted small">{{ .description }}</p>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
