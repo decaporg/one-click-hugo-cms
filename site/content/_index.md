@@ -1,7 +1,7 @@
 ---
 headline: "ASDRO – Die Überflieger mit dem Durchblick"
-subtitle: "High-Tech Geophysics für eine effiziente Vermessung, Inspektion und fachspezifische Bewertung von Oberflächen und Untergründen."
-image: /img/home-header.jpg
+subtitle: "Wir bieten \"DIE\" Komplett-Lösung für die Vermessung, Inspektion & fachspezifische Bewertung von Oberflächen und Untergründen."
+image: /img/header-asdro.jpg
 title: "Home"
 buttons:
     primary:
