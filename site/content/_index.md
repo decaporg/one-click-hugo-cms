@@ -13,10 +13,10 @@ buttons:
         link: "/pages/services"
         icon: "book-outline"
 clients:
-    - image: img/client/duisport.svg
-      label: "Duisport"
-    - image: img/client/siemens.svg
-      label: "Siemens"
+    # - image: img/client/duisport.svg
+    #   label: "Duisport"
+    # - image: img/client/siemens.svg
+    #   label: "Siemens"
     - image: img/client/oge.svg
       label: "OGE"
     - image: img/client/evonik.svg

@@ -11,31 +11,31 @@ team:
   title: Die ASDROnauten
   members:
     - name: Julian Beautemps
-      image: /img/team/Julian Beautemps.jpg
+      image: /img/team/julian-beautemps.jpg
       position: CEO
       ressort: Management, Strategy, Sales
     - name: Alexander Weyer
-      image: /img/team/Alexander Weyer.jpg
+      image: /img/team/alexander-weyer.jpg
       position: CTO
       ressort: R&D, Projects, Software
     - name: Patrick Lendle
-      image: /img/team/Patrick Lendle.jpg
+      image: /img/team/patrick-lendle.jpg
       position: Reporting & Austria
       ressort: M.Sc. Geophysik
     - name: Malin Chrzon
-      image: /img/team/Malin Chrzon.jpg
+      image: /img/team/malin-chrzon.jpg
       position: Projects & Innovation
       ressort: M.Sc. Geophysik
     - name: Catharina van Alen
-      image: /img/team/Catharina van Alen.jpg
+      image: /img/team/catharina-van-alen.jpg
       position: Sales & Marketing
       ressort: M.Sc. Geophysik
     - name: Jan Graßhof
-      image: /img/team/Jan Graßhof.jpg
+      image: /img/team/jan-grasshof.jpg
       position: Technic & Processes
       ressort: B.Sc. Maschinenbau
     - name: Florian Scholz
-      image: /img/team/Florian Scholz.jpg
+      image: /img/team/florian-scholz.jpg
       position: GIS & Software
       ressort: B.Sc. Geoinformatik
     - name: Peter Beautemps

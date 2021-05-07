@@ -7,7 +7,7 @@
   {{ end }}
 
   {{ if .Content }}
-    <section class="section pt-0">
+    <section class="section{{ if .Params.intro }} pt-0{{ end }}">
       {{ partial "text-wrapper" .Content }}
     </section>
   {{ end }}

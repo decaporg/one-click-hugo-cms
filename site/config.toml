@@ -4,7 +4,7 @@ languageLang = "en"
 title = "Asdro Drone Solutions"
 [params]
   [params.contact]
-    email = "hallo@asdro.de"
+    email = "info@asdro.de"
     phoneHuman = "+49 (0) 208 / 741 752 64"
     phoneMachine = "+4920874175264"
 
