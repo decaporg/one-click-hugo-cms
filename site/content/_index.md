@@ -49,21 +49,27 @@ services:
     - heading: Kampfmittelsondierung
       text: Zertifizierte Fachfirma nach SprengG 7 & SprengG 20. Schnell & transparent!
       icon: search
+      subpage: ordnance-probing
     - heading: Leitungsortung
       text: Ortung von Bestandsleitung und Fremdleitung mit höchster Präzision
       icon: crosshair
+      subpage: line-location
     - heading: Altlasten-Check
       text: Fundamente, Keller, Bunker und sonstige Störkörper zuverlässig vor dem Baustart dokumentieren.
       icon: home
+      subpage: inspection
     - heading: 3D-Vermessung
       text: Vollflächige Vermessung mit Zentimeter-Genauigkeit
       icon: box
+      # subpage: surveying
     - heading: Geo-Physik
       text: Fragestellung rund um die Geophysik durch fachmännisches Personal
       icon: book-open
+      # subpage: geo-physics
     - heading: Bestandsaufnahme
       text: Dokumentation, Schadensanalyse und Visualsierung von Beständen
       icon: folder
+      subpage: site-exploration
 intro:
     heading: "What we offer"
     text: "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone."

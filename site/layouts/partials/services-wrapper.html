@@ -8,7 +8,15 @@
           </div>
 
           <div class="content mt-3">
-            <h5>{{ .heading }}</h5>
+            <h5>
+              {{ if .subpage }}
+                <a href="/pages/services/{{ .subpage }}" class="stretched-link text-dark">
+                  {{ .heading }}
+                </a>
+              {{ else }}
+                {{ .heading }}
+              {{ end }}
+            </h5>
             <p class="text-muted mb-0">{{ .text }}</p>
           </div>
         </div>

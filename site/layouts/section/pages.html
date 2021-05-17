@@ -6,6 +6,12 @@
     {{ partial "page-intro" . }}
   {{ end }}
 
+  {{ if .Params.services }}
+    <section class="section">
+      {{ partial "services-wrapper" .Params }}
+    </section>
+  {{ end }}
+
   {{ if .Content }}
     <section class="section{{ if .Params.intro }} pt-0{{ end }}">
       {{ partial "text-wrapper" .Content }}
