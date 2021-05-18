@@ -1,5 +1,6 @@
 ---
 title: Zertifikate
+draft: true
 image: /img/pages/perspective-header.jpg
 values:
   - heading: "Shade-grown coffee"
