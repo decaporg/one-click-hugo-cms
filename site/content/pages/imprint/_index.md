@@ -11,7 +11,7 @@ Duisburger Str. 375, 46049 Oberhausen
 
 ###### Vertreten durch:
 
-Julian Weßel & Alexander Weyer
+Julian Beautemps & Alexander Weyer
 
 ###### Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:
 DE323048435

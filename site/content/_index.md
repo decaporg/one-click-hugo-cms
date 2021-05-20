@@ -1,6 +1,6 @@
 ---
 headline: "ASDRO – Die Überflieger mit dem Durchblick"
-subtitle: "Wir bieten \"DIE\" Komplett-Lösung für die Vermessung, Inspektion & fachspezifische Bewertung von Oberflächen und Untergründen."
+subtitle: "Die Komplett-Lösung für die Vermessung, Inspektion & fachspezifische Bewertung von Oberflächen und Untergründen."
 image: /img/header-asdro.jpg
 title: "Home"
 buttons:
@@ -54,22 +54,22 @@ services:
       text: Ortung von Bestandsleitung und Fremdleitung mit höchster Präzision
       icon: crosshair
       subpage: line-location
-    - heading: Altlasten-Check
+    - heading: Baugrunderkundung
       text: Fundamente, Keller, Bunker und sonstige Störkörper zuverlässig vor dem Baustart dokumentieren.
       icon: home
-      subpage: inspection
+      subpage: site-exploration
     - heading: 3D-Vermessung
       text: Vollflächige Vermessung mit Zentimeter-Genauigkeit
       icon: box
-      # subpage: surveying
-    - heading: Geo-Physik
+      subpage: inspection
+    - heading: Geophysik
       text: Fragestellung rund um die Geophysik durch fachmännisches Personal
       icon: book-open
       # subpage: geo-physics
     - heading: Bestandsaufnahme
       text: Dokumentation, Schadensanalyse und Visualsierung von Beständen
       icon: folder
-      subpage: site-exploration
+      subpage: inspection
 intro:
     heading: "What we offer"
     text: "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone."
