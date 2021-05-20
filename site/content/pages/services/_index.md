@@ -1,7 +1,7 @@
 ---
 title: Leistungen
-image: /img/pages/drone-header.jpg
-heading: What we offer
+image: /img/pages/header-default.jpg
+heading: Unsere Services für Ihr Projekt
 services:
   - heading: Kampfmittelsondierung
     text: Zertifizierte Fachfirma nach SprengG 7 & SprengG 20. Schnell & transparent!

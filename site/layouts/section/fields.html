@@ -4,17 +4,17 @@
 
 <section class="section bg-light">
   <div class="container mt-100 mt-60">
-    <div class="row align-items-end mb-4 pb-4">
-      <div class="col-md-8">
-        <div class="section-title text-center text-md-left">
-          <h6 class="text-primary">Branchen</h6>
-          <h4 class="title mb-4">Wen wir unterstützen können</h4>
-          <p class="text-muted mb-0 para-desc">Start working with <span
-              class="text-primary font-weight-bold">Landrick</span> that can provide everything you need to generate
-            awareness, drive traffic, connect.</p>
+    {{ if .Params.intro }}
+      <div class="row align-items-end mb-4 pb-4">
+        <div class="col-md-8">
+          <div class="section-title text-center text-md-left">
+            <h6 class="text-primary">{{ .Params.intro.subtitle }}</h6>
+            <h4 class="title mb-4">{{ .Params.intro.heading }}</h4>
+            <p class="text-muted mb-0 para-desc">{{ .Params.intro.description }}</p>
+          </div>
         </div>
       </div>
-    </div>
+    {{ end }}
 
     <div class="row">
       <div class="col-md-4 mt-4 pt-2">
