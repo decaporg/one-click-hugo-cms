@@ -1,11 +1,10 @@
 ---
 title: Öl und Gas
 layout: pages
-image: /img/pages/drone-header.jpg
-heading: What we offer
+image: /img/pages/header-oil-gas.jpg
 description: Öl und Gas
 intro:
-    image: /img/pages/intro-oil-gas.png
+    image: /img/pages/intro-oil-gas.jpg
     heading: Was bieten wir der Öl und Gas Branche?
     description:
         Bei der Bauplanung von unterirdischen Versorgungsnetzten ist eine fachgemäße Vorerkundung des Baugrundes ein wesentlicher Bestandteil, um die Sicherheit während der Baumaßnahmen zu gewährleisten und ungewollten Kosten zu verhindern. Die Sicherheit auf der Baustelle kann beispielsweise durch unentdeckte Munitionsaltlasten gefährdet werden.

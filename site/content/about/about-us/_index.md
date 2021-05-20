@@ -1,6 +1,6 @@
 ---
 title: Über Asdro
-image: /img/pages/aboutus-header.jpg
+image: /img/pages/header-about.jpg
 navTransparent: true
 intro:
   image: /img/preview.webp

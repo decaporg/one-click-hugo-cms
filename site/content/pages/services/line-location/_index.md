@@ -1,15 +1,14 @@
 ---
 title: Leitungsortung
 type: services
-image: /img/pages/drone-header.jpg
-heading: What we offer
+image: /img/pages/header-line-location.jpg
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
 intro:
-  image: /img/about2.png
+  image: /img/pages/intro-line-location.jpg
   heading: Ortung von unterirdischen Leitungen
   description: >
     Unterirdisch verlaufende Leitungen sind häufig unzureichend dokumentiert. Kommt es zu einer Beschädigung dieser Leitungen bei Bauvorhaben, können enorme Kosten entstehen.Damit es bei Bauvorhaben in Branchen wie dem Tiefbau und der Energieversorgung nicht zu ungewollten Kosten kommt, ist die Leitungsortung als vorbereitende Maßnahme wichtig.<br>Mit drohnengestützten Verfahren detektieren wir:

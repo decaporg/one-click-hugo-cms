@@ -1,15 +1,14 @@
 ---
 title: Infrastruktur
 type: fields
-image: /img/pages/drone-header.jpg
-heading: What we offer
+image: /img/pages/header-infrastructure.jpg
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
 intro:
-    image: /img/pages/intro-infrastructure.png
+    image: /img/pages/intro-infrastructure.jpg
     heading: Was bieten wir der Infrastruktur-Branche?
     description:
         Die turnusmäßige Inspektion von Infrastruktur-Anlagen, wie beispielsweise Straßen, Häfen oder Schienennetzen, ist erforderlich, um Schäden rechtzeitig zu erkennen und zu beheben.

@@ -1,11 +1,10 @@
 ---
 title: Tiefbau
 layout: pages
-image: /img/pages/drone-header.jpg
-heading: What we offer
+image: /img/pages/header-civil-eng.jpg
 description: Die Vermessung und Kartierung neuer Baugebiete/-grundstücke spielt oft für Bauvorhaben eine entscheidende Rolle.
 intro:
-    image: /img/pages/intro-civil-eng.png
+    image: /img/pages/intro-civil-eng.jpg
     heading: Was bieten wir dem Tiefbau?
     description:
         Ein wesentlicher Bestandteil bei Bauvorhaben ist die fachgerechte Vorerkundung des Baugrundes, um mögliche Gefahren im Voraus zu erkennen oder unerwünschte Kosten zu vermeiden.

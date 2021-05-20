@@ -5,7 +5,9 @@
       <div class="col-lg-12 text-center">
         <div class="page-next-level title-heading">
           <h1 class="title-dark">{{ .Title }}</h1>
-          <p class="para-desc mb-0 mx-auto{{ if .Params.Image }} text-white-50{{ end }}">{{ .Params.Heading }}</p>
+          {{ if .Params.Heading }}
+            <p class="para-desc mb-0 mx-auto{{ if .Params.Image }} text-white-50{{ end }}">{{ .Params.Heading }}</p>
+          {{ end }}
           <div class="page-next">
             <nav aria-label="breadcrumb" class="d-inline-block">
               <ul class="breadcrumb bg-white rounded shadow mb-0">
