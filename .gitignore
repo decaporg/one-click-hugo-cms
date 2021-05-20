@@ -5,3 +5,4 @@ site/data/webpack.json
 yarn-error.log
 .DS_Store
 .vscode
+**:Zone.Identifier
