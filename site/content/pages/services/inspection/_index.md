@@ -2,7 +2,6 @@
 title: Inspektion
 type: services
 image: /img/pages/header-default.jpg
-heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -10,10 +9,11 @@ description: >-
   anyone.
 intro:
   image: /img/about2.png
-  heading: Works as inspected
+  heading: Anlageninspektion per Drohne
   description: >
-    Die Inspektion von Infrastruktur-Anlagen durch den Menschen ist mit einem hohen Zeitaufwand und hohen Kosten verbunden. Mit drohnenbasierter Photogrammmetrie von ASDRO wird die Anlage autonomvermessen und ein digitales 3D-Modell erstellt.  Schäden können anhand des digitalen Abbilds der Anlage schnell erkannt und anschließend behoben werden. Die Inspektion läuft somit rein digital ab.
+    Die turnusmäßige Inspektion von Infrastrukturanlagen ist notwendig, um Schäden rechtzeitig zu erkennen und zu beheben. Inspektion durch den Menschen ist mit einem großen zeitlichen Aufwand verbunden und birgt Herausforderungen durch unwegsames Gelände. Drohnenbasierte Messverfahren ermöglichen eine schnelle und hochpräzise Erfassung des Ist-Zustandes von Infrastrukturen – auch bei schwer zugänglichen Anlagen. Schäden können anhand des digitalen Abbilds der Anlage schnell erkannt und anschließend behoben werden. Die Inspektion läuft somit rein digital ab.
   bulletpoints:
-  - Georeferenzierte 3D-Modelle zur digitalen Inspektion
-  - Lagegenauigkeit von 1-2 cm und Höhengenauigkeit von 2-3 cm
+  - Turnusmäßige Dokumentation von Infrastrukturen zur Inspektionen
+  - Georeferenzierte Orthofotos, Höhen- und 3D-Modelle
+  - Hochpräzise Ergebnisse mit 1-2 cm Lagegenauigkeit und 2-3 cm Höhengenauigkeit
 ---

@@ -17,28 +17,28 @@ intro:
 accordion:
   - title: Tiefbau
     description: >
-      This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.
+      Von der Baugrunderkundung bis zur Baudokumentation. Mit unseren sicheren und präzisen Drohnen-Technologien unterstützen wir Unternehmen in allen Bauphasen.
     image: /img/pages/excavator.jpg
     link:
       url: /pages/fields/civil-engineering
       label: Mehr zu Tiefbau
-  - title: Oil & Gas
-    description: >
-      This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.
-    image: /img/pages/pipeline.jpg
-    link:
-      url: /pages/fields/energy-supply
-      label: Mehr zu Oil & Gas
   - title: Infrastruktur
     description: >
-      This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.
+      Präzise Vermessung und Inspektion von Gebäuden und Anlagen durch Drohnen - Die schnelle und kostengünstige Alternative zur Bodenvermessungen und Inspektion durch den Menschen
     image: /img/pages/harbor.jpg
     link:
       url: /pages/fields/infrastructure
       label: Mehr zu Infrastruktur
+  - title: Oil & Gas
+    description: >
+      Trassenvorerkundung, Baudokumentation oder Inspektion von Anlagen – Wir liefern diverse Lösungen für Unternehmen der Öl & Gas Branche
+    image: /img/pages/pipeline.jpg
+    link:
+      url: /pages/fields/energy-supply
+      label: Mehr zu Oil & Gas
   - title: Weitere Branchen
     description: >
-      This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics.
+      Ihre Branche ist nicht vertreten? Kontaktieren Sie uns und wir sprechen mit Ihnen über Ihren konkreten Anwendungsfall.
     image: /img/pages/exhibition.jpg
 ---
 

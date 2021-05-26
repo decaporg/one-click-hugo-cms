@@ -3,11 +3,12 @@ title: Öl und Gas
 layout: pages
 image: /img/pages/header-oil-gas.jpg
 description: Öl und Gas
+customList: true
 intro:
     image: /img/pages/intro-oil-gas.jpg
-    heading: Was bieten wir der Öl und Gas Branche?
+    heading: Was bieten wir der Öl- und Gas-Branche?
     description:
-        Bei der Bauplanung von unterirdischen Versorgungsnetzten ist eine fachgemäße Vorerkundung des Baugrundes ein wesentlicher Bestandteil, um die Sicherheit während der Baumaßnahmen zu gewährleisten und ungewollten Kosten zu verhindern. Die Sicherheit auf der Baustelle kann beispielsweise durch unentdeckte Munitionsaltlasten gefährdet werden.
+        Der Einsatz von Drohen liefert vielseitige Lösungen in der Öl- & Gasbranche. Ob Trassenvorerkundung oder Baudokumentation, wir unterstützen Unternehmen in unterschiedlichen Bauphasen.
     counter:
         target: 30
         label: präzise <br> Lokalisierung
@@ -18,14 +19,22 @@ intro:
         label: Jetzt Angebot einholen
 ---
 
-### Unsere Lösung
+### Drohnenlösungen für die Öl & Gas Branche - Zerstörungsfrei  und sicher
 
-Ungewollte Kosten können wiederum entstehen, wenn unterirdische Fundamente oder archäologische Strukturen unentdeckt bleiben und zu einer Verzögerung der Baumaßnahmen führen. Auch die Beschädigung von undokumentierten Leitungen, die nicht vorab lokalisiert wurden, kann diese Folgen haben.
+##### Trassenvorerkundung
 
-Mit Messverfahren von ASDRO werden Störkörper und Leitungen gefahrenfrei aus der Luft detektiert, damit diese vor dem Baubeginn geräumt werden können. Besonders große Flächen werden in kürzester Zeit autonom vermessen. Die Verfahren liefern hochpräzise Ergebnisse, die vollständig digitalisiert werden und zusätzlich in die Bauplanung mit einfließen können.
+Im Zuge der Genehmigungsplanung von Bauprojekten ist eine Untersuchung des Baugrundes auf eine Belastung durch Kampfmittel zu veranlassen. Bei konventioneller Kampfmittelsondierung wird der Baugrund begangen oder befahren. Es bestehen Risiken für beteiligtes Personal durch verborgene Kampfmittel und Herausforderungen durch unwegsames Gelände.
 
-+ Umfassende Vorerkundung des Baugrundes; oberflächlich und unterirdisch
-+ Detektion von Störkörpern, u.a. Kampfmitteln, Schadstoffen und Fundamenten, und Leitungen im Baugrund
-+ Detektion von Mittleren- und Großkalibern, sowie Blindgängern bis 2-4 m Tiefe
-+ metallische und stromführende Leitungen mit Lagegenauigkeit von 30 cm
-+ DN1000 Leitungen bis in 10m
+Der Einsatz von Drohnen-Technologien ermöglicht eine sichere  und zerstörungsfreie Sondierung des Baugrundes. Bestellt Äcker können gequert werden, wodurch Flächenvorarbeiten nicht erforderlich sind.
+
+Ebenso erfassen unsere Drohnen Leitungen, Altlasten und archäologische Strukturen.  Für eine weitreichende Vorerkundung ist auch die Erfassung von Trassenoberfläche wichtig. Zur Kostenkalkulation für Entschädigungszahlungen identifizieren wir Trassenbereiche in landwirtschaftlicher Nutzung und deren Entwicklung nach der Leitungseinbringung.
+
+##### Baudokumentation
+
+Drohnen ermöglichen eine schnelle und präzise Erfassung des Ist-Zustandes von Trassen während der Baumaßnahmen und umgehen Herausforderungen der bodengebundenen Vermessung und Inspektion. Turnusmäßig und während laufenden Bauarbeiten werden hochauflösendeAufnahmen gemacht und der Baufortschritt schnell und kostengünstig dokumentiert.
+
+* Umfassende Vorerkundung von Geländeoberflächen und -untergründen
+* Detektion von Kampfmitteln im Baugrund durch zertifizierte Fachfirma nach §7 und § 20 SprengG
+* Identifikation und präzise Positionsbestimmung von metallischen und stromführenden Leitungen
+* Detektion von metallischen Altlasten, Störkörpern oder archäologischen Strukturen
+* Turnusmäßige Dokumentation des Ist-Zustanden von Bauprojekten

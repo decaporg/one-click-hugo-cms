@@ -3,11 +3,12 @@ title: Tiefbau
 layout: pages
 image: /img/pages/header-civil-eng.jpg
 description: Die Vermessung und Kartierung neuer Baugebiete/-grundstücke spielt oft für Bauvorhaben eine entscheidende Rolle.
+customList: true
 intro:
     image: /img/pages/intro-civil-eng.jpg
     heading: Was bieten wir dem Tiefbau?
     description:
-        Ein wesentlicher Bestandteil bei Bauvorhaben ist die fachgerechte Vorerkundung des Baugrundes, um mögliche Gefahren im Voraus zu erkennen oder unerwünschte Kosten zu vermeiden.
+        Drohnen-Technologien liefern diverse Lösungen im Tiefbau. Von sicherer Baugrunderkundung bis zur turnusmäßigen Baudokumentation - Wir unterstützen Unternehmen in allen Bauphasen
     counter:
         target: 10
         label: schnellere <br> Auftragszeiten
@@ -17,14 +18,18 @@ intro:
         label: Jetzt Angebot einholen
 ---
 
-### Unsere Lösung
+### Schnell, präzise und sicher – Drohnenanwendungen im Tiefbau
 
-Weil der Sicherheit auf Baustellen  höchste Priorität zugeordnet wird, muss beispielsweise vor Baumaßnahmen der Baugrund auf eine Belastung durch Kampfmittel untersucht werden. Auch ist es sinnvoll, unterirdische Fundamente oder archäologische Strukturen vorab zu lokalisieren und zu bergen, um ungewollte Kosten oder Verzögerungen des Bauvorhabens zu vermeiden. Ungewollte Kosten können auch entstehen, wenn  undokumentierte Leitungen während der Baumaßnahmen beschädigt werden.
+##### Baugrundvorerkundung
 
-Die drohnenbasierten Messverfahren von ASDRO ermöglichen eine schnelle Untersuchung des Baugrundes und hochpräzise Lokalisierung von unterirdischen Strukturen und Gegenständen. Vollständig digitalisiert können die Ergebnisse auch direkt in die Bauplanung mit einfließen.
+Im Zuge der Genehmigungsplanung von Bauprojekten ist eine Untersuchung des Baugrundes auf eine Belastung durch Kampfmittel zu veranlassen. Bei bodengebundener Kampfmittelsondierung bestehen Risiken für beteiligtes Personal durch verborgene Kampfmittel und Herausforderungen durch unwegsames Gelände. Der Einsatz von Drohnen-Technologien ermöglicht eine sichere und geländeunabhängige Sondierung des Baugrundes - und ist dabei 10x schneller als konventionelle Methoden. Ebenso erfassen unsere Drohnen metallische und stromführende Leitungen, Altlasten, Archäologie und Infrastrukturen – für eine weitreichende Vorerkundung der Oberfläche und des Untergrundes vor Baubeginn.
 
-+ Umfassende Vorerkundung des Baugrundes; oberflächlich und unterirdisch
-+ Detektion von Störkörpern, u.a. Kampfmitteln, Altlasten und Fundamenten, und Leitungen im Baugrund
-+ Detektion von Mittleren- und Großkalibern, sowie Blindgängern bis 2-4 m Tiefe
-+ metallische und stromführende Leitungen mit Lagegenauigkeit von 30 cm
-+ DN1000 Leitungen bis in 10m
+##### Baudokumentation
+
+Drohnen ermöglichen eine schnelle und präzise Erfassung des Ist-Zustandes von Bauprojekten und umgehen Herausforderungen der bodengebundenen Vermessung und Inspektion. Turnusmäßig und während laufenden Bauarbeiten werden hochauflösende Aufnahmen gemacht und der Baufortschritt schnell und kostengünstig dokumentiert.
+
+* Umfassende Vorerkundung von Geländeoberflächen und -untergründen
+* Detektion von Kampfmitteln im Baugrund durch zertifizierte Fachfirma nach §7 und § 20 SprengG
+* Identifikation und präzise Positionsbestimmung von metallischen und stromführenden Leitungen
+* Detektion von metallischen Altlasten, Störkörpern oder archäologischen Strukturen+
+* Turnusmäßige Dokumentation des Ist-Zustanden von Bauprojekten

@@ -7,11 +7,12 @@ description: >-
   java’s origin and support the farmers that grew it. We take coffee production,
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
+customList: true
 intro:
     image: /img/pages/intro-infrastructure.jpg
     heading: Was bieten wir der Infrastruktur-Branche?
     description:
-        Die turnusmäßige Inspektion von Infrastruktur-Anlagen, wie beispielsweise Straßen, Häfen oder Schienennetzen, ist erforderlich, um Schäden rechtzeitig zu erkennen und zu beheben.
+        Drohnen erfassen schnell und geländeunabhängig den Ist-Zustand von Infrastrukturanlagen. Für Inspektionen und zur Vermessung sind Drohnen-Lösungen somit die kostengünstige Alternative zur Bodenvermessung und Anlagensichtung durch den Menschen.
     counter:
         target: 50
         label: kostengünstiger
@@ -21,7 +22,14 @@ intro:
         label: Jetzt Angebot einholen
 ---
 
-Erfolgt die Anlageninspektion durch den Menschen, ist sie mit hohem Zeitaufwand und hohen Kosten verbunden. Mit drohnengestützter Photogrammetrie von ASDRO werden innerhalb von kurzer Zeit hochauflösende und aktuelle Aufnahmen von der Anlage gemacht, aus denen 3D-Modelle erstellt werden. Anschließend kann die Inspektion der Anlage rein digital am Computer erfolgen.
+### Präzise und schnelle Erfassung von Infrastrukturanlagen mittels Drohne
 
-+ Georeferenzierte 3D-Modelle
-+ Lagegenauigkeit von 1-2 cm und Höhengenauigkeit von 2-3 cm.
+Eine turnusmäßige Inspektion und Vermessung von Infrastrukturanlagen ist erforderlich, um Schäden rechtzeitig zu erkennen und zu beheben. Inspektionen durch den Menschen und bodengebundene Vermessungen sind mit einem großen zeitlichen Aufwand verbunden.
+
+Der Einsatz von Drohen ermöglicht eine schnelle und hochpräzise Erfassung von Infrastrukturen - auch bei schwer zugänglichen Anlagen.
+
+Die Inspektion erfolgt anschließend anhand des digitalen Abbildes der Anlage. Durch die schnelle Projektabwicklung und hohe Datenqualität bietet der Einsatz von Drohnen zur Anlageninspektion und -vermessung Unternehmen eine kostengünstige Alternative zu konventionellen Methoden.
+
+* Turnusmäßige Dokumentation von Infrastrukturen zur Inspektionen
+* Georeferenzierte Orthofotos, Höhen- und 3D-Modelle
+* Hochpräzise Ergebnisse mit 1-2 cm Lagegenauigkeit und 2-3 cm Höhengenauigkeit

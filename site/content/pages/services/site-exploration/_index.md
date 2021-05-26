@@ -2,7 +2,6 @@
 title: Baugrunderkundung
 type: services
 image: /img/pages/header-default.jpg
-heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -10,8 +9,12 @@ description: >-
   anyone.
 intro:
   image: /img/about2.png
-  heading: Sicherheit auf der Baustelle
+  heading: Baugrunderkundung per Drohne
   description: >-
-    Die Baugrunderkundung ist als vorbereitende Maßnahme wichtiger Bestandteil der Bauplanung in Branchen wie dem Tiefbau und der Energieversorgung.<br><br>Nicht nur Munitionsaltlasten und Leitungen sollten vor Baubeginn lokalisiert werde, auch die Kenntnis von unterirdische Fundamente, archäologische Strukturen und Altlasten ist wichtig. Frühzeitig können Maßnahmen eingeleitet werden, die die Strukturen vor Beginn des Bauvorhabens bergen. Ein unvorhersehbarer Stopp bei laufenden Baumaßnahmen, und damit einhergehende Mehrkosten, könnenso verhindert werden.
+    Die Baugrunderkundung ist die Untersuchung des Baugrundes auf metallische Störkörper und archäologische Strukturen. Neben der Kampfmittelsondierung und Leitungsortung ist sie wichtiger Bestandteil von Bauvorhaben, um Planungssicherheit zu garantieren. Auch können im Zuge der Bauplanung archäologische Vorerkundungen mit geringem Bodeneingriff verlangt werden. Der Einsatz von drohnengestützten Messverfahren ermöglicht eine sichere und zerstörungsfreie Erkundung des Baugrundes.
+  bulletpoints:
+    - Detektion von metallischen Altlasten
+    - Identifikation und Positionsbestimmung von archäologischen Strukturen
+    - Detektion von metallischen Störkörpern
 ---
 

@@ -149,84 +149,62 @@ Sobald Sie eine unserer Seiten besuchen, die ein YouTube-Video eingebaut hat, se
 Wenn Sie nicht in einem Google-Konto oder einem Youtube-Konto angemeldet sind, speichert Google Daten mit einer eindeutigen Kennung, die mit Ihrem Gerät, Browser oder App verknüpft sind. So bleibt beispielsweise Ihre bevorzugte Spracheinstellung beibehalten. Aber viele Interaktionsdaten können nicht gespeichert werden, da weniger Cookies gesetzt werden.
 In der folgenden Liste zeigen wir Cookies, die in einem Test im Browser gesetzt wurden. Wir zeigen einerseits Cookies, die ohne angemeldeten YouTube-Konto gesetzt werden. Andererseits zeigen wir Cookies, die mit angemeldetem Account gesetzt werden. Die Liste kann keinen Vollständigkeitsanspruch erheben, weil die Userdaten immer von den Interaktionen auf YouTube abhängen.
 
-```
 Name: YSC
 Verwendungszweck: Dieses Cookie registriert eine eindeutige ID, um Statistiken des gesehenen Videos zu speichern.
 Ablaufdatum: nach Sitzungsende
 Beispielwert: b9-CV6ojI5Y
-```
 
-```
 Name: PREF
 Verwendungszweck: Dieses Cookie registriert ebenfalls Ihre eindeutige ID. Google bekommt über PREF Statistiken, wie Sie YouTube-Videos auf unserer Webseite verwenden.
 Ablaufdatum: nach 8 Monate
 Beispielwert: f1=50000000
-```
 
-```
 Name: GPS
 Verwendungszweck: Dieses Cookie registriert Ihre eindeutige ID auf mobilen Geräten, um den GPS-Standort zu tracken.
 Ablaufdatum: nach 30 Minuten
 Beispielwert: 1
-```
 
-```
 Name: VISITOR_INFO1_LIVE
 Verwendungszweck: Dieses Cookie versucht die Bandbreite des Users auf unseren Webseiten (mit eingebautem YouTube-Video) zu schätzen.
 Ablaufdatum: nach 8 Monaten
 Beispielwert: 95Chz8bagyU
-```
 
 Weitere Cookies, die gesetzt werden, wenn Sie mit Ihrem YouTube-Konto angemeldet sind:
 
-```
 Name: APISID
 Verwendungszweck: Dieses Cookie wird verwendet, um ein Profil über Ihre Interessen zu erstellen. Genützt werden die Daten für personalisierte Werbeanzeigen.
 Ablaufdatum: nach 2 Jahre
 Beispielwert: zILlvClZSkqGsSwI/AU1aZI6HY7311117653
-```
 
-```
 Name: CONSENT
 Verwendungszweck: Das Cookie speichert den Status der Zustimmung eines Users zur Nutzung unterschiedlicher Services von Google. CONSENT dient auch der Sicherheit, um User zu überprüfen und Userdaten vor unbefugten Angriffen zu schützen.
 Ablaufdatum: nach 19 Jahren
 Beispielwert: YES+AT.de+20150628-20-0
-```
 
-```
 Name: HSID
 Verwendungszweck: Dieses Cookie wird verwendet, um ein Profil über Ihre Interessen zu erstellen. Diese Daten helfen personalisierte Werbung anzeigen zu können.
 Ablaufdatum: nach 2 Jahren
 Beispielwert: AcRwpgUik9Dveht0I
-```
 
-```
 Name: LOGIN_INFO
 Verwendungszweck: In diesem Cookie werden Informationen über Ihre Login-Daten gespeichert.
 Ablaufdatum: nach 2 Jahren
 Beispielwert: AFmmF2swRQIhALl6aL…
-```
 
-```
 Name: SAPISID
 Verwendungszweck: Dieses Cookie funktioniert, indem es Ihren Browser und Ihr Gerät eindeutig identifiziert. Es wird verwendet, um ein Profil über Ihre Interessen zu erstellen.
 Ablaufdatum: nach 2 Jahren
 Beispielwert: 7oaPxoG-pZsJuuF5/AnUdDUIsJ9iJz2vdM
-```
 
-```
 Name: SID
 Verwendungszweck: Dieses Cookie speichert Ihre Google-Konto-ID und Ihren letzten Anmeldezeitpunkt in digital signierter und verschlüsselter Form.
 Ablaufdatum: nach 2 Jahren
 Beispielwert: oQfNKjAsI311117653
-```
 
-```
 Name: SIDCC
 Verwendungszweck: Dieses Cookie speichert Informationen, wie Sie die Webseite nutzen und welche Werbung Sie vor dem Besuch auf unserer Seite möglicherweise gesehen haben.
 Ablaufdatum: nach 3 Monaten
 Beispielwert: AN0-TYuqub2JOcDTyL
-```
 
 ##### Wie lange und wo werden die Daten gespeichert?
 Die Daten, die YouTube von Ihnen erhält und verarbeitet werden auf den Google-Servern gespeichert. Die meisten dieser Server befinden sich in Amerika. Unter https://www.google.com/about/datacenters/inside/locations/?hl=de  sehen Sie genau wo sich die Google-Rechenzentren befinden. Ihre Daten sind auf den Servern verteilt. So sind die Daten schneller abrufbar und vor Manipulation besser geschützt.

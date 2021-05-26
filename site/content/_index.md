@@ -47,7 +47,7 @@ blurb:
     text: "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities."#
 services:
     - heading: Kampfmittelsondierung
-      text: Zertifizierte Fachfirma nach SprengG 7 & SprengG 20. Schnell & transparent!
+      text: Zertifizierte Fachfirma nach §7 SprengG & §20 SprengG. Schnell & Transparent
       icon: search
       subpage: ordnance-probing
     - heading: Leitungsortung
@@ -55,7 +55,7 @@ services:
       icon: crosshair
       subpage: line-location
     - heading: Baugrunderkundung
-      text: Fundamente, Keller, Bunker und sonstige Störkörper zuverlässig vor dem Baustart dokumentieren.
+      text: Fundamente, Keller, Bunker und sonstige Störkörper zuverlässig vor dem Baustart dokumentieren
       icon: home
       subpage: site-exploration
     - heading: 3D-Vermessung

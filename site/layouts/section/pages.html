@@ -13,7 +13,7 @@
   {{ end }}
 
   {{ if .Content }}
-    <section class="section{{ if .Params.intro }} pt-0{{ end }}">
+    <section class="section{{ if .Params.intro }} pt-0{{ end }}{{ if .Params.customList }} styled-lists{{ end }}">
       {{ partial "text-wrapper" .Content }}
     </section>
   {{ end }}

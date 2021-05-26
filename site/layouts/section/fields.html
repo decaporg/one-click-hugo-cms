@@ -16,41 +16,20 @@
       </div>
     {{ end }}
 
-    <div class="row">
-      <div class="col-md-4 mt-4 pt-2">
-        <ul class="nav nav-pills nav-justified flex-column bg-white rounded shadow p-3 mb-0 sticky-bar" id="pills-tab"
-          role="tablist">
-          {{ range $i, $e := .Params.accordion }}
-            <li class="nav-item">
-              <a class="nav-link rounded{{ if eq $i 0}} active{{ end }}" id="webdeveloping" data-toggle="pill" href="#{{ .title | urlize }}" role="tab"
-                aria-controls="developing" aria-selected="false">
-                <div class="text-center py-1">
-                  <h6 class="mb-0">{{ .title }}</h6>
-                </div>
-              </a>
-            </li>
-          {{ end }}
-        </ul>
-      </div>
-
-      <div class="col-md-8 col-12 mt-4 pt-2">
-        <div class="tab-content" id="pills-tabContent">
-          {{ range $i, $e := .Params.accordion }}
-            <div class="tab-pane fade bg-white p-4 rounded shadow{{ if eq $i 0}} active show{{ end }}" id="{{ .title | urlize }}" role="tabpanel" aria-labelledby="webdeveloping">
-              <img src="{{ .image }}" class="img-fluid rounded shadow" alt="{{ .title }}">
-              <div class="mt-4">
-                <p class="text-muted">{{ .description }}</p>
-                {{ if .link }}
-                  <a href="{{ .link.url }}" class="text-primary">
-                    {{ .link.label }}
-                    <i data-feather="arrow-right" class="fea icon-sm"></i>
-                  </a>
-                {{ end }}
-              </div>
+    <div class="row justify-content-center">
+    {{ range .Params.accordion }}
+      <div class="col-md-6 col-12 mt-4 pt-2">
+        <div class="card border-0 work-container work-classic bg-transparent">
+          <div class="card-body p-0">
+            <img src="{{ .image }}" alt="{{ .title }}" class="img-fluid rounded work-image">
+            <div class="content pt-3">
+              <h5 class="mb-0">{{ if .link.url }}<a href="{{ .link.url }}" class="text-dark stretched-link">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</h5>
+              <p class="text-muted">{{ .description }}</p>
             </div>
-          {{ end }}
+          </div>
         </div>
       </div>
+    {{ end }}
     </div>
   </div>
 </section>
@@ -61,9 +40,9 @@
       <div class="col-12 text-center">
         <div class="video-solution-cta position-relative" style="z-index: 1;">
           <div class="position-relative">
-            <img src="/img/preview.webp" class="img-fluid rounded-md shadow-lg" alt="">
+            <img src="/img/preview.jpg" class="img-fluid rounded-md shadow-lg" alt="">
             <div class="play-icon">
-              <a href="https://www.youtube.com/watch?v=bCU61ydOM5o" class="play-btn video-play-icon">
+              <a href="https://www.youtube.com/watch?v=GY_Ap7sRp0I" class="play-btn video-play-icon">
                 <i class="mdi mdi-play text-primary rounded-circle bg-white shadow-lg"></i>
               </a>
             </div>

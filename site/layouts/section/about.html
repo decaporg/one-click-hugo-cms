@@ -19,11 +19,13 @@
           <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
               <div class="ml-lg-4">
                 <div class="section-title">
+                  {{ if .Params.intro.heading }}
                     <h4 class="title mb-4">{{ .Params.intro.heading }}</h4>
-                    <p class="text-muted">{{ safeHTML .Content }}</p>
-                    {{ if .Params.intro.button.link }}
-                      <a href="{{ .Params.intro.button.link }}" class="btn btn-primary mt-3">{{ .Params.intro.button.label }}</a>
-                    {{ end }}
+                  {{ end }}
+                  <div class="text-muted">{{ safeHTML .Content }}</div>
+                  {{ if .Params.intro.button.link }}
+                    <a href="{{ .Params.intro.button.link }}" class="btn btn-primary mt-3">{{ .Params.intro.button.label }}</a>
+                  {{ end }}
                 </div>
               </div>
           </div>

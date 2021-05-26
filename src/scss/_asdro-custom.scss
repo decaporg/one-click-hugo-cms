@@ -2,3 +2,19 @@
     width: 20px;
     height: 20px;
 }
+
+.text-wrapper {
+    p, li {
+        color: #8492a6;
+    }
+}
+
+.styled-lists {
+    ul {
+        list-style-image: url('/img/icons/feather-circle-check.svg');
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

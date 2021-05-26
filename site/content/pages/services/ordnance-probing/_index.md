@@ -2,7 +2,6 @@
 title: Kampfmittelsondierung
 type: services
 image: /img/pages/header-default.jpg
-heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -10,12 +9,13 @@ description: >-
   anyone.
 intro:
   image: /img/about2.png
-  heading: Sicher & schnell
+  heading: Drohnen-Kampfmittelsondierung
   video:
     id: yba7hPeTSjk
   description: >
-    Die Kampfmittelsondierung ist in Branchen wie dem Tiefbau und der Energieversorgung als vorbereitende Maßnahme bei Bauvorhaben maßgeblich. Eine gefahrenfreie Durchführung von Bauvorhaben kann nur dann erfolgen, wenn Munitionsaltlasten im Untergrund zuvor lokalisiert undgeborgen wurden.<br>Die drohnengestützte Sondierung von ASDRO detektiert sicher:
+    Die Kampfmittelsondierung ist die Untersuchung des Baugrundes auf eine Belastung durch Kampfmittel. Im Zuge der Genehmigungsplanung von Bauprojekten ist diese vor Baubeginn zu veranlassen. Bei bodengebundener Kampfmittelsondierung bestehen Risiken für beteiligtesPersonal durch verborgene Kampfmittel und Herausforderungen durch unwegsames Gelände. Der Einsatz von Drohnen-Technologien ermöglicht eine sichere und geländeunabhängige Sondierung von Flächen und ist dabei 10x schneller als konventionelle Methoden.
   bulletpoints:
-    - Blindgänger bis in eine Tiefe von 4 m
-    - Mittel- bis Großkaliber bis in Tiefen von …
+    - Detektion von Kampfmitteln im Baugrund durch zertifizierte Fachfirma nach §7 und § 20 SprengG
+    - Blindgänger bis in eine Tiefe von 5 m
+    - Munitionsaltlasten ab Kaliber 7.5 cm
 ---
