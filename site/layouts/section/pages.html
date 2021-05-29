@@ -14,7 +14,7 @@
 
   {{ if .Content }}
     <section class="section{{ if .Params.intro }} pt-0{{ end }}{{ if .Params.customList }} styled-lists{{ end }}">
-      {{ partial "text-wrapper" .Content }}
+      {{ partial "text-wrapper" . }}
     </section>
   {{ end }}
 

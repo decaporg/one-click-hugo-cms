@@ -1,9 +1,28 @@
 <div class="container text-wrapper">
     <div class="row justify-content-center">
         <div class="col-lg-9">
-            <div class="card shadow border-0 rounded">
+            <div class="card border-0 rounded">
                 <div class="card-body">
-                    {{ . }}
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-4">{{ .Params.main.header }}</h3>
+                        </div>
+                        <div class="col-12 col-lg-7">{{ .Content }}</div>
+                        <div class="col-12 col-lg-5">
+                            {{ if .Params.bulletpoints }}
+                            <ul class="intro-bulletpoints list-unstyled text-muted">
+                                {{ range .Params.bulletpoints }}
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <span class="text-primary mr-2">
+                                            <i data-feather="check-circle" class="align-middle"></i>
+                                        </span>
+                                        <span class="align-middle">{{ . }}</span>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        {{ end }}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

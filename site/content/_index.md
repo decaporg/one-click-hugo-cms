@@ -17,14 +17,20 @@ clients:
     #   label: "Duisport"
     # - image: img/client/siemens.svg
     #   label: "Siemens"
+    - image: img/client/dbu.svg
+      label: "DBU"
+    - image: img/client/ministerium.svg
+      label: "Bundesministerium für Wirtschaft und Energie"
+    - image: img/client/esri.svg
+      label: "esri"
     - image: img/client/oge.svg
       label: "OGE"
-    - image: img/client/evonik.svg
-      label: "Evonik"
+    # - image: img/client/evonik.svg
+    #   label: "Evonik"
     - image: img/client/goldbeck.svg
       label: "Goldbeck"
-    - image: img/client/telekom.svg
-      label: "Telekom"
+    # - image: img/client/telekom.svg
+    #   label: "Telekom"
 counter:
     - icon: fast-forward
       title: schneller
@@ -34,7 +40,7 @@ counter:
     - icon: shield
       title: Sicherheit
       count: 100
-      description: Durch den Einsatz von sicheren Drohnen wird ein Ausfall des Systems vorgebeugt. Die Sicherheit von Mensch und Maschine steht stets im Vordergrund.
+      description: Durch den Einsatz von Drohnen werden Flächen kontaktlos vermessen und Risiken für beteiligte Einsatzkräfte eliminiert.
       suffix: "%"
     - icon: maximize
       title: Hektar
@@ -67,7 +73,7 @@ services:
       icon: book-open
       # subpage: geo-physics
     - heading: Bestandsaufnahme
-      text: Dokumentation, Schadensanalyse und Visualsierung von Beständen
+      text: Dokumentation, Schadensanalyse und Visualisierung von Beständen
       icon: folder
       subpage: inspection
 intro:

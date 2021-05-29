@@ -3,17 +3,7 @@ title: Branchen
 type: fields
 layout: fields
 image: /img/pages/header-default.jpg
-heading: Vielfältige Anwendungszwecke auch für Ihr Unternehmen
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
-intro:
-  heading: Was wir Ihnen bieten
-  subtitle: Anwendungen
-  description: >
-    Wir bieten "DIE" Komplett-Lösung für die Vermessung, Inspektion & fachspezifische Bewertung von Oberflächen und Untergründen.
+heading: Vielfältige Anwendungsfälle auch für Ihr Unternehmen
 accordion:
   - title: Tiefbau
     description: >

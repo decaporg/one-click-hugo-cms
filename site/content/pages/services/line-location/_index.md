@@ -11,10 +11,10 @@ intro:
   image: /img/pages/intro-line-location.jpg
   heading: Drohnen-Leitungsortung
   description: >
-    Unter Leitungsortung versteht man die Detektion und Positionsbestimmung von unterirdisch verlaufenden Leitungen. Für mehr Planungssicherheit bei Bauvorhaben und Vermeidung von Leitungsschädigung wird eine Untersuchung des Baugrundes auf Leitungen vor Baubeginn häufig beauftragt. Der Einsatz von Drohnen-Technologien ermöglicht eine großflächige Ortung von Leitungen in kürzester Zeit. Für die präzise Lage- und Tiefenbestimmungen von ausgewählten Leitungen werden anschließend bodengebundene Messverfahren eingesetzt.
+    Unter Leitungsortung versteht man die Detektion und Positionsbestimmung von unterirdisch verlaufenden Leitungen. Für mehr Planungssicherheit bei Bauvorhaben und Vermeidung von Leitungsschädigung wird eine Untersuchung des Baugrundes auf Leitungen vor Baubeginn häufig beauftragt. Der Einsatz von Drohnen-Technologien ermöglicht eine großflächige Ortung von Leitungen in kürzester Zeit. Für die präzise Lage- und Tiefenbestimmung werden anschließend bodengebundene Messverfahren eingesetzt.
   bulletpoints:
-    - Identifikation, Lage- und Tiefenbestimmung von Leitungen mit Drohnen-Geomagnetik und Georadar.
-    - Ausstellung von BLV Bescheinigungen für das Baugrundstück
+    - Identifikation, Lage- und Tiefenbestimmung von Leitungen mit Drohnen-Geomagnetik und Georadar
+    - Ausstellung von BVL Bescheinigungen für das Baugrundstück
     - Lagegenauigkeit von 30 cm
     - DN1000 Leitungen bis in 10 m Tiefe
 ---

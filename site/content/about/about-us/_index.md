@@ -45,6 +45,6 @@ team:
 ---
 **ASDRO** ("Advanced & Specialized Drone Solutions") ist ein junges und dynamisches Unternehmen, welches branchenübergreifend im Bereich der Drohnenvermessung arbeitet.
 
-Es wurde 2019 als Spin-off der Universität Münster gegründet und hat seinen Hauptsitz in Oberhausen, sowie einen weiteren Standort in Wien. ASDRO kombiniert autonome Datenaufnahme und automatisierte Datenverarbeitung für eine zukunftsweise und effiziente Komplettlösung im Bereich der Oberflächen- und Untergrundvermessung.
+Das Startup wurde 2019 als Spin-off der Universität Münster gegründet und hat seinen Hauptsitz in Oberhausen, sowie einen weiteren Standort in Wien. ASDRO kombiniert autonome Datenaufnahme und automatisierte Datenverarbeitung für eine zukunftsweisende und effiziente Komplettlösung im Bereich der Oberflächen- und Untergrundvermessung.
 
 Unser Anspruch ist es stets einen Schritt voraus zu sein um die Technologien und Lösungen von morgen zu entwickeln. Dazu können wir bereits jetzt Lösungen anbieten, die der Maßstab für fortschrittlichste und dabei präziseste Arbeit darstellt.

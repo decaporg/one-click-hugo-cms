@@ -8,13 +8,12 @@ description: >-
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
 intro:
-  image: /img/about2.png
+  image: /img/pages/intro-site-exploration.jpg
   heading: Baugrunderkundung per Drohne
   description: >-
     Die Baugrunderkundung ist die Untersuchung des Baugrundes auf metallische Störkörper und archäologische Strukturen. Neben der Kampfmittelsondierung und Leitungsortung ist sie wichtiger Bestandteil von Bauvorhaben, um Planungssicherheit zu garantieren. Auch können im Zuge der Bauplanung archäologische Vorerkundungen mit geringem Bodeneingriff verlangt werden. Der Einsatz von drohnengestützten Messverfahren ermöglicht eine sichere und zerstörungsfreie Erkundung des Baugrundes.
   bulletpoints:
-    - Detektion von metallischen Altlasten
+    - Detektion von metallischen Störkörpern und Altlasten
     - Identifikation und Positionsbestimmung von archäologischen Strukturen
-    - Detektion von metallischen Störkörpern
 ---
 

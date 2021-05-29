@@ -11,22 +11,22 @@ services:
     text: Ortung von Bestandsleitung und Fremdleitung mit höchster Präzision
     icon: crosshair
     subpage: line-location
-  - heading: Altlasten-Check
-    text: Fundamente, Keller, Bunker und sonstige Störkörper zuverlässig vor dem Baustart dokumentieren.
+  - heading: Baugrunderkundung
+    text: Fundamente, Keller, Bunker und sonstige Störkörper zuverlässig vor dem Baustart dokumentieren
     icon: home
-    subpage: inspection
+    subpage: site-exploration
   - heading: 3D-Vermessung
     text: Vollflächige Vermessung mit Zentimeter-Genauigkeit
     icon: box
-    # subpage: surveying
-  - heading: Geo-Physik
+    subpage: inspection
+  - heading: Geophysik
     text: Fragestellung rund um die Geophysik durch fachmännisches Personal
     icon: book-open
     # subpage: geo-physics
   - heading: Bestandsaufnahme
-    text: Dokumentation, Schadensanalyse und Visualsierung von Beständen
+    text: Dokumentation, Schadensanalyse und Visualisierung von Beständen
     icon: folder
-    subpage: site-exploration
+    subpage: inspection
 ---
 
 
