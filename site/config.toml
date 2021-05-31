@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Asdro Drone Solutions"
+title = "ASDRO"
 [params]
   [params.contact]
     email = "info@asdro.de"
