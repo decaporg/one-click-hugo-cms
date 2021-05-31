@@ -38,7 +38,7 @@
     "date-fns": "^1.30.1",
     "eslint": "^6.1.0",
     "eslint-plugin-import": "^2.18.2",
-    "exports-loader": "^0.7.0",
+    "exports-loader": "^3.0.0",
     "fancy-log": "^1.3.2",
     "file-loader": "^4.1.0",
     "html-webpack-plugin": "^3.2.0",
