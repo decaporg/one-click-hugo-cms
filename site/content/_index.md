@@ -27,8 +27,8 @@ clients:
       label: "OGE"
     # - image: img/client/evonik.svg
     #   label: "Evonik"
-    - image: img/client/goldbeck.svg
-      label: "Goldbeck"
+    # - image: img/client/goldbeck.svg
+    #   label: "Goldbeck"
     # - image: img/client/telekom.svg
     #   label: "Telekom"
 counter:
