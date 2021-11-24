@@ -54,11 +54,15 @@ module.exports = {
     new AssetsPlugin({
       filename: "webpack.json",
       path: path.join(process.cwd(), "site/data"),
-      prettyPrint: true
+      prettyPrint: true,
     }),
     new CopyWebpackPlugin({
       patterns: [{ from: "./src/fonts/", to: "fonts/" }],
     }),
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      filename: "admin/index.html",
+      template: "src/cms.html",
+      inject: false,
+    }),
   ],
 };
