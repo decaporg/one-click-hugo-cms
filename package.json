@@ -32,7 +32,7 @@
     "copy-webpack-plugin": "^9.1.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
-    "css-minimizer-webpack-plugin": "^3.1.3",
+    "css-minimizer-webpack-plugin": "^4.0.0",
     "eslint": "^8.2.0",
     "exports-loader": "^3.1.0",
     "file-loader": "^6.2.0",
