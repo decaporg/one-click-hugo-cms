@@ -1,10 +1,10 @@
 module.exports = {
-  plugins: {
-    "postcss-import": {},
-    "postcss-preset-env": {
+  plugins: [
+    require("postcss-import")({}),
+    require("postcss-preset-env")({
       browsers: "last 2 versions"
-    },
-    "postcss-custom-media": {},
-    autoprefixer: {}
-  }
+    }),
+    require("postcss-custom-media")({}),
+    require("autoprefixer")({})
+  ]
 };
