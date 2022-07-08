@@ -8,3 +8,7 @@
 
 [context.deploy-preview]
   command = "yarn build:preview"
+
+[dev]
+  framework = "hugo"
+  targetPort = 3000
