@@ -23,7 +23,7 @@ input, textarea {
   position: relative;
   transition: var(--hover-transition);
   z-index: 2;
-  &:focus {
+  :focus {
     background-color: var(--white);
   }
   &:focus + label {
