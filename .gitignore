@@ -4,3 +4,6 @@ site/data/webpack.json
 /npm-debug.log
 yarn-error.log
 .netlify/
+
+cypress/videos
+cypress/screenshots
