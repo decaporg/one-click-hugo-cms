@@ -16,5 +16,7 @@ products:
 values:
     heading: Our values
     text: Coffee is an amazing part of human culture but it has a dark side too – one of colonialism and mindless abuse of natural resources and human lives. We want to turn this around and return the coffee trade to the drink’s exhilarating, empowering and unifying nature.
+footer_title: Newsletter subscribe
+footer_blurb: Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.
 ---
 
