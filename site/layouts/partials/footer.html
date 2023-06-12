@@ -5,8 +5,8 @@
 		<div class="measure-narrow center mb4">
 
 			<img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
-			<p class="f3 lh-title light-gray b tc mb2">Newsletter subscribe</p>
-			<p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
+			<p class="f3 lh-title light-gray b tc mb2">{{ .Site.Data.footer.title }}</p>
+			<p>{{ .Site.Data.footer.blurb }}</p>
 
 			{{ partial "newsletter-form" . }}
 
