@@ -5,10 +5,8 @@
 		<div class="measure-narrow center mb4">
 
 			<img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
-			{{ with .GetPage "/_index.md" }}
-				<p class="f3 lh-title light-gray b tc mb2">{{ .Params.footer_title }}</p>
-				<p>{{ .Params.footer_blurb }}</p>
-			{{ end }}
+			<p class="f3 lh-title light-gray b tc mb2">{{ .Site.Data.footer.title }}</p>
+			<p>{{ .Site.Data.footer.blurb }}</p>
 
 			{{ partial "newsletter-form" . }}
 
