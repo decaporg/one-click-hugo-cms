@@ -10,6 +10,7 @@ import ProductsPreview from "./cms-preview-templates/products";
 import ValuesPreview from "./cms-preview-templates/values";
 import ContactPreview from "./cms-preview-templates/contact";
 import FooterPreview from "./cms-preview-templates/footer";
+import ConfigPreview from "./cms-preview-templates/config";
 
 CMS.registerPreviewStyle(styles, { raw: true });
 CMS.registerPreviewTemplate("home", HomePreview);
@@ -18,4 +19,5 @@ CMS.registerPreviewTemplate("products", ProductsPreview);
 CMS.registerPreviewTemplate("values", ValuesPreview);
 CMS.registerPreviewTemplate("contact", ContactPreview);
 CMS.registerPreviewTemplate("footer", FooterPreview);
+CMS.registerPreviewTemplate("config", ConfigPreview);
 CMS.init();
