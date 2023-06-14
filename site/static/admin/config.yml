@@ -91,5 +91,7 @@ collections: # A list of collections the CMS should be able to edit
       - file: "site/config.toml"
         label: Hugo Config
         name: config
+        editor:
+          preview: false
         fields:
           - {label: Site Title for Browser Tab, name: title, widget: string}
