@@ -1,6 +1,8 @@
 <li class="dib ph2 raise">
   <a href="{{.link}}" class="link bg-white black db relative br-100 pa2">
-    <svg width="16px" height="16px" class="db">
+    <!-- see SVG tips for alt text https://www.w3.org/WAI/tutorials/images/tips/ -->
+    <svg width="16px" height="16px" class="db" aria-labelledby="alt-{{.svg}}">
+      <title id="alt-{{.svg}}">{{.alt}}</title>
       <use xlink:href="#{{.svg}}"></use>
     </svg>
   </a>
