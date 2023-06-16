@@ -79,9 +79,19 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Heading, name: heading, widget: string}
               - {label: Text, name: text, widget: text}
               - {label: Image, name: imageUrl, widget: image}
+  - name: "site_settings"
+    label: "Site Settings"
+    files:
       - file: "site/data/footer.json"
         label: Footer
         name: footer
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Blurb, name: blurb, widget: text}
+      - file: "site/config.toml"
+        label: Hugo Config
+        name: config
+        editor:
+          preview: false
+        fields:
+          - {label: Site Title for Browser Tab, name: title, widget: string}
