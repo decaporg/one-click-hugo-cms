@@ -25,6 +25,14 @@ Clone this repository, and run `yarn` or `npm install` from the new folder to in
 
 Then start the development server with `yarn start` or `npm start`.
 
+## Testing
+
+With the development server running, run the tests locally
+with `yarn cypress:run` or `npm run cypress:run`.
+Or use `yarn cypress:open` or `npm run cypress:open` to run interactively.
+
+Cypress tests also run on deploy with the [Cypress Netlify integration](https://www.netlify.com/integrations/cypress/).
+
 ## Layouts
 
 The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the `site/layouts/partials` folder for all available partials.
