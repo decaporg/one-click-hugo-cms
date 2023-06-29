@@ -9,7 +9,8 @@ parserOptions:
 plugins: [ "import" ]
 
 extends: [
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:cypress/recommended"
   ]
 
 settings:
