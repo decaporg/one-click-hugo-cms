@@ -1,12 +1,21 @@
 env:
   browser: true
 
-parser: babel-eslint
+parser: "@babel/eslint-parser"
 
 parserOptions:
   ecmaVersion: 6
 
 plugins: [ "import" ]
+
+extends: [
+    "plugin:react/recommended",
+    "plugin:cypress/recommended"
+  ]
+
+settings:
+  react:
+    version: detect
 
 rules:
   # Possible Errors
@@ -76,6 +85,10 @@ rules:
   # https://github.com/eslint/eslint/tree/master/docs/rules#variables
   no-undef: 2
   no-unused-vars: [2, {"args": "none"}]
+
+  # turn off PropType checking
+  # https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
+  react/prop-types: [0]
 
 # Global scoped method and vars
 globals:

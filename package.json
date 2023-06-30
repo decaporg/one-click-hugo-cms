@@ -5,7 +5,7 @@
   "repository": "netlify/victor-hugo",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src",
+    "lint": "eslint src cypress",
     "start": "run-p start:**",
     "start:hugo": "hugo -d ../dist -s site -vw",
     "start:webpack": "webpack-dev-server --config webpack.dev.js --hot",
@@ -37,7 +37,9 @@
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
     "eslint": "^8.2.0",
+    "eslint-plugin-cypress": "^2.13.3",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.32.2",
     "exports-loader": "^3.1.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
