@@ -24,4 +24,4 @@ You do NOT have to include this information if this is a FEATURE REQUEST
 
 **- What is the expected behavior?**
 
-**- Please mention your node.js, NPM, Hugo and operating system version.**
+**- Please mention your node.js, NPM, and operating system version.**

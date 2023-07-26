@@ -1,8 +1,8 @@
 {
-  "name": "victor-hugo",
+  "name": "one-click-hugo-cms",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
-  "repository": "netlify/victor-hugo",
+  "description": "Hugo template with Decap CMS ",
+  "repository": "decaporg/one-click-hugo-cms",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src cypress",
