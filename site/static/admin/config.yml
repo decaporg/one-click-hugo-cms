@@ -99,7 +99,7 @@ collections: # A list of collections the CMS should be able to edit
             name: params
             widget: object
             fields:
-              - label: Open Graph (Facebook) Image
+              - label: Open Graph Image
                 name: images
                 widget: list
                 field: { label: Image, name: image, widget: image }
