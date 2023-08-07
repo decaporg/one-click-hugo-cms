@@ -1,0 +1,149 @@
+html {
+  font-size: var(--font-size);
+  @media (--breakpoint-medium) {
+    font-size: var(--font-size-m);
+  }
+  @media (--breakpoint-large) {
+    font-size: var(--font-size-l);
+  }
+  background-color: var(--black);
+}
+
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--spacing-medium);
+  line-height: var(--line-height);
+  font-weight: var(--body-font-weight);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--off-white);
+ }
+
+p {
+  margin-bottom: var(--spacing-medium);
+  max-width: 32rem;
+}
+
+strong {
+  font-weight: var(--bold-font-weight);
+}
+
+em {
+  font-style: italic;
+}
+
+sup {
+  font-size: .6rem;
+  font-weight: 700;
+  vertical-align: super;
+}
+
+/* Measure is limited to ~66 characters */
+.measure {
+  max-width: 30em;
+}
+
+/* Measure is limited to ~80 characters */
+.measure-wide {
+  max-width: 34em;
+}
+
+/* Measure is limited to ~45 characters */
+.measure-narrow {
+  max-width: 25em;
+}
+
+/* Book paragraph style - paragraphs are indented with no vertical spacing. */
+.indent {
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (--breakpoint-not-small) {
+  .measure-ns  {
+    max-width: 30em;
+  }
+  .measure-wide-ns {
+    max-width: 34em;
+  }
+  .measure-narrow-ns {
+    max-width: 20em;
+  }
+  .indent-ns {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .small-caps-ns {
+    font-variant: small-caps;
+  }
+  .truncate-ns {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (--breakpoint-medium) {
+  .measure-m {
+    max-width: 30em;
+  }
+  .measure-wide-m {
+    max-width: 34em;
+  }
+  .measure-narrow-m {
+    max-width: 20em;
+  }
+  .indent-m {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .small-caps-m {
+    font-variant: small-caps;
+  }
+  .truncate-m {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (--breakpoint-large) {
+  .measure-l {
+    max-width: 30em;
+  }
+  .measure-wide-l {
+    max-width: 34em;
+  }
+  .measure-narrow-l {
+    max-width: 20em;
+  }
+  .indent-l {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .small-caps-l {
+    font-variant: small-caps;
+  }
+  .truncate-l {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

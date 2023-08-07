@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -9,6 +9,6 @@
   <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <script src="<%= htmlWebpackPlugin.files.chunks.cms.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.publicPath %>/<%= htmlWebpackPlugin.files.js[1] %>"></script>
 </body>
 </html>

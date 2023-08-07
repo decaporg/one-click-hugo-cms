@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  branch: main
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
@@ -60,8 +61,6 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
@@ -80,3 +79,27 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Heading, name: heading, widget: string}
               - {label: Text, name: text, widget: text}
               - {label: Image, name: imageUrl, widget: image}
+  - name: "site_settings"
+    label: "Site Settings"
+    files:
+      - file: "site/data/footer.json"
+        label: Footer
+        name: footer
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Blurb, name: blurb, widget: text}
+      - file: "site/config.toml"
+        label: Hugo Config
+        name: config
+        editor:
+          preview: false
+        fields:
+          - {label: Site Title for Browser Tab, name: title, widget: string}
+          - label: Params
+            name: params
+            widget: object
+            fields:
+              - label: Open Graph Image
+                name: images
+                widget: list
+                field: { label: Image, name: image, widget: image }

@@ -6,11 +6,13 @@ const ContactEntry = ({heading, text}) =>
     <p>{ text }</p>
   </div>;
 
-const ContactEntries = ({data}) => data && data.length > 0
+const ContactEntries = ({data}) =>
+  (data && data.length > 0
     ? <div className="flex-ns mb3">
-      {data.map(({heading, text}) => <ContactEntry heading={heading} text={text} />)}
+      {// eslint-disable-next-line react/jsx-key
+        data.map(({heading, text}) => <ContactEntry heading={heading} text={text} />)}
     </div>
-    : "";
+    : "");
 
 export default class ContactPreview extends React.Component {
   render() {
