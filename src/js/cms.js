@@ -1,4 +1,4 @@
-import CMS from "netlify-cms-app";
+import CMS from "decap-cms-app";
 
 // Import main site styles as a string to inject into the CMS preview pane
 // eslint-disable-next-line import/no-unresolved
