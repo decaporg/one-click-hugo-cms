@@ -43,12 +43,12 @@ Use Hugo’s `dict` functionality to feed content into partials and avoid repeat
 
 The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano. To customize the template for your brand, refer to `src/css/imports/_variables.css` where most of the important global variables like colors and spacing are stored.
 
-## SVG
+## SVG Social Icons
 
-All SVG icons stored in `site/static/img/icons` are automatically optimized with SVGO (gulp-svgmin) and concatenated into a single SVG sprite stored as a a partial called `svg.html`. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the `<use>` tag like so:
+The social media icons are in `site/assets/img`.
+Make sure you use consistent icons in terms of viewport and art direction for optimal results.
+For an icon named `icons-facebook.svg`, refer to the SVG `social-icon` partial like so:
 
 ```
-<svg width="16px" height="16px" class="db">
-  <use xlink:href="#SVG-ID"></use>
-</svg>
+{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook" "alt" "Kaldi on Facebook") }}
 ```
